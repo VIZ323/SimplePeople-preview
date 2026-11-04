@@ -1,5 +1,37 @@
 {
   "schemaVersion": 1,
-  "latestVersion": null,
-  "releases": []
+  "latestVersion": "v0.2.0-stage.1",
+  "releases": [
+    {
+      "version": "v0.2.0-stage.1",
+      "status": "published",
+      "sourceCommit": "49058e9b548cc6ee54ab35ebdcc69540e0d8f610",
+      "tag": "v0.2.0-stage.1",
+      "sourceSHA256": "141b8cb07321a3984d6ea8f218cc52a04af4a5fac88f355c0089feda5a44a493",
+      "buildSHA256": "412df50a5aa640d88b29294e7017b33c7e8d1488814ebfcdd124480641a655dc",
+      "previewUrl": "https://viz323.github.io/SimplePeople-preview/versions/v0.2.0-stage.1/",
+      "releaseUrl": "https://github.com/VIZ323/SimplePeople-preview/releases/tag/v0.2.0-stage.1",
+      "publishedAt": "2026-11-04T11:28:16.518Z",
+      "changes": [
+        "三条真实构筑路线，三招起手、六槽与后续单选；原有12种技能和觉醒保留",
+        "六关79波配置、两精英与四Boss、实际HP来源账本、定向突破和末战利品收尾",
+        "五资源与首通经济、定向灵果培养，关闭零参与反复退出铸币",
+        "首页继续挑战、可重看引导、成长总页、实际费用/净收益与领取后去向",
+        "V2权威存档、明确异常恢复及18段原创音频的受控播放"
+      ],
+      "acceptanceScope": [
+        "阶段构筑与玩家旅程整合试玩，不是完整成品验收",
+        "通过普通首页、引导、选卷、三路线选择进入真实战斗，体验拖动走位与自动攻击",
+        "检查单选升级、暂停/继续、成长和资源用途、设置及存档恢复流程",
+        "Web Mobile为当前线上试玩目标；抖音/微信保留同源本地测试构建"
+      ],
+      "knownIssues": [
+        "首轮固定控制器矩阵65/360胜；真实钱包战役3/60清六关。存在路线、控制器与消费策略混杂，整体平衡未达完成标准，下一批继续改进",
+        "新版局部真实界面/持续走位/自然升级已实测；完整自然胜负、全部动态与设备持续性能仍需后续内部整合验证",
+        "微信模拟器重启后首页可见，点击与完整流程验证仍未通过；历史SDK与音频问题未宣称解决",
+        "缺少正式小游戏AppID与广告位；广告/上架不属于此阶段已通过内容",
+        "历史v17交付ZIP及旧平台/性能报告不作为本阶段验证结果"
+      ]
+    }
+  ]
 }
