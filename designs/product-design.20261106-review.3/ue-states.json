@@ -37,7 +37,7 @@
     "equippedCompanionId": "null|CO01|CO02, one value; never old plural array",
     "levels": "training0..20; activated equipment/companion1..10; unactivated0",
     "capApproval": "proposed; not whole-user-approved",
-    "abilityAuthority": "../product/gameplay.json#/equipmentAbilities and companionAbilities"
+    "abilityAuthority": "gameplay.json#/equipmentAbilities and companionAbilities"
   },
   "legacyScreenMap": [
     {
@@ -209,7 +209,7 @@
     "shortage/read-only/conflict/retry/recovery structure"
   ],
   "choiceContract": {
-    "source": "../product/gameplay.json#/runSkillPolicy",
+    "source": "gameplay.json#/runSkillPolicy",
     "kinds": [
       "learn-rank1",
       "upgrade-existing-plus1"
@@ -348,7 +348,7 @@
       "commit": "同offer仅应用一次；多次跨境逐项排队确认",
       "cancel": "不丢机会/不重抽/不自动应用",
       "designOnly": true,
-      "compositionRef": "../product/gameplay.json#/runSkillPolicy",
+      "compositionRef": "gameplay.json#/runSkillPolicy",
       "composition": "新/已有两类都有时，类内各等概率选1，第三从剩余并集取，最后随机排列；不是全技能入选率相同"
     },
     {
@@ -395,7 +395,7 @@
       "commit": null,
       "cancel": null,
       "designOnly": true,
-      "sourceRef": "../product/economy.json#/training"
+      "sourceRef": "economy.json#/training"
     },
     {
       "id": "TRAINING_PREVIEW",
@@ -586,7 +586,7 @@
       "commit": null,
       "cancel": null,
       "designOnly": true,
-      "sourceRef": "../product/economy.json#/failureReward"
+      "sourceRef": "economy.json#/failureReward"
     },
     {
       "id": "SHARD_CONVERSION",
@@ -629,7 +629,7 @@
       "commit": "复起先暂停再继续；危险/敌人/弹体不重置；重开仅重置本局",
       "cancel": null,
       "designOnly": true,
-      "approvalRef": "../product/gameplay.json#/reviveRecommendation"
+      "approvalRef": "gameplay.json#/reviveRecommendation"
     },
     {
       "id": "CODEX_HELP_PROGRESS",
@@ -774,7 +774,7 @@
   "literalExamples": [
     {
       "id": "EX-ST01-FIRST",
-      "ref": "../product/economy.json#/examples/0",
+      "ref": "economy.json#/examples/0",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "首通ST01回营",
@@ -816,7 +816,7 @@
     },
     {
       "id": "EX-ACTIVATE-EQ01",
-      "ref": "../product/economy.json#/examples/1",
+      "ref": "economy.json#/examples/1",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "激活并装备青锋枪",
@@ -860,7 +860,7 @@
     },
     {
       "id": "EX-UPGRADE-EQ01-L1",
-      "ref": "../product/economy.json#/examples/2",
+      "ref": "economy.json#/examples/2",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "青锋枪1→2",
@@ -891,7 +891,7 @@
     },
     {
       "id": "EX-UPGRADE-EQ01-SHORT",
-      "ref": "../product/economy.json#/examples/3",
+      "ref": "economy.json#/examples/3",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "钱铁不足",
@@ -922,7 +922,7 @@
     },
     {
       "id": "EX-TRAIN-ATK-01",
-      "ref": "../product/economy.json#/examples/4",
+      "ref": "economy.json#/examples/4",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "攻击训练0→1",
@@ -953,7 +953,7 @@
     },
     {
       "id": "EX-TRAIN-HP-01",
-      "ref": "../product/economy.json#/examples/5",
+      "ref": "economy.json#/examples/5",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "血量训练0→1",
@@ -984,7 +984,7 @@
     },
     {
       "id": "EX-ST02-FIRST",
-      "ref": "../product/economy.json#/examples/6",
+      "ref": "economy.json#/examples/6",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "首通ST02接续样例",
@@ -1022,7 +1022,7 @@
     },
     {
       "id": "EX-ACTIVATE-CO01",
-      "ref": "../product/economy.json#/examples/7",
+      "ref": "economy.json#/examples/7",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "激活并同行行云轮",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": "EX-UPGRADE-CO01-L1",
-      "ref": "../product/economy.json#/examples/8",
+      "ref": "economy.json#/examples/8",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "行云轮1→2",
@@ -1093,7 +1093,7 @@
     },
     {
       "id": "EX-ACTIVATE-CO02-SHORT",
-      "ref": "../product/economy.json#/examples/9",
+      "ref": "economy.json#/examples/9",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "激活碎片不足",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": "EX-ACTIVATE-SURPLUS",
-      "ref": "../product/economy.json#/examples/10",
+      "ref": "economy.json#/examples/10",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "囤14片激活及余片转铁",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": "EX-FULL-LEVEL-DUPLICATE",
-      "ref": "../product/economy.json#/examples/11",
+      "ref": "economy.json#/examples/11",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "满级本体4片转铁",
@@ -1203,7 +1203,7 @@
     },
     {
       "id": "EX-COMPANION-SWAP",
-      "ref": "../product/economy.json#/examples/12",
+      "ref": "economy.json#/examples/12",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "已有一同行后更换",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": "EX-COMPANION-UNEQUIP",
-      "ref": "../product/economy.json#/examples/13",
+      "ref": "economy.json#/examples/13",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "暂歇",
@@ -1271,7 +1271,7 @@
     },
     {
       "id": "EX-MAX-EQUIPMENT",
-      "ref": "../product/economy.json#/examples/14",
+      "ref": "economy.json#/examples/14",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "装备满级恢复",
@@ -1299,7 +1299,7 @@
     },
     {
       "id": "EX-MAX-TRAINING",
-      "ref": "../product/economy.json#/examples/15",
+      "ref": "economy.json#/examples/15",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "训练满级恢复",
@@ -1327,7 +1327,7 @@
     },
     {
       "id": "EX-ACTIVATE-CO02-OCCUPIED",
-      "ref": "../product/economy.json#/examples/16",
+      "ref": "economy.json#/examples/16",
       "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
       "kind": "independent literal design example, not executable transaction",
       "title": "已有同行时激活第二位",
@@ -1420,7 +1420,7 @@
     ]
   },
   "equipmentDropQuantityContract": {
-    "source": "../product/economy.json#/dropRules/quantityByCategory/equipment",
+    "source": "economy.json#/dropRules/quantityByCategory/equipment",
     "rule": "每胜1装备包，目标按原池/单focus；数量独立4或5各1/2，强制目标仍随机数量；伙伴仍4",
     "firstEquipment": "首通6+4/5=10/11都够激活；11激活扣10，余1同回执转铁",
     "presentation": "显示实际命中目标与数量；单目标池仍有数量随机，不伪造额外抽奖机会"

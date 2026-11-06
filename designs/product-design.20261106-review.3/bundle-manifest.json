@@ -1,10 +1,10 @@
 {
   "version": "product-design.20261106-review.3",
   "kind": "static-product-design-review-not-game-build",
-  "createdUtc": "2026-11-06T15:08:21.539978+00:00",
+  "createdUtc": "2026-11-06T15:11:52.295062+00:00",
   "payloadFileCount": 4,
-  "payloadBytes": 188962,
-  "payloadIdentitySha256": "c0e669639875c0ea795f5b59b6a733265b4e63691f6db4914256b30c379f0b30",
+  "payloadBytes": 188698,
+  "payloadIdentitySha256": "8eaccdc170e325196c537f7b0d1d5fd75816e82bcf10fc006c0138293bd34363",
   "files": [
     {
       "path": "index.html",
@@ -35,8 +35,8 @@
     },
     {
       "path": "ue-states.json",
-      "bytes": 44703,
-      "sha256": "9da110f5757753c69220403cfebacfc6af03dffc724393d609622ea719b33d75",
+      "bytes": 44439,
+      "sha256": "23bcb64aa6242aee40d1593b5e279939bf0fedbb4df098dcf7809038e92051cc",
       "source": {
         "path": "ue/states.json",
         "sha256": "f94671f08e2d3cc94d5b9756bee78690ad433e776c8c83e28402d0ab737f97b4"
