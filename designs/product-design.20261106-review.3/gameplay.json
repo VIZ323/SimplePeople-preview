@@ -1,0 +1,420 @@
+{
+  "version": "product-design.20261106-review.3",
+  "status": "original-recommendation-pending-user-review",
+  "visualStyleApproved": true,
+  "gameDevelopmentAuthorized": false,
+  "initialThree": {
+    "status": "meaning-confirmed-A-catalog-only",
+    "confirmed": "账号初始解锁3种技能，局内经验三选一获得新招或升级已有；非开场直接携带3个",
+    "recommendedInitialCatalog": [
+      "SK01",
+      "SK04",
+      "SK08"
+    ],
+    "recommendedRunStart": {
+      "basicSpear": true,
+      "learnedExtraSkills": [],
+      "skillsUsed": 0,
+      "slots": 4
+    },
+    "firstOffer": [
+      "SK01-learn-rank1",
+      "SK04-learn-rank1",
+      "SK08-learn-rank1"
+    ],
+    "remainingApproval": "初始具体招式、4槽/10级及首局XP/压力为原创推荐待审，不再询问A/B",
+    "firstOfferScope": "仅首次新账号、账号池仍为初始推荐3种时；后续已解锁更多技能的新局，首轮从当时账号已解锁合法池取3，不固定回初始3种。"
+  },
+  "runSkillPolicy": {
+    "recommendedSlots": 4,
+    "rankCap": 10,
+    "learnRank": 1,
+    "upgradeDelta": 1,
+    "xpThreshold": "推荐下一境10+4(L-1)+2*floor((L-1)/5)，L从1起；首个阈值10，第二14；保留到身/溢出，具体波次预算待新方案审后再验",
+    "candidateSources": [
+      "已解锁且未学并有空位的技能学习卡",
+      "已学且低于10级的同技能升级卡"
+    ],
+    "distinctPerOffer": true,
+    "targetOfferCount": 3,
+    "mixedOffer": "新/旧两类均有合法项且有空位：新类内等概率取1、已学升级类内等概率取1，再从两类剩余合法技能并集等概率无放回取第3；最终随机排列。剩余不足则显示真实数量。没有路线偏置；这是类别混合保底，不声称所有技能总入选率相同。",
+    "newOnlyOrUpgradeOnly": "某类不存在时由另一类合法技能补足；基础枪开场额外技能0，首轮全3张学习卡，确认后才有第一招。",
+    "insufficientLegal": "合法技能不足3时只显示真实数量；全满则停止技能选择、明确本局技能已满，不造重复卡/第5招/永久币替代",
+    "atFullSlots": "只给已有技能升级，未学技能不入当局候选；不推荐局中换招，避免合成退级与重置循环",
+    "reroll": "本次先不保留旧整局2次换组；建议首版无换组，减少保底/次数/广告新依赖，待用户审",
+    "awakening": "本版本主规则撤去2觉醒位、金物和突破箱；旧12觉醒稿仅历史/未来扩展参考",
+    "bossRewards": "Boss战利品不再发局内装备或+2突破选择；局内学习只由到身XP触发，通关养成由最终结算发放"
+  },
+  "rankFormula": {
+    "damage": "baseDamage * (1 + 0.12*(rank-1))",
+    "interval": "baseInterval / (1 + 0.03*(rank-1))",
+    "unchangedAtRank": "数量、范围、命中门限和目标控制免疫不随等级额外加点；以后要改须改对应技能规格，不能暗留旧改造点",
+    "note": "原创简单单轴推荐；霜线的频率收益须受既有目标控制免疫限制，未认证控制强度或实战DPS"
+  },
+  "permanentAttackScope": "训练攻击与装备攻击加算只作用角色基础枪和已学技能；伙伴自身数值独立，避免从旧武器级反复继承",
+  "damageFormula": "baseDamage * rankFactor(if skill) * (1 + 0.05*attackTrainingLevel + sum(equippedAttackBonus))；再按待重审的护甲/暴击合同处理，不承接旧路线或逐招修炼系数",
+  "healthFormula": "100 + 10*healthTrainingLevel + sum(equippedFlatHp)；新局满血开始，局外更换不改暂停局HP",
+  "skillCatalog": [
+    {
+      "id": "SK01",
+      "name": "回锋",
+      "accountUnlock": "初始",
+      "role": "定向飞刃，帮助理解远近距离",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK04",
+      "name": "星锤",
+      "accountUnlock": "初始",
+      "role": "近身环绕，短步绕敌",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK08",
+      "name": "霜线",
+      "accountUnlock": "初始",
+      "role": "控线与穿透，学会横切危险",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK07",
+      "name": "气环",
+      "accountUnlock": "ST01",
+      "role": "脚下保护，补近身空隙",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK09",
+      "name": "飞羽",
+      "accountUnlock": "ST02",
+      "role": "扇射覆盖，处理分散来敌",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK03",
+      "name": "风卷",
+      "accountUnlock": "ST02",
+      "role": "移动持续区，沿退路覆盖",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK02",
+      "name": "震岳",
+      "accountUnlock": "ST03",
+      "role": "破列重击，对付高护甲",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK05",
+      "name": "地龙",
+      "accountUnlock": "ST03",
+      "role": "多落点地刺，覆盖群体",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK10",
+      "name": "雷引",
+      "accountUnlock": "ST04",
+      "role": "链跳，处理相邻目标",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK06",
+      "name": "墨爪",
+      "accountUnlock": "ST04",
+      "role": "定点陷阱，提前布置",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK11",
+      "name": "青刺",
+      "accountUnlock": "ST05",
+      "role": "周向输出，应对包围",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    },
+    {
+      "id": "SK12",
+      "name": "两仪",
+      "accountUnlock": "ST06",
+      "role": "相向双轨，考验贴身距离",
+      "initialBaseParameterStatus": "旧独立技能基础动作/形态仅参考；删除依赖路线的目标/增益，本次不认证旧伤害/冷却已适配新养成"
+    }
+  ],
+  "stageUnlocks": [
+    {
+      "id": "ST01",
+      "name": "青溪试刃",
+      "requiresFirstClear": null,
+      "skillPoolAfterFirstClear": [
+        "SK01",
+        "SK04",
+        "SK08",
+        "SK07"
+      ],
+      "newSkillIds": [
+        "SK07"
+      ],
+      "combatSchedule": "旧79波/时间/HP/敌人权重仅历史参考，须以无路线、新局内等级和新局外强度重审；本次不复制为已适配关卡"
+    },
+    {
+      "id": "ST02",
+      "name": "古渡夜行",
+      "requiresFirstClear": "ST01",
+      "skillPoolAfterFirstClear": [
+        "SK01",
+        "SK04",
+        "SK08",
+        "SK07",
+        "SK09",
+        "SK03"
+      ],
+      "newSkillIds": [
+        "SK09",
+        "SK03"
+      ],
+      "combatSchedule": "旧79波/时间/HP/敌人权重仅历史参考，须以无路线、新局内等级和新局外强度重审；本次不复制为已适配关卡"
+    },
+    {
+      "id": "ST03",
+      "name": "竹影追风",
+      "requiresFirstClear": "ST02",
+      "skillPoolAfterFirstClear": [
+        "SK01",
+        "SK04",
+        "SK08",
+        "SK07",
+        "SK09",
+        "SK03",
+        "SK02",
+        "SK05"
+      ],
+      "newSkillIds": [
+        "SK02",
+        "SK05"
+      ],
+      "combatSchedule": "旧79波/时间/HP/敌人权重仅历史参考，须以无路线、新局内等级和新局外强度重审；本次不复制为已适配关卡"
+    },
+    {
+      "id": "ST04",
+      "name": "残垒破阵",
+      "requiresFirstClear": "ST03",
+      "skillPoolAfterFirstClear": [
+        "SK01",
+        "SK04",
+        "SK08",
+        "SK07",
+        "SK09",
+        "SK03",
+        "SK02",
+        "SK05",
+        "SK10",
+        "SK06"
+      ],
+      "newSkillIds": [
+        "SK10",
+        "SK06"
+      ],
+      "combatSchedule": "旧79波/时间/HP/敌人权重仅历史参考，须以无路线、新局内等级和新局外强度重审；本次不复制为已适配关卡"
+    },
+    {
+      "id": "ST05",
+      "name": "孤城听雷",
+      "requiresFirstClear": "ST04",
+      "skillPoolAfterFirstClear": [
+        "SK01",
+        "SK04",
+        "SK08",
+        "SK07",
+        "SK09",
+        "SK03",
+        "SK02",
+        "SK05",
+        "SK10",
+        "SK06",
+        "SK11"
+      ],
+      "newSkillIds": [
+        "SK11"
+      ],
+      "combatSchedule": "旧79波/时间/HP/敌人权重仅历史参考，须以无路线、新局内等级和新局外强度重审；本次不复制为已适配关卡"
+    },
+    {
+      "id": "ST06",
+      "name": "归墟终卷",
+      "requiresFirstClear": "ST05",
+      "skillPoolAfterFirstClear": [
+        "SK01",
+        "SK04",
+        "SK08",
+        "SK07",
+        "SK09",
+        "SK03",
+        "SK02",
+        "SK05",
+        "SK10",
+        "SK06",
+        "SK11",
+        "SK12"
+      ],
+      "newSkillIds": [
+        "SK12"
+      ],
+      "combatSchedule": "旧79波/时间/HP/敌人权重仅历史参考，须以无路线、新局内等级和新局外强度重审；本次不复制为已适配关卡"
+    }
+  ],
+  "retired": [
+    "R01/R02/R03 selection and all synergy/passive/offer modifiers",
+    "16growth tracks and per-skill permanent training",
+    "run equipment6opportunity/per-run-clear inventory",
+    "ingots/gems/essence/fruits exchange/offline/feed",
+    "six run skill slots,2awakening slots,rank12/box+2/skill-point allocation as default rules",
+    "old route/awakening/per-skill-training/six-run-gear achievements and reward grants"
+  ],
+  "examples": [
+    {
+      "case": "SK01rank4 standalone",
+      "baseDamage": 14,
+      "rank": 4,
+      "damageBeforeArmor": 19.04,
+      "baseInterval": 1.05,
+      "intervalApproxS": 0.9633,
+      "not": "DPS/胜率证明"
+    },
+    {
+      "case": "ATK2 + equipment attack5%, SK01rank4",
+      "factor": 1.15,
+      "damageBeforeArmor": 21.896,
+      "baseSpearDamage": 16.1,
+      "not": "不是自然成长/通关或实际DPS证明"
+    }
+  ],
+  "firstLearning": {
+    "status": "authored-product-recommendation-not-runtime",
+    "startLevel": 1,
+    "startXp": 0,
+    "firstThreshold": 10,
+    "introEnemy": "EN01翼蝠普通群",
+    "firstXpSources": "建议前5只每只2经验；第五枚到身触发10，不按固定秒数弹卡",
+    "selection": "全3张均为未学技能1级学习卡；不带默认起手或路线",
+    "after": "选择SK01则技能仅SK01:1，基础枪仍独立；另2招只在账号池，不自动装上",
+    "secondThreshold": 14,
+    "secondOffer": [
+      "SK01:1→2",
+      "SK04:learn1",
+      "SK08:learn1"
+    ],
+    "thirdOrLater": "仍按当前合法新/升级池及4槽/10级规则；不把通关解锁写成开场自动拥有",
+    "noTimeClaim": "不承诺20秒/35秒第一次升级，实际需输入/走位/拾取与敌人HP校准",
+    "condition": "首次新账号，账号池仍只有初始推荐3种；不是所有后续新局固定教程。"
+  },
+  "equipmentAbilities": [
+    {
+      "id": "EQ01",
+      "name": "青锋枪",
+      "slot": "weapon",
+      "level1": {
+        "attackBonus": 0.05
+      },
+      "perLevel": {
+        "attackBonus": 0.05
+      },
+      "level10": {
+        "attackBonus": 0.5
+      }
+    },
+    {
+      "id": "EQ02",
+      "name": "山行袍",
+      "slot": "clothes",
+      "level1": {
+        "flatHp": 10
+      },
+      "perLevel": {
+        "flatHp": 10
+      },
+      "level10": {
+        "flatHp": 100
+      }
+    },
+    {
+      "id": "EQ03",
+      "name": "青玉坠",
+      "slot": "accessory",
+      "level1": {
+        "attackBonus": 0.02,
+        "flatHp": 4
+      },
+      "perLevel": {
+        "attackBonus": 0.02,
+        "flatHp": 4
+      },
+      "level10": {
+        "attackBonus": 0.2,
+        "flatHp": 40
+      }
+    }
+  ],
+  "companionAbilities": [
+    {
+      "id": "CO01",
+      "name": "行云轮",
+      "level1": {
+        "speedUPerS": 6,
+        "pickupU": 10
+      },
+      "perLevel": {
+        "speedUPerS": 1,
+        "pickupU": 2
+      },
+      "level10": {
+        "speedUPerS": 15,
+        "pickupU": 28
+      },
+      "role": "便利型伴行器，不将已认可人物动作绑成未经验证骑乘",
+      "inheritsPlayerAttack": false
+    },
+    {
+      "id": "CO02",
+      "name": "赤鬃小兽",
+      "level1": {
+        "damage": 4
+      },
+      "perLevel": {
+        "damage": 1
+      },
+      "level10": {
+        "damage": 13
+      },
+      "intervalS": 2.6,
+      "rangeU": 600,
+      "speedUPerS": 340,
+      "pierce": 1,
+      "role": "可见补刀，固定自身等级伤害，目标护甲仍扣，不暴击",
+      "inheritsPlayerAttack": false
+    }
+  ],
+  "aggregateLimits": {
+    "attackTraining20": 1.0,
+    "allGearAttackAt10": 0.7,
+    "playerAttackMultiplierMax": 2.7,
+    "baseSpear14AtMaxBeforeArmor": 37.8,
+    "playerMaxHpAtTraining20AndGear10": 440,
+    "withCO01Level10SpeedUPerS": 225,
+    "withCO01Level10PickupU": 88,
+    "not": "这些是本版字段组合上界，不是通关要求或全系统满级所需时长"
+  },
+  "activationPresentation": {
+    "equipment": "激活并装备；对应空槽，一次扣10专属片并创建L1与佩戴状态",
+    "companionEmpty": "激活并同行",
+    "companionOccupied": "仅激活L1、保留原同行；随后独立确认换人",
+    "excessAtActivation": "扣10后余片同一收据1片→1精铁，不能再消耗10或留下无用途余片",
+    "scope": "候选真实事务设计，不实现"
+  },
+  "reviveRecommendation": {
+    "perRun": 1,
+    "hpRatio": 0.6,
+    "protectionSeconds": 2,
+    "after": "先暂停，再显式继续，危险/敌人/弹体不重置；不需要广告",
+    "approval": "恢复语义沿用UE，具体规则本轮明确推荐、待整体产品审"
+  }
+}

@@ -1,0 +1,1429 @@
+{
+  "version": "product-ue.20261106-review.3.v1",
+  "status": "design-contract-pending-overall-user-review-not-implemented",
+  "approvalBoundary": {
+    "confirmedInitialMeaning": "账号初始解锁池3种，非开场直接携带3个",
+    "noActiveABBranches": true,
+    "proposedNotUserQuote": [
+      "基础枪开场、额外0/4",
+      "SK01/04/08具体初始名单",
+      "4招/10级/无AW箱/无换组",
+      "ATK/HP20级、各物品10级、10片激活",
+      "两资源、三装备位置、唯一同行、费用/掉率/保底/XP/能力/复起数值"
+    ],
+    "noFirstMinuteOrBalanceClaim": true
+  },
+  "fieldContract": {
+    "wallet": [
+      "RC01",
+      "RC02"
+    ],
+    "boundShardCounts": [
+      "SH-EQ01",
+      "SH-EQ02",
+      "SH-EQ03",
+      "SH-CO01",
+      "SH-CO02"
+    ],
+    "trainingLevels": [
+      "ATK",
+      "HP"
+    ],
+    "equippedEquipment": {
+      "weapon": "null|EQ01",
+      "clothes": "null|EQ02",
+      "accessory": "null|EQ03"
+    },
+    "equippedCompanionId": "null|CO01|CO02, one value; never old plural array",
+    "levels": "training0..20; activated equipment/companion1..10; unactivated0",
+    "capApproval": "proposed; not whole-user-approved",
+    "abilityAuthority": "../product/gameplay.json#/equipmentAbilities and companionAbilities"
+  },
+  "legacyScreenMap": [
+    {
+      "oldId": "camp",
+      "disposition": "保留并改内容",
+      "newMeaning": "只列铜钱/精铁；碎片是目标物品；训练/装备/伙伴显示各自开放状态"
+    },
+    {
+      "oldId": "stages",
+      "disposition": "保留",
+      "newMeaning": "选关后直接具名出发确认，不经路线套餐"
+    },
+    {
+      "oldId": "prepare",
+      "disposition": "改义",
+      "newMeaning": "仅阶段/训练/三装备位/唯一同行/基础枪与本稿额外0招的快照预览；旧routeId/起手对/联动与供选偏置全部退役"
+    },
+    {
+      "oldId": "battle",
+      "disposition": "改义",
+      "newMeaning": "本稿建议4招/各10级；基础枪独立；无改造点/AW空槽/箱进级；只写合同不修改现有HUD"
+    },
+    {
+      "oldId": "choice",
+      "disposition": "改义",
+      "newMeaning": "实际到身XP三选一：新学1级或已有+1；真实合法数量，详情/暂停保留同机会"
+    },
+    {
+      "oldId": "gearReward",
+      "disposition": "退役",
+      "newMeaning": "取消局内6机会、旧新件台、舍下治疗与离局清空；替换为最终结算专片及营地持久目标"
+    },
+    {
+      "oldId": "awakening",
+      "disposition": "退役",
+      "newMeaning": "无本版两觉醒/金物/突破箱；旧稿仅历史输入"
+    },
+    {
+      "oldId": "pause",
+      "disposition": "保留",
+      "newMeaning": "显式继续回原层/offer/余时；清旧手势，无追赶"
+    },
+    {
+      "oldId": "settings",
+      "disposition": "保留",
+      "newMeaning": "静音/减少动态/返回原处；不增加产品系统"
+    },
+    {
+      "oldId": "down",
+      "disposition": "保留结构、数值推荐待审",
+      "newMeaning": "Root本稿明确建议1次/60%/2秒，先暂停再继续；无广告/花币复起"
+    },
+    {
+      "oldId": "result",
+      "disposition": "重写内容",
+      "newMeaning": "成功的基础/首次/解锁/固定片/一次随机片/转铁分列；失败只经济权威铜钱"
+    },
+    {
+      "oldId": "growth",
+      "disposition": "重写内容",
+      "newMeaning": "仅ATK/HP；删16项、逐招永久树、速度/拾取购买、资源兑换/离线页签"
+    },
+    {
+      "oldId": "gear",
+      "disposition": "重写内容",
+      "newMeaning": "持久weapon/clothes/accessory；EQ01/02/03专片激活/等级/佩戴；不叠旧6槽4品质"
+    },
+    {
+      "oldId": "companions",
+      "disposition": "重写内容",
+      "newMeaning": "10专片激活、钱铁升级、equippedCompanionId单值；删元宝结缘/喂XP/双同行"
+    },
+    {
+      "oldId": "codex",
+      "disposition": "保留并改义",
+      "newMeaning": "账号池已解锁≠本局已学；开放收集≠已激活；局内技能级≠永久训练/物品级"
+    },
+    {
+      "oldId": "achievements",
+      "disposition": "不继承发奖合同",
+      "newMeaning": "旧路线/AW/逐招/六器资源奖励退役；若保留入口只作新旅程目标只读展示"
+    },
+    {
+      "oldId": "help",
+      "disposition": "保留并重写说明",
+      "newMeaning": "写新合法性、碎片、持久装备、唯一同行与下次快照，不留旧经济词条"
+    }
+  ],
+  "legacyModalMap": [
+    {
+      "oldId": "confirmDepart",
+      "disposition": "改义",
+      "newMeaning": "选关与账号快照确认，无路线确认"
+    },
+    {
+      "oldId": "upgradeConfirm",
+      "disposition": "共用",
+      "newMeaning": "训练/激活/升级/换同行分别具名，列前后/成本/生效时间"
+    },
+    {
+      "oldId": "resourceShort",
+      "disposition": "共用",
+      "newMeaning": "RC01/RC02/专属片分别列所需/持有/差额和来源；不跨片凑数，不强制广告"
+    },
+    {
+      "oldId": "locked",
+      "disposition": "保留",
+      "newMeaning": "写前置通关；区分未开放/收集中/可激活/已拥有"
+    },
+    {
+      "oldId": "detail",
+      "disposition": "保留",
+      "newMeaning": "回原目标/选中/offer/滚动/触发器，不重抽不消费"
+    },
+    {
+      "oldId": "loadError",
+      "disposition": "保留合同",
+      "newMeaning": "资源/规则/账号不可读不创建半成run，保持选关"
+    },
+    {
+      "oldId": "saveError",
+      "disposition": "保留合同",
+      "newMeaning": "同候选重试；取消不丢候选、不把待记录当已到账"
+    },
+    {
+      "oldId": "saveConflict",
+      "disposition": "保留合同",
+      "newMeaning": "只读核对，不合并/覆盖钱包；重新载入后重新预览"
+    },
+    {
+      "oldId": "fullSlots",
+      "disposition": "改义",
+      "newMeaning": "本稿4招满则未学不进池；不发第5招，不强制换旧招"
+    },
+    {
+      "oldId": "maxLevel",
+      "disposition": "分清原因",
+      "newMeaning": "训练20、装备/伙伴10、局内招10均本稿推荐；不卖0增益/第11级"
+    },
+    {
+      "oldId": "adCancelled",
+      "disposition": "退役",
+      "newMeaning": "本版无旧广告加领及其奖励依赖"
+    },
+    {
+      "oldId": "adError",
+      "disposition": "退役",
+      "newMeaning": "不保留不存在广告路径的占位异常"
+    },
+    {
+      "oldId": "restartConfirm",
+      "disposition": "保留并改义",
+      "newMeaning": "仅放弃本局XP/已学，不清账号钱铁/专片/训练/装备/伙伴"
+    }
+  ],
+  "retiredDependencies": [
+    "routeId/R01/R02/R03/default-pair/synergy/offer-bias/route-achievement",
+    "six run skill slots/two awakening/rank12/modification-points/box+2/old rerolls",
+    "GE01..06 run inventory/quality chances/decline heal/per-run clear",
+    "UP01..16 per-skill/speed/pickup permanent training",
+    "CU02..05/exchanges/offline earned allowance/feed XP/dual companion",
+    "old AC route/awakening/per-skill/six-gear resources and ad-bonus claims",
+    "review.2 literal sample wallet as player-account migration input"
+  ],
+  "reusableUE": [
+    "approved scene-first material style, readable native labels and44px target constraints; not redrawn",
+    "select only then named confirm; detail/return preserve context",
+    "pause/explicit resume/hard input cancel/remaining-time freeze",
+    "shortage/read-only/conflict/retry/recovery structure"
+  ],
+  "choiceContract": {
+    "source": "../product/gameplay.json#/runSkillPolicy",
+    "kinds": [
+      "learn-rank1",
+      "upgrade-existing-plus1"
+    ],
+    "legality": [
+      "account unlocked",
+      "new requires unlearned plus empty proposed4slot",
+      "upgrade requires learned below proposed10",
+      "one distinct skillId per offer"
+    ],
+    "composition": "两类各自等概率取1，再从剩余并集取第3，最终随机排列；不等于每技能入选率相同",
+    "legalCount": {
+      "three": "3卡",
+      "twoOrOne": "仅真实数量",
+      "zero": "解释当前可学招式已满并继续，无币或其他替代卡"
+    },
+    "preserve": [
+      "offerId",
+      "cardIds",
+      "selectedId",
+      "applyCount",
+      "pendingXpQueue",
+      "resumeLayer",
+      "remainingTime"
+    ]
+  },
+  "settlementOrder": [
+    "实际通关成立，构造同一完整候选而不先提交任何解锁",
+    "候选内按A先计算本回解锁许可与固定片，再确定来源关/单focus目标与独立装备4/5数量；伙伴数量固定4",
+    "候选内按激活状态处理同名片/溢出转铁与保底计数",
+    "全部解锁/钱铁/片/保底/收据一次提交；失败则全部保持",
+    "成功后才显示已到账/已开放与可用余额",
+    "玩家另行具名激活/升级/换同行，再出发取新快照"
+  ],
+  "states": [
+    {
+      "id": "CAMP",
+      "family": "journey",
+      "entry": "账号记录已确认且无未决候选",
+      "visibleContract": "两资源、下一关与养成入口开放条件；碎片不进通用钱包",
+      "actions": [
+        "selectStage",
+        "training",
+        "equipment",
+        "companions",
+        "codex",
+        "help"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true
+    },
+    {
+      "id": "STAGE_SELECT",
+      "family": "departure",
+      "entry": "选择已开放关",
+      "visibleContract": "关名/首次状态；锁定卷明确前置，不展示路线套餐",
+      "actions": [
+        "selectStage",
+        "departPreview",
+        "detail",
+        "back"
+      ],
+      "commit": null,
+      "cancel": "保留所选与滚动，不消费",
+      "designOnly": true
+    },
+    {
+      "id": "DEPART_PREVIEW",
+      "family": "departure",
+      "entry": "关卡开放且数据可读",
+      "visibleContract": "关名、基础枪、本稿额外0/4、ATK/HP、三已装备目标/级、唯一同行与生效版本",
+      "actions": [
+        "confirmDepart",
+        "cancel"
+      ],
+      "commit": "必需资源与账号版本就绪后才建立新run快照；不带routeId",
+      "cancel": "回选关；有旧未完局先明确继续或重开，不静默覆盖",
+      "designOnly": true
+    },
+    {
+      "id": "DEPART_LOADING_ERROR",
+      "family": "departure",
+      "entry": "必要资源/规则/账号未就绪",
+      "visibleContract": "载入/错误原因，不能重复启动",
+      "actions": [
+        "retry",
+        "cancel"
+      ],
+      "commit": null,
+      "cancel": "保留选择与预览，不生成半成run",
+      "designOnly": true
+    },
+    {
+      "id": "RUN",
+      "family": "run",
+      "entry": "出发候选成功",
+      "visibleContract": "基础枪+实际已学0..4招、各自等级、HP/XP/暂停；不显示AW/突破箱或旧规则文字",
+      "actions": [
+        "move",
+        "stop",
+        "pause"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true,
+      "snapshot": "运行快照不受营地后续编辑影响"
+    },
+    {
+      "id": "FIRST_LEARNING",
+      "family": "choice",
+      "entry": "仅首次新账号且账号池仍为本稿初始3种，首10XP实际到身；后续新局首XP按当前已解锁池通用规则，不固定这3卡",
+      "visibleContract": "三张学习1级卡SK01/SK04/SK08，0/4→选一后1/4；不是开场直接携带3个",
+      "actions": [
+        "select",
+        "detail",
+        "confirmChoice",
+        "pause"
+      ],
+      "commit": "只学所选一招，另两招留在账号池",
+      "cancel": "详情/暂停仍同offer与选中",
+      "designOnly": true,
+      "approval": "用户只确认池含义；具体招/0额外/10XP为推荐"
+    },
+    {
+      "id": "XP_OFFER",
+      "family": "choice",
+      "entry": "到身达到阈值且有合法项",
+      "visibleContract": "最多3个不同技能：已解锁未学且有空位的新学、已学未满级的+1；本稿次14XP可为1升2新",
+      "actions": [
+        "select",
+        "detail",
+        "confirmChoice",
+        "pause"
+      ],
+      "commit": "同offer仅应用一次；多次跨境逐项排队确认",
+      "cancel": "不丢机会/不重抽/不自动应用",
+      "designOnly": true,
+      "compositionRef": "../product/gameplay.json#/runSkillPolicy",
+      "composition": "新/已有两类都有时，类内各等概率选1，第三从剩余并集取，最后随机排列；不是全技能入选率相同"
+    },
+    {
+      "id": "XP_FEWER_OR_SATURATED",
+      "family": "choice",
+      "entry": "合法项2/1/0且数据完整",
+      "visibleContract": "2/1张只显示真实数；0张说明当前可学招式满级，区分3/4池已满与4/4容量",
+      "actions": [
+        "selectIfAny",
+        "confirmIfAny",
+        "continueIfNone",
+        "detail"
+      ],
+      "commit": "无合法项不造假卡/重复卡/永久币替代；不授隐藏收益",
+      "cancel": null,
+      "designOnly": true,
+      "notes": "数据载入失败不能伪装饱和；饱和XP显示由Root规则给定，不另猜数值"
+    },
+    {
+      "id": "CHOICE_DETAIL_PAUSE",
+      "family": "continuity",
+      "entry": "详情/手动暂停/失焦盖住选择",
+      "visibleContract": "保持offerId/cards/selected/applyCount/pendingXpQueue/余时",
+      "actions": [
+        "closeDetail",
+        "resume",
+        "settings"
+      ],
+      "commit": "恢复原选择，仍需具名确认",
+      "cancel": "冻结时钟/演出、清活动指/physical/blocked/按键，无追赶/补音",
+      "designOnly": true
+    },
+    {
+      "id": "TRAINING",
+      "family": "training",
+      "entry": "初始可见，仅ATK或HP",
+      "visibleContract": "当前级/20、每级收益与下一价、RC01余额、下次入卷生效",
+      "actions": [
+        "selectATKorHP",
+        "previewUpgrade",
+        "detail",
+        "back"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true,
+      "sourceRef": "../product/economy.json#/training"
+    },
+    {
+      "id": "TRAINING_PREVIEW",
+      "family": "training",
+      "entry": "未达上限且成本已读",
+      "visibleContract": "具名等级/能力/钱前后；无逐招/速度/拾取购买",
+      "actions": [
+        "confirm",
+        "cancel"
+      ],
+      "commit": "只升级所选项一级；当前run不变",
+      "cancel": "钱/级完整保持",
+      "designOnly": true
+    },
+    {
+      "id": "TARGET_LOCKED",
+      "family": "persistent-target",
+      "entry": "系统或该目标未达开放关",
+      "visibleContract": "装备ST01；EQ02/ST03、EQ03/ST05；伙伴ST02、CO02/ST04；开放不是直接拥有",
+      "actions": [
+        "sourceDetail",
+        "back"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true
+    },
+    {
+      "id": "TARGET_COLLECTING",
+      "family": "persistent-target",
+      "entry": "已开放未激活且专片不足10",
+      "visibleContract": "目标SH-id n/10与来源；不同目标片不合并；单focus详情只读",
+      "actions": [
+        "sourceDetail",
+        "back"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true,
+      "notes": "未激活片不出售/转赠/手动换铁"
+    },
+    {
+      "id": "TARGET_READY",
+      "family": "persistent-target",
+      "entry": "对应片≥10且未激活",
+      "visibleContract": "已集齐、L1收益、10片扣除、余片转铁、佩戴或同行结果；不自动激活",
+      "actions": [
+        "activationPreview",
+        "detail"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true
+    },
+    {
+      "id": "EQUIPMENT_ACTIVATE",
+      "family": "equipment",
+      "entry": "对应空槽、目标开放且片够",
+      "visibleContract": "激活并装备·目标；一次10片→L1+weapon/clothes/accessory，钱铁0，余片同回执转铁",
+      "actions": [
+        "confirm",
+        "cancel"
+      ],
+      "commit": "唯一目标、等级、槽、扣片/余片转铁一起记录；不合成后再激活双扣",
+      "cancel": "片/槽/钱铁/等级全部原样",
+      "designOnly": true
+    },
+    {
+      "id": "EQUIPMENT_OWNED_UPGRADE",
+      "family": "equipment",
+      "entry": "已激活L1..10",
+      "visibleContract": "持久等级、所属槽、当前/下一能力、钱铁成本；不离局清空",
+      "actions": [
+        "upgradePreview",
+        "detail",
+        "back"
+      ],
+      "commit": "未满10且足额才只升所选1级，不耗本体片，不造第二件；下次快照生效",
+      "cancel": "完整保持；max状态禁确认",
+      "designOnly": true
+    },
+    {
+      "id": "COMPANION_ACTIVATE_EMPTY",
+      "family": "companion",
+      "entry": "无同行，目标开放且片够",
+      "visibleContract": "激活并同行·目标；10片→L1，同行null→目标，余片转铁",
+      "actions": [
+        "confirm",
+        "cancel"
+      ],
+      "commit": "一次激活并设置唯一同行；下次出发生效",
+      "cancel": "保持null/原片/原钱包",
+      "designOnly": true
+    },
+    {
+      "id": "COMPANION_ACTIVATE_OCCUPIED",
+      "family": "companion",
+      "entry": "已有同行，另一个目标片够",
+      "visibleContract": "仅激活·新目标；旧同行名称明确保留，不暗中换人",
+      "actions": [
+        "confirm",
+        "cancel"
+      ],
+      "commit": "只激活L1；之后独立更换确认",
+      "cancel": "旧同行/材料/未激活状态不变",
+      "designOnly": true
+    },
+    {
+      "id": "COMPANION_OWNED_UPGRADE",
+      "family": "companion",
+      "entry": "已激活，目标可同行或暂歇",
+      "visibleContract": "等级1..10，无持久XP；钱铁升级、当前唯一同行、下次生效",
+      "actions": [
+        "upgradePreview",
+        "assignPreview",
+        "restPreview",
+        "detail"
+      ],
+      "commit": "只升选中目标1级，另一伙伴和同行指向保持；不喂元宝/果/XP",
+      "cancel": "完整保持；满级禁升级",
+      "designOnly": true
+    },
+    {
+      "id": "COMPANION_ASSIGN_REST",
+      "family": "companion",
+      "entry": "已激活目标需换人或暂歇",
+      "visibleContract": "A或无→B/无；零费用、单值equippedCompanionId，旧目标仍拥有原级",
+      "actions": [
+        "confirm",
+        "cancel"
+      ],
+      "commit": "一次改唯一同行；不先卸A再二次确认，不返材料；下次快照生效",
+      "cancel": "旧同行保留",
+      "designOnly": true
+    },
+    {
+      "id": "VICTORY_PENDING",
+      "family": "settlement",
+      "entry": "实际通关，候选未记录",
+      "visibleContract": "将获得：基础/首次/技能与系统开放/固定片/随机片/转铁各来源；不是已到账",
+      "actions": [
+        "recordCandidate",
+        "detail",
+        "cancelKeepCandidate"
+      ],
+      "commit": "候选内计算本回许可/固定片→一次抽取/单focus与转铁→全部解锁/钱铁/片/保底/收据一次记录；成功后才已到账",
+      "cancel": "保持同随机结果与未决标记，不可花费候选或绕过未决另开",
+      "designOnly": true
+    },
+    {
+      "id": "VICTORY_RECEIPT",
+      "family": "settlement",
+      "entry": "完整候选已记录",
+      "visibleContract": "两资源总数、账号池新增、系统开放、目标片进度、转铁来源、保底详情",
+      "actions": [
+        "returnCamp",
+        "viewTarget",
+        "detail"
+      ],
+      "commit": "玩家另行激活/升级；账号新技能不塞入结束局，不自动学/装",
+      "cancel": null,
+      "designOnly": true
+    },
+    {
+      "id": "REPEAT_VICTORY",
+      "family": "settlement",
+      "entry": "已首通再次胜利",
+      "visibleContract": "只A常规胜利钱铁/来源关该类一次抽；不重复首通片/首次解锁",
+      "actions": [
+        "receipt",
+        "detail",
+        "returnCamp"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true,
+      "notes": "高级账号回低关仍按低关池，不高级片全池化"
+    },
+    {
+      "id": "FAILURE_RECEIPT",
+      "family": "settlement",
+      "entry": "非通关结束",
+      "visibleContract": "仅铜钱min(20,5×完整已过波)，0波0；无精铁/片/首通/解锁",
+      "actions": [
+        "detail",
+        "returnCamp"
+      ],
+      "commit": null,
+      "cancel": null,
+      "designOnly": true,
+      "sourceRef": "../product/economy.json#/failureReward"
+    },
+    {
+      "id": "SHARD_CONVERSION",
+      "family": "persistent-target",
+      "entry": "已激活/满级同名片，或激活扣10后余片",
+      "visibleContract": "原片目标/原数量→等量精铁；固定/随机/溢出来源分列，本体库存0",
+      "actions": [
+        "sourceDetail",
+        "acknowledge"
+      ],
+      "commit": "同一收据记录，不生第二件，不加级/XP，不暗滤旧目标概率",
+      "cancel": null,
+      "designOnly": true
+    },
+    {
+      "id": "NEXT_DEPARTURE",
+      "family": "journey",
+      "entry": "养成已记录且无未决候选",
+      "visibleContract": "下一关、ATK/HP、三槽目标/等级、唯一同行、账号可学池与版本",
+      "actions": [
+        "departPreview",
+        "cancel"
+      ],
+      "commit": "新run只取新快照，仍按本稿基础枪+0额外开始；不沿用上局已学/等级",
+      "cancel": "不改账号与旧run记录",
+      "designOnly": true
+    },
+    {
+      "id": "PAUSE_DOWN_SETTINGS",
+      "family": "continuity",
+      "entry": "正常暂停/倒地/设置",
+      "visibleContract": "显式继续与旧层恢复；免费复起结构，本稿数值仅推荐1次/60%/2秒；无广告或币复起",
+      "actions": [
+        "resume",
+        "settings",
+        "revive",
+        "settle",
+        "restartPreview"
+      ],
+      "commit": "复起先暂停再继续；危险/敌人/弹体不重置；重开仅重置本局",
+      "cancel": null,
+      "designOnly": true,
+      "approvalRef": "../product/gameplay.json#/reviveRecommendation"
+    },
+    {
+      "id": "CODEX_HELP_PROGRESS",
+      "family": "reference",
+      "entry": "查看说明/内容/目标",
+      "visibleContract": "账号解锁、本局已学、开放收集、激活、佩戴/同行分层；不继承旧资源型成就发奖",
+      "actions": [
+        "detail",
+        "back"
+      ],
+      "commit": null,
+      "cancel": "回原层/原选中；从暂停来仍回暂停",
+      "designOnly": true
+    },
+    {
+      "id": "PREVIEW",
+      "family": "shared-operation",
+      "entry": "前后候选可读",
+      "visibleContract": "目标、等级/能力、成本/余额/专片、槽/同行、生效时间",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "具名确认当前candidateId；确认中禁重复",
+      "cancel": "取消保持原值与选中，不先扣再退款",
+      "designOnly": true
+    },
+    {
+      "id": "INSUFFICIENT",
+      "family": "shared-operation",
+      "entry": "钱/铁/专片或前置不足",
+      "visibleContract": "按权威列所需/持有/差额和合法来源，不把缺省当0",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "确认禁用，不部分扣除、不强制广告",
+      "cancel": "返回原目标/滚动，可查来源",
+      "designOnly": true
+    },
+    {
+      "id": "ALREADY_APPLIED",
+      "family": "shared-operation",
+      "entry": "同候选已应用/目标已激活",
+      "visibleContract": "原回执与当前状态",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "不重抽、不重扣、不重发首次/解锁",
+      "cancel": "返回不改变",
+      "designOnly": true
+    },
+    {
+      "id": "MAX_LEVEL",
+      "family": "shared-operation",
+      "entry": "到对应推荐上限",
+      "visibleContract": "训练20/目标10/本局招10分别说明",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "不买第11级/零增益，已激活本体片仍转铁",
+      "cancel": "其他目标可看",
+      "designOnly": true
+    },
+    {
+      "id": "WRITE_PENDING",
+      "family": "shared-operation",
+      "entry": "已提交、结果未定",
+      "visibleContract": "处理中、旧状态和同候选保留",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "禁重复确认与并行消费",
+      "cancel": "不能假装失败重做或跳过",
+      "designOnly": true
+    },
+    {
+      "id": "WRITE_FAILED",
+      "family": "shared-operation",
+      "entry": "已知未提交成功",
+      "visibleContract": "失败原因、同候选重试或保留返回",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "不成功演出、不重抽、不扣机会",
+      "cancel": "保留未决候选，禁用候选余额/新出发绕过",
+      "designOnly": true
+    },
+    {
+      "id": "RECOVERY",
+      "family": "shared-operation",
+      "entry": "结果未知/重载遇到未决",
+      "visibleContract": "核对同candidate/receipt身份，不能当空档",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "已应用回原回执；未应用回原候选；账号已变则重看前后",
+      "cancel": "显式恢复，不重放旧点击",
+      "designOnly": true
+    },
+    {
+      "id": "CONFLICT_READONLY",
+      "family": "shared-operation",
+      "entry": "账号revision/完整性冲突",
+      "visibleContract": "只读及载入确认记录/风险说明",
+      "actions": [
+        "confirmOrRetryIfLegal",
+        "cancelOrBack",
+        "detail"
+      ],
+      "commit": "不合并/覆盖钱包，不推测null=0",
+      "cancel": "取消仍只读，原选择保留",
+      "designOnly": true
+    }
+  ],
+  "commonInvariants": [
+    "A部分状态示例未列字段保持，缺省/null不是0",
+    "预览/取消不改账号或当前run",
+    "激活一次扣10，L1与明确佩戴/同行、余片转铁一起记录",
+    "已有同行激活第二位不换人，单独更换才改单值",
+    "升级只钱铁，不消耗本体片，不产生伙伴持久XP",
+    "已激活及满级再来同名片1→1铁，来源列明",
+    "单focus按来源关合格抽计数，不多目标并行承诺",
+    "账号解锁不让高级目标进入所有低关池",
+    "营地编辑只进下一run，不改暂停局HP/伤害/装备/同行",
+    "重复/详情/重试/恢复不重抽、不重发首次、不重复扣费",
+    "失败只权威铜钱，不给铁/片/解锁",
+    "旧原型余额/样本不是玩家数据，不做默认迁移"
+  ],
+  "literalExamples": [
+    {
+      "id": "EX-ST01-FIRST",
+      "ref": "../product/economy.json#/examples/0",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "首通ST01回营",
+      "before": {
+        "wallet": {
+          "RC01": 0,
+          "RC02": 0
+        },
+        "firstClearIds": [],
+        "boundShardCounts": {
+          "SH-EQ01": 0
+        },
+        "equipmentLevels": {
+          "EQ01": 0
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 220,
+          "RC02": 12
+        },
+        "firstClearIds": [
+          "ST01"
+        ],
+        "unlockedStages": [
+          "ST01",
+          "ST02"
+        ],
+        "boundShardCounts": {
+          "SH-EQ01": 10
+        },
+        "equipmentLevels": {
+          "EQ01": 0
+        }
+      },
+      "cost": null,
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-ACTIVATE-EQ01",
+      "ref": "../product/economy.json#/examples/1",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "激活并装备青锋枪",
+      "before": {
+        "wallet": {
+          "RC01": 220,
+          "RC02": 12
+        },
+        "boundShardCounts": {
+          "SH-EQ01": 10
+        },
+        "equipmentLevels": {
+          "EQ01": 0
+        },
+        "equippedEquipment": {
+          "weapon": null
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 220,
+          "RC02": 12
+        },
+        "boundShardCounts": {
+          "SH-EQ01": 0
+        },
+        "equipmentLevels": {
+          "EQ01": 1
+        },
+        "equippedEquipment": {
+          "weapon": "EQ01"
+        }
+      },
+      "cost": {
+        "SH-EQ01": 10,
+        "RC01": 0,
+        "RC02": 0
+      },
+      "confirmLabel": "激活并装备",
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-UPGRADE-EQ01-L1",
+      "ref": "../product/economy.json#/examples/2",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "青锋枪1→2",
+      "before": {
+        "wallet": {
+          "RC01": 220,
+          "RC02": 12
+        },
+        "equipmentLevels": {
+          "EQ01": 1
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 160,
+          "RC02": 8
+        },
+        "equipmentLevels": {
+          "EQ01": 2
+        }
+      },
+      "cost": {
+        "RC01": 60,
+        "RC02": 4
+      },
+      "confirmLabel": "升级",
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-UPGRADE-EQ01-SHORT",
+      "ref": "../product/economy.json#/examples/3",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "钱铁不足",
+      "before": {
+        "wallet": {
+          "RC01": 50,
+          "RC02": 3
+        },
+        "equipmentLevels": {
+          "EQ01": 1
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 50,
+          "RC02": 3
+        },
+        "equipmentLevels": {
+          "EQ01": 1
+        }
+      },
+      "cost": {
+        "RC01": 60,
+        "RC02": 4
+      },
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-TRAIN-ATK-01",
+      "ref": "../product/economy.json#/examples/4",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "攻击训练0→1",
+      "before": {
+        "wallet": {
+          "RC01": 160,
+          "RC02": 8
+        },
+        "trainingLevels": {
+          "ATK": 0
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 120,
+          "RC02": 8
+        },
+        "trainingLevels": {
+          "ATK": 1
+        }
+      },
+      "cost": {
+        "RC01": 40,
+        "RC02": 0
+      },
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-TRAIN-HP-01",
+      "ref": "../product/economy.json#/examples/5",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "血量训练0→1",
+      "before": {
+        "wallet": {
+          "RC01": 120,
+          "RC02": 8
+        },
+        "trainingLevels": {
+          "HP": 0
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 90,
+          "RC02": 8
+        },
+        "trainingLevels": {
+          "HP": 1
+        }
+      },
+      "cost": {
+        "RC01": 30,
+        "RC02": 0
+      },
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-ST02-FIRST",
+      "ref": "../product/economy.json#/examples/6",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "首通ST02接续样例",
+      "before": {
+        "wallet": {
+          "RC01": 90,
+          "RC02": 8
+        },
+        "firstClearIds": [
+          "ST01"
+        ],
+        "equipmentLevels": {
+          "EQ01": 2
+        },
+        "boundShardCounts": {
+          "SH-CO01": 0
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 400,
+          "RC02": 28
+        },
+        "firstClearIds": [
+          "ST01",
+          "ST02"
+        ],
+        "boundShardCounts": {
+          "SH-CO01": 10
+        }
+      },
+      "cost": null,
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-ACTIVATE-CO01",
+      "ref": "../product/economy.json#/examples/7",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "激活并同行行云轮",
+      "before": {
+        "wallet": {
+          "RC01": 400,
+          "RC02": 28
+        },
+        "boundShardCounts": {
+          "SH-CO01": 10
+        },
+        "companionLevels": {
+          "CO01": 0
+        },
+        "equippedCompanionId": null
+      },
+      "after": {
+        "wallet": {
+          "RC01": 400,
+          "RC02": 28
+        },
+        "boundShardCounts": {
+          "SH-CO01": 0
+        },
+        "companionLevels": {
+          "CO01": 1
+        },
+        "equippedCompanionId": "CO01"
+      },
+      "cost": {
+        "SH-CO01": 10,
+        "RC01": 0,
+        "RC02": 0
+      },
+      "confirmLabel": "激活并同行",
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-UPGRADE-CO01-L1",
+      "ref": "../product/economy.json#/examples/8",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "行云轮1→2",
+      "before": {
+        "wallet": {
+          "RC01": 400,
+          "RC02": 28
+        },
+        "companionLevels": {
+          "CO01": 1
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "companionLevels": {
+          "CO01": 2
+        }
+      },
+      "cost": {
+        "RC01": 80,
+        "RC02": 6
+      },
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-ACTIVATE-CO02-SHORT",
+      "ref": "../product/economy.json#/examples/9",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "激活碎片不足",
+      "before": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "boundShardCounts": {
+          "SH-CO02": 6
+        },
+        "companionLevels": {
+          "CO02": 0
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "boundShardCounts": {
+          "SH-CO02": 6
+        },
+        "companionLevels": {
+          "CO02": 0
+        }
+      },
+      "cost": null,
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-ACTIVATE-SURPLUS",
+      "ref": "../product/economy.json#/examples/10",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "囤14片激活及余片转铁",
+      "before": {
+        "wallet": {
+          "RC01": 100,
+          "RC02": 20
+        },
+        "boundShardCounts": {
+          "SH-EQ02": 14
+        },
+        "equipmentLevels": {
+          "EQ02": 0
+        },
+        "equippedEquipment": {
+          "clothes": null
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 100,
+          "RC02": 24
+        },
+        "boundShardCounts": {
+          "SH-EQ02": 0
+        },
+        "equipmentLevels": {
+          "EQ02": 1
+        },
+        "equippedEquipment": {
+          "clothes": "EQ02"
+        }
+      },
+      "cost": {
+        "SH-EQ02": 10
+      },
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-FULL-LEVEL-DUPLICATE",
+      "ref": "../product/economy.json#/examples/11",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "满级本体4片转铁",
+      "before": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "equipmentLevels": {
+          "EQ01": 10
+        },
+        "boundShardCounts": {
+          "SH-EQ01": 0
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 26
+        },
+        "equipmentLevels": {
+          "EQ01": 10
+        },
+        "boundShardCounts": {
+          "SH-EQ01": 0
+        }
+      },
+      "cost": null,
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-COMPANION-SWAP",
+      "ref": "../product/economy.json#/examples/12",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "已有一同行后更换",
+      "before": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "companionLevels": {
+          "CO01": 2,
+          "CO02": 1
+        },
+        "equippedCompanionId": "CO01"
+      },
+      "after": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "companionLevels": {
+          "CO01": 2,
+          "CO02": 1
+        },
+        "equippedCompanionId": "CO02"
+      },
+      "cost": {
+        "RC01": 0,
+        "RC02": 0
+      },
+      "confirmLabel": "改为同行",
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-COMPANION-UNEQUIP",
+      "ref": "../product/economy.json#/examples/13",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "暂歇",
+      "before": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "companionLevels": {
+          "CO01": 2
+        },
+        "equippedCompanionId": "CO01"
+      },
+      "after": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "companionLevels": {
+          "CO01": 2
+        },
+        "equippedCompanionId": null
+      },
+      "cost": {
+        "RC01": 0,
+        "RC02": 0
+      },
+      "confirmLabel": "暂歇",
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-MAX-EQUIPMENT",
+      "ref": "../product/economy.json#/examples/14",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "装备满级恢复",
+      "before": {
+        "wallet": {
+          "RC01": 999,
+          "RC02": 100
+        },
+        "equipmentLevels": {
+          "EQ01": 10
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 999,
+          "RC02": 100
+        },
+        "equipmentLevels": {
+          "EQ01": 10
+        }
+      },
+      "cost": null,
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-MAX-TRAINING",
+      "ref": "../product/economy.json#/examples/15",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "训练满级恢复",
+      "before": {
+        "wallet": {
+          "RC01": 999,
+          "RC02": 100
+        },
+        "trainingLevels": {
+          "ATK": 20
+        }
+      },
+      "after": {
+        "wallet": {
+          "RC01": 999,
+          "RC02": 100
+        },
+        "trainingLevels": {
+          "ATK": 20
+        }
+      },
+      "cost": null,
+      "confirmLabel": null,
+      "partialFields": "unlisted fields preserved; do not default0"
+    },
+    {
+      "id": "EX-ACTIVATE-CO02-OCCUPIED",
+      "ref": "../product/economy.json#/examples/16",
+      "sourceSHA256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80",
+      "kind": "independent literal design example, not executable transaction",
+      "title": "已有同行时激活第二位",
+      "before": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "boundShardCounts": {
+          "SH-CO02": 10
+        },
+        "companionLevels": {
+          "CO01": 2,
+          "CO02": 0
+        },
+        "equippedCompanionId": "CO01"
+      },
+      "after": {
+        "wallet": {
+          "RC01": 320,
+          "RC02": 22
+        },
+        "boundShardCounts": {
+          "SH-CO02": 0
+        },
+        "companionLevels": {
+          "CO01": 2,
+          "CO02": 1
+        },
+        "equippedCompanionId": "CO01"
+      },
+      "cost": {
+        "SH-CO02": 10,
+        "RC01": 0,
+        "RC02": 0
+      },
+      "confirmLabel": "激活",
+      "partialFields": "unlisted fields preserved; do not default0"
+    }
+  ],
+  "technicalDependenciesDesignOnly": [
+    {
+      "id": "TD-CANDIDATE",
+      "contract": "目标/具名成本/前后/生效时间与candidate身份由单一权威给定，UI不算第二套"
+    },
+    {
+      "id": "TD-SETTLEMENT",
+      "contract": "一次完整结果包含解锁/固定片/抽片/保底/转铁/钱铁/收据；重试同候选"
+    },
+    {
+      "id": "TD-ACTIVATION",
+      "contract": "扣10、L1、装备槽/单同行结果与余片转铁原子记录；不先扣后退款"
+    },
+    {
+      "id": "TD-REVISION",
+      "contract": "已应用receipt/revision核对、未知结果恢复与只读冲突；不合并钱包"
+    },
+    {
+      "id": "TD-SNAPSHOT",
+      "contract": "出发读取确认账号版本及可学池形成快照；营地变化不回灌当前run"
+    },
+    {
+      "id": "TD-PITY",
+      "contract": "A单focus/合格来源抽/跨次保留/完成退出/第三合格强制；仅未来逻辑合同"
+    },
+    {
+      "id": "TD-LIFECYCLE",
+      "contract": "保留层栈/offer/余时；清指/physical/blocked/键；显式继续"
+    },
+    {
+      "id": "TD-LEGACY",
+      "contract": "review.2只读历史；无真实用户数据迁移授权，不读取旧假档为新账号"
+    }
+  ],
+  "authorStaticReview": {
+    "scope": "仅合同/引用/旧新状态交叉阅读和JSON文档核对，无代码实现/渲染/浏览器/Cocos/游戏测试",
+    "checks": [
+      "confirmed meaning separate from proposed start",
+      "no active A/B branch",
+      "route and old economic loops retired",
+      "slot keys and single companion match authority",
+      "all17 example identities/numbers copied from final economy",
+      "cancel/shortage/repeat/max/write-fail/recovery/next snapshot covered"
+    ],
+    "notProof": [
+      "play balance",
+      "runtime correctness",
+      "visual rendering",
+      "whole user approval"
+    ]
+  },
+  "equipmentDropQuantityContract": {
+    "source": "../product/economy.json#/dropRules/quantityByCategory/equipment",
+    "rule": "每胜1装备包，目标按原池/单focus；数量独立4或5各1/2，强制目标仍随机数量；伙伴仍4",
+    "firstEquipment": "首通6+4/5=10/11都够激活；11激活扣10，余1同回执转铁",
+    "presentation": "显示实际命中目标与数量；单目标池仍有数量随机，不伪造额外抽奖机会"
+  },
+  "literalExampleScope": "17例是其明确before与已给结果，不是每次固定收入；涉及装备掉落链的现有4片例限定数量4这一合法结果，4/5通用分支只引用经济权威。"
+}

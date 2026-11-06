@@ -1,0 +1,47 @@
+{
+  "version": "product-design.20261106-review.3",
+  "kind": "static-product-design-review-not-game-build",
+  "createdUtc": "2026-11-06T15:08:21.539978+00:00",
+  "payloadFileCount": 4,
+  "payloadBytes": 188962,
+  "payloadIdentitySha256": "c0e669639875c0ea795f5b59b6a733265b4e63691f6db4914256b30c379f0b30",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 68951,
+      "sha256": "6b6c030942f47b618f201684e0046c26f0755d57064ac2341c15fd31cb518303",
+      "source": {
+        "path": "index.html",
+        "sha256": "6b6c030942f47b618f201684e0046c26f0755d57064ac2341c15fd31cb518303"
+      }
+    },
+    {
+      "path": "gameplay.json",
+      "bytes": 15035,
+      "sha256": "490d5c8a363759b7861a3aafb17db0922c2eb9bedab4f271db0405355d646f8d",
+      "source": {
+        "path": "product/gameplay.json",
+        "sha256": "35d9b26c2c88e042e5fb2fcf4ca766abaad6689a20a8e442475d10bb71d220aa"
+      }
+    },
+    {
+      "path": "economy.json",
+      "bytes": 60273,
+      "sha256": "721ea23cd69f76df611974fabd5c0a951b531732f4454323c6b0769ea89f6652",
+      "source": {
+        "path": "product/economy.json",
+        "sha256": "43c30887246f3fc646aaafc9b50879cd1e22a5715a8c40ce3a64623de32d0b80"
+      }
+    },
+    {
+      "path": "ue-states.json",
+      "bytes": 44703,
+      "sha256": "9da110f5757753c69220403cfebacfc6af03dffc724393d609622ea719b33d75",
+      "source": {
+        "path": "ue/states.json",
+        "sha256": "f94671f08e2d3cc94d5b9756bee78690ad433e776c8c83e28402d0ab737f97b4"
+      }
+    }
+  ],
+  "scope": "only static product/necessary UE review, no game code, assets, raw reference, messages, private provenance, credentials or old bundle"
+}
