@@ -1,0 +1,790 @@
+{
+  "version": "final-design-ui.20261106-review.2-retained.1",
+  "authority": "../DESIGN.md",
+  "scope": "17 screen/13 modal authored UI templates; no gameplay or transaction",
+  "screens": [
+    {
+      "id": "camp",
+      "name": "营地",
+      "purpose": "世界与认可成人行者是第一眼，出战突出。",
+      "template": "screens.js:camp()",
+      "gallery": "gallery.html?screen=camp",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "depart",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "完整客栈世界、认可长枪行者、左右实体徽章",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "stages",
+      "name": "选卷",
+      "purpose": "六卷顺序、锁定前置、所选卷详情。",
+      "template": "screens.js:stages()",
+      "gallery": "gallery.html?screen=stages",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "prepare",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [
+        "locked",
+        "detail"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "六卷场景与卷章、开放条件",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "prepare",
+      "name": "出战整备",
+      "purpose": "三路线起手两招、基础枪术不占槽、站位取舍。",
+      "template": "screens.js:prepare()",
+      "gallery": "gallery.html?screen=prepare",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "start",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "长枪整身与三路线起手组合",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "battle",
+      "name": "战斗HUD",
+      "purpose": "透明HUD覆盖唯一世界画布；气血/时间/阶段/六招/两觉醒。",
+      "template": "screens.js:battle()",
+      "gallery": "gallery.html?screen=battle",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "pause",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": false,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [
+        "loadError",
+        "pause"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "无遮挡六圆槽/两觉醒/气血经验HUD",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "choice",
+      "name": "境界选择",
+      "purpose": "合法候选、已选与具名确认，详情不丢选择。",
+      "template": "screens.js:choice()",
+      "gallery": "gallery.html?screen=choice",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "confirmChoice",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [
+        "detail",
+        "fullSlots"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "三列实体图标、固定主/副收益/类别、大勾选徽记",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "gearReward",
+      "name": "器物奖励",
+      "purpose": "本卷同部位器物比较与取舍。",
+      "template": "screens.js:gearReward()",
+      "gallery": "gallery.html?screen=gearReward",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "confirmChoice",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "pick两新候选",
+        "compare旧新净变化",
+        "返回原两件不消费",
+        "明确舍下两件",
+        "处理回执后明确继续",
+        "已处理再入禁止重复"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "大器物、主属性与词条前后、留用/替换",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "awakening",
+      "name": "遗物觉醒",
+      "purpose": "招式/遗物与觉醒机会。",
+      "template": "screens.js:awakening()",
+      "gallery": "gallery.html?screen=awakening",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "confirmChoice",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "大金物、正式觉醒名、五资格和待确认箭头",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "pause",
+      "name": "暂停",
+      "purpose": "冻结并保留原页面与选择，明确继续。",
+      "template": "screens.js:pause()",
+      "gallery": "gallery.html?screen=pause",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "resume",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "暂歇行者、继续/设置/重开/结算物件菜单",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "settings",
+      "name": "声音与画面",
+      "purpose": "静音/减少动态，返回原层。",
+      "template": "screens.js:settings()",
+      "gallery": "gallery.html?screen=settings",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "back",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "鼓形声音主体、静音/减少动态开关",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "down",
+      "name": "倒地复起",
+      "purpose": "倒地原因、免费复起与放弃。",
+      "template": "screens.js:down()",
+      "gallery": "gallery.html?screen=down",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "revive",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [
+        "adCancelled",
+        "adError"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "候选倒地代表姿、确切来源、一次免费复起",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "result",
+      "name": "胜败结算",
+      "purpose": "胜败、资源分列与局内重置。",
+      "template": "screens.js:result()",
+      "gallery": "gallery.html?screen=result",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "returnCamp",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [
+        "saveError",
+        "saveConflict",
+        "adCancelled",
+        "adError"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "大胜败、五资源实体总收益、具名来源详情",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "growth",
+      "name": "营地修行",
+      "purpose": "16项价格与每级收益显示，不扣款。",
+      "template": "screens.js:growth()",
+      "gallery": "gallery.html?screen=growth",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "previewUpgrade",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "training16项",
+        "resources五资源",
+        "玉换钱/元宝",
+        "果炼息",
+        "已赚待炼额度收取",
+        "UP01/UP02/UP05 literal后态回执"
+      ],
+      "exceptionStates": [
+        "resourceShort",
+        "maxLevel",
+        "saveError",
+        "saveConflict"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture",
+        "operationPreview",
+        "operationReceipt"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "长枪/对应修行主体、16项物件、费用与只读前后回执",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "gear",
+      "name": "器物回顾与图鉴",
+      "purpose": "本卷/上卷/图鉴，非永久装备背包。",
+      "template": "screens.js:gear()",
+      "gallery": "gallery.html?screen=gear",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "chooseGear",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "六部环形陈列、品质物件、本卷/上卷/图鉴",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "companions",
+      "name": "同行伙伴",
+      "purpose": "两个伙伴结缘/同行/培养。",
+      "template": "screens.js:companions()",
+      "gallery": "gallery.html?screen=companions",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "previewUpgrade",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "未结缘/条件足与不足",
+        "两位独立普通/果喂",
+        "两位同时同行",
+        "单独装卸预览",
+        "等级/XP/current-after回执"
+      ],
+      "exceptionStates": [
+        "locked",
+        "resourceShort"
+      ],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "完整CO01/透明CO02候选、拥有/门槛与独立培养",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "codex",
+      "name": "行路图鉴",
+      "purpose": "十二招、觉醒与非人妖怪。",
+      "template": "screens.js:codex()",
+      "gallery": "gallery.html?screen=codex",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "chooseEntry",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "书页语境、招式/反派主体与索引",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "achievements",
+      "name": "江湖功绩",
+      "purpose": "十二功绩、条件与自动入账。",
+      "template": "screens.js:achievements()",
+      "gallery": "gallery.html?screen=achievements",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "detail",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "功绩镜/章、12条件与自动入账状态",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    },
+    {
+      "id": "help",
+      "name": "行路须知",
+      "purpose": "走停/避险/经验/局内局外说明。",
+      "template": "screens.js:help()",
+      "gallery": "gallery.html?screen=help",
+      "enter": "Root旅程或审阅情景，模板只读state/data",
+      "primaryAction": "back",
+      "exit": "Root保持返回栈/selected/tab/scroll/focus；UI只读state/data",
+      "freezesWorld": true,
+      "normalStates": [
+        "默认",
+        "选中/未选"
+      ],
+      "exceptionStates": [],
+      "minimumTouchCSSPx": 44,
+      "contextKeys": [
+        "screen",
+        "scenario",
+        "selected",
+        "tab",
+        "stageId",
+        "returnTo",
+        "modal",
+        "fixture"
+      ],
+      "status": "actual-review.2-display-template-not-user-approved",
+      "visualSubject": "真实展开卷轴、行/避/拾/择/成/留章节",
+      "font": "body16/secondary14; title MaShanZheng with fallback"
+    }
+  ],
+  "modals": [
+    {
+      "id": "confirmDepart",
+      "name": "启程确认",
+      "gallery": "gallery.html?screen=growth&modal=confirmDepart",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "upgradeConfirm",
+      "name": "修行前后确认",
+      "gallery": "gallery.html?screen=growth&modal=upgradeConfirm",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close",
+        "confirmPreview"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "resourceShort",
+      "name": "资源不足",
+      "gallery": "gallery.html?screen=growth&modal=resourceShort",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "locked",
+      "name": "前置锁定",
+      "gallery": "gallery.html?screen=growth&modal=locked",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "detail",
+      "name": "详情返回",
+      "gallery": "gallery.html?screen=growth&modal=detail",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "loadError",
+      "name": "载入失败",
+      "gallery": "gallery.html?screen=growth&modal=loadError",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "retryLoad",
+        "returnCamp"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "saveError",
+      "name": "记录失败",
+      "gallery": "gallery.html?screen=growth&modal=saveError",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "retrySave"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "saveConflict",
+      "name": "记录冲突",
+      "gallery": "gallery.html?screen=growth&modal=saveConflict",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "cancel",
+        "help"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "fullSlots",
+      "name": "六槽已满",
+      "gallery": "gallery.html?screen=growth&modal=fullSlots",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "maxLevel",
+      "name": "修行满级",
+      "gallery": "gallery.html?screen=growth&modal=maxLevel",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "adCancelled",
+      "name": "广告未完成",
+      "gallery": "gallery.html?screen=growth&modal=adCancelled",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "adError",
+      "name": "广告不可用",
+      "gallery": "gallery.html?screen=growth&modal=adError",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    },
+    {
+      "id": "restartConfirm",
+      "name": "重开确认",
+      "gallery": "gallery.html?screen=growth&modal=restartConfirm",
+      "keepsUnderlyingScreen": true,
+      "underlayInert": true,
+      "worldFrozen": true,
+      "resumeRule": "Root返回同screen/selected/tab，异常不扣资源或重复奖励",
+      "actions": [
+        "close",
+        "confirmRestart"
+      ],
+      "status": "actual-review.2-material-modal",
+      "recoveryOwner": "Root, existing data-action; protected/inert original screen retained"
+    }
+  ],
+  "motion": {
+    "pageEnterMs": 200,
+    "modalEnterMs": 200,
+    "easing": "cubic-bezier(.2,.7,.3,1)",
+    "reduced": "移除装饰进入，保留选中与危险状态"
+  },
+  "integration": {
+    "render": "window.DesignScreens.render(state,data) => HTML string",
+    "noWorldCanvas": true,
+    "allNavigationOwnedByRoot": true,
+    "sharedBase": "window.DESIGN_SHARED_BASE fallback docs/design-v1 root",
+    "tabEvents": "gear/codex with data-tab; Root reads dataset.tab",
+    "newRecoveryActions": [
+      "retryLoad",
+      "retrySave",
+      "cancel"
+    ],
+    "fixturePolicy": "wallet/HP/price/effects are authored display samples, no simulation/transactions",
+    "actionsFile": "action-map.json",
+    "fixtures": {
+      "offers": "complete card objects with kind/new|upgrade|utility, before/after or beforeLabel/afterLabel; no template stat calculations",
+      "result": "base/firstExtra/achievementExtra/total displayed as supplied; label/scopeTransition shown by Root review shell",
+      "gearReward": "id/rarity/before/after/beforeAffix/afterAffix supplied by controller",
+      "awakening": "stable AW IDs; eligibility snapshot; occupied slots from battle.awakening.length",
+      "emptyOwnership": "explicit empty companionLevels/achievements/gearEquipped/lastGearEquipped respected",
+      "revive": "only one free revival; used state has settlement action, no ad revival"
+    },
+    "newActions": [
+      "refreshChoice"
+    ],
+    "worldReady": "prepare reads fixture.worldReady===false and disables start; worldError label retained",
+    "newDetailIds": [
+      "RESULT-SOURCES"
+    ],
+    "upgradePreview": "optional literal {id,beforeLevel,afterLevel,currencyId,beforeBalance,afterBalance}; id must match current growth; does not calculate or apply",
+    "recoveryActions": "saveError cancel preserves candidate via existing cancel; retrySave preserved; saveConflict cancel remains readonly return",
+    "operationFields": {
+      "operationCatalog": "A operations[]，只列入口",
+      "operationPreview": "{operation:resolved operation,sample:resolved positive/negative}，只在upgradeConfirm使用；取消/离开要清掉",
+      "operationReceipt": "与preview同形；资源/对应伙伴/UP成长页只读前后",
+      "companionFields": "companionLevels/companionXp/companionXpRequired/equippedCompanionIds数组；两位可同时同行",
+      "gearOffer": "resolved sample的candidates/comparisons/current/submitAllowed",
+      "gearStep": "pick/compare；selected是candidateId",
+      "gearReceipt": "{title,copy,beforeHp,afterHp,maxHp,parts}，优先于候选；只有confirmChoice继续",
+      "UT-HEAL": "支持带空格hp/maxHP literal标签；unavailable卡与确认都禁用，原气血保留"
+    }
+  }
+}

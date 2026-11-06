@@ -1,0 +1,2713 @@
+{
+  "version": "final-design-ui-data.20261106-review.2",
+  "status": "derived-display-data-for-unified-candidate-not-approved",
+  "scope": "display-contract-only-no-simulation-no-transactions",
+  "approvedOnly": "hero-painted-motion.20261106-review.1局部人物动作",
+  "stages": [
+    {
+      "id": "ST01",
+      "name": "青溪试刃",
+      "purpose": "基础识别与选择",
+      "narrativeObjective": "沿青溪驱散雾灯妖核与虫群，学会看预告后短弧转向。",
+      "waves": 10,
+      "nominalSeconds": 450,
+      "clearReward": {
+        "coins": 120,
+        "ingots": 10,
+        "gems": 1,
+        "essence": 120,
+        "fruits": 2
+      },
+      "firstClearExtra": {
+        "coins": 60,
+        "ingots": 10,
+        "gems": 1,
+        "essence": 60,
+        "fruits": 2
+      },
+      "unlockAfterStage": null,
+      "sceneRef": "SC01",
+      "designStatus": "recommended-candidate-not-approved",
+      "finalPreparation": {
+        "id": "ST01-PRE-FINAL",
+        "beforeWave": "ST01-W10",
+        "gate": "前3Boss、两精英及此前全部波次目标实际完成，余敌危险清除；不是到时间送奖励",
+        "gear": 1,
+        "chest": 1,
+        "order": "先已赚人物升级→整备箱→装备；拾物满足后可觉醒→明确继续最后Boss",
+        "duplicate": "本卷run+preparationId一次；返回/重开情景不能重复记奖励",
+        "failureOrCancel": "提交失败保留候选、未消耗机会；返回详情保留；离开整备待显式继续，不偷偷开Boss",
+        "scope": "原创修订，原型只展示预设场景，不实现门槛/Director"
+      }
+    },
+    {
+      "id": "ST02",
+      "name": "古渡夜行",
+      "purpose": "射阵切侧与经验回收",
+      "narrativeObjective": "古渡被棘背弩蜥与蛛妖占据，切过骨刺火线回收失散灵息。",
+      "waves": 12,
+      "nominalSeconds": 504,
+      "clearReward": {
+        "coins": 160,
+        "ingots": 12,
+        "gems": 1,
+        "essence": 160,
+        "fruits": 2
+      },
+      "firstClearExtra": {
+        "coins": 80,
+        "ingots": 12,
+        "gems": 1,
+        "essence": 80,
+        "fruits": 2
+      },
+      "unlockAfterStage": "ST01",
+      "sceneRef": "SC02",
+      "designStatus": "recommended-candidate-not-approved",
+      "finalPreparation": {
+        "id": "ST02-PRE-FINAL",
+        "beforeWave": "ST02-W12",
+        "gate": "前3Boss、两精英及此前全部波次目标实际完成，余敌危险清除；不是到时间送奖励",
+        "gear": 1,
+        "chest": 1,
+        "order": "先已赚人物升级→整备箱→装备；拾物满足后可觉醒→明确继续最后Boss",
+        "duplicate": "本卷run+preparationId一次；返回/重开情景不能重复记奖励",
+        "failureOrCancel": "提交失败保留候选、未消耗机会；返回详情保留；离开整备待显式继续，不偷偷开Boss",
+        "scope": "原创修订，原型只展示预设场景，不实现门槛/Director"
+      }
+    },
+    {
+      "id": "ST03",
+      "name": "竹影追风",
+      "purpose": "侧翼与控制窗口",
+      "narrativeObjective": "竹影蝠群与空壳妖像夹击，借冻结与转场找回退路。",
+      "waves": 12,
+      "nominalSeconds": 528,
+      "clearReward": {
+        "coins": 210,
+        "ingots": 14,
+        "gems": 2,
+        "essence": 210,
+        "fruits": 3
+      },
+      "firstClearExtra": {
+        "coins": 105,
+        "ingots": 14,
+        "gems": 1,
+        "essence": 105,
+        "fruits": 2
+      },
+      "unlockAfterStage": "ST02",
+      "sceneRef": "SC03",
+      "designStatus": "recommended-candidate-not-approved",
+      "finalPreparation": {
+        "id": "ST03-PRE-FINAL",
+        "beforeWave": "ST03-W12",
+        "gate": "前3Boss、两精英及此前全部波次目标实际完成，余敌危险清除；不是到时间送奖励",
+        "gear": 1,
+        "chest": 1,
+        "order": "先已赚人物升级→整备箱→装备；拾物满足后可觉醒→明确继续最后Boss",
+        "duplicate": "本卷run+preparationId一次；返回/重开情景不能重复记奖励",
+        "failureOrCancel": "提交失败保留候选、未消耗机会；返回详情保留；离开整备待显式继续，不偷偷开Boss",
+        "scope": "原创修订，原型只展示预设场景，不实现门槛/Director"
+      }
+    },
+    {
+      "id": "ST04",
+      "name": "残垒破阵",
+      "purpose": "重甲、绕背和集中投资",
+      "narrativeObjective": "残垒被甲虫、螳妖与岩甲犀卫封路，本版候选集中检验破甲与侧绕。",
+      "waves": 15,
+      "nominalSeconds": 570,
+      "clearReward": {
+        "coins": 270,
+        "ingots": 16,
+        "gems": 2,
+        "essence": 270,
+        "fruits": 3
+      },
+      "firstClearExtra": {
+        "coins": 135,
+        "ingots": 16,
+        "gems": 1,
+        "essence": 135,
+        "fruits": 2
+      },
+      "unlockAfterStage": "ST03",
+      "sceneRef": "SC04",
+      "designStatus": "recommended-candidate-not-approved",
+      "finalPreparation": {
+        "id": "ST04-PRE-FINAL",
+        "beforeWave": "ST04-W15",
+        "gate": "前3Boss、两精英及此前全部波次目标实际完成，余敌危险清除；不是到时间送奖励",
+        "gear": 1,
+        "chest": 1,
+        "order": "先已赚人物升级→整备箱→装备；拾物满足后可觉醒→明确继续最后Boss",
+        "duplicate": "本卷run+preparationId一次；返回/重开情景不能重复记奖励",
+        "failureOrCancel": "提交失败保留候选、未消耗机会；返回详情保留；离开整备待显式继续，不偷偷开Boss",
+        "scope": "原创修订，原型只展示预设场景，不实现门槛/Director"
+      }
+    },
+    {
+      "id": "ST05",
+      "name": "孤城听雷",
+      "purpose": "交叉火力与转场",
+      "narrativeObjective": "孤城异核引来巨鸦与棘蜥交叉袭扰，用有节奏换位解除妖群压力。",
+      "waves": 15,
+      "nominalSeconds": 600,
+      "clearReward": {
+        "coins": 340,
+        "ingots": 18,
+        "gems": 3,
+        "essence": 340,
+        "fruits": 4
+      },
+      "firstClearExtra": {
+        "coins": 170,
+        "ingots": 18,
+        "gems": 1,
+        "essence": 170,
+        "fruits": 2
+      },
+      "unlockAfterStage": "ST04",
+      "sceneRef": "SC05",
+      "designStatus": "recommended-candidate-not-approved",
+      "finalPreparation": {
+        "id": "ST05-PRE-FINAL",
+        "beforeWave": "ST05-W15",
+        "gate": "前3Boss、两精英及此前全部波次目标实际完成，余敌危险清除；不是到时间送奖励",
+        "gear": 1,
+        "chest": 1,
+        "order": "先已赚人物升级→整备箱→装备；拾物满足后可觉醒→明确继续最后Boss",
+        "duplicate": "本卷run+preparationId一次；返回/重开情景不能重复记奖励",
+        "failureOrCancel": "提交失败保留候选、未消耗机会；返回详情保留；离开整备待显式继续，不偷偷开Boss",
+        "scope": "原创修订，原型只展示预设场景，不实现门槛/Director"
+      }
+    },
+    {
+      "id": "ST06",
+      "name": "归墟终卷",
+      "purpose": "混编综合检验",
+      "narrativeObjective": "归墟异核扰动四类妖王，本版候选综合处理既有首领威胁。",
+      "waves": 15,
+      "nominalSeconds": 630,
+      "clearReward": {
+        "coins": 420,
+        "ingots": 20,
+        "gems": 3,
+        "essence": 420,
+        "fruits": 4
+      },
+      "firstClearExtra": {
+        "coins": 210,
+        "ingots": 20,
+        "gems": 1,
+        "essence": 210,
+        "fruits": 2
+      },
+      "unlockAfterStage": "ST05",
+      "sceneRef": "SC06",
+      "designStatus": "recommended-candidate-not-approved",
+      "finalPreparation": {
+        "id": "ST06-PRE-FINAL",
+        "beforeWave": "ST06-W15",
+        "gate": "前3Boss、两精英及此前全部波次目标实际完成，余敌危险清除；不是到时间送奖励",
+        "gear": 1,
+        "chest": 1,
+        "order": "先已赚人物升级→整备箱→装备；拾物满足后可觉醒→明确继续最后Boss",
+        "duplicate": "本卷run+preparationId一次；返回/重开情景不能重复记奖励",
+        "failureOrCancel": "提交失败保留候选、未消耗机会；返回详情保留；离开整备待显式继续，不偷偷开Boss",
+        "scope": "原创修订，原型只展示预设场景，不实现门槛/Director"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "R01",
+      "name": "近圈护阵",
+      "starter": [
+        "SK04",
+        "SK07"
+      ],
+      "thirdCore": "SK12",
+      "fourthCore": "SK11",
+      "core": [
+        "SK04",
+        "SK07",
+        "SK12",
+        "SK11"
+      ],
+      "stance": "保持约95–145u近圈，以短弧绕行让环绕物命中；棘背弩蜥出现时主动出圈清线再回阵。",
+      "counter": "分散棘背弩蜥、重叠近身圆击；不能靠站桩或护甲硬吃所有预警。",
+      "tradeoff": "范围/防护换单体远程效率；第5/6槽补霜线或回锋，会挤占主招升阶与觉醒投入。",
+      "synergy": {
+        "name": "护阵",
+        "activation": "任意两本路核心达到3重",
+        "nearEnemyRadiusU": 160,
+        "damageReductionAdditive": 0.1,
+        "invulnerabilityBonusS": 0.15,
+        "bonusWindowCooldownS": 2,
+        "sharedDamageReductionCap": 0.4
+      },
+      "visualCue": "脚下细朱圈短亮，不遮敌方危险轮廓。"
+    },
+    {
+      "id": "R02",
+      "name": "游击穿阵",
+      "starter": [
+        "SK01",
+        "SK08"
+      ],
+      "thirdCore": "SK09",
+      "fourthCore": "SK10",
+      "core": [
+        "SK01",
+        "SK08",
+        "SK09",
+        "SK10"
+      ],
+      "stance": "保持约180–300u投射距离，冻住前排后沿侧面穿阵回收经验；避弹以横切为主。",
+      "counter": "重甲列阵、被两侧包夹、沿直线贪拾取；冻Boss只能短控，不能永冻。",
+      "tradeoff": "穿透与控制换原地覆盖；加气环可保身但少一次主招升阶，越跑越远会损失经验。",
+      "synergy": {
+        "name": "游刃",
+        "activation": "任意两本路核心达到3重",
+        "frozenFirstHitPierceRefund": 1,
+        "refundMaximumPerProjectile": 1,
+        "moveSpeedBonusAfterFreeze": 0.06,
+        "moveBuffS": 1.2,
+        "frozenTargetPriorityDistanceFactor": 0.75
+      },
+      "visualCue": "冻敌边缘短亮与轻羽线，速度窗只用足迹提示。"
+    },
+    {
+      "id": "R03",
+      "name": "布阵牵引",
+      "starter": [
+        "SK03",
+        "SK05"
+      ],
+      "thirdCore": "SK06",
+      "fourthCore": "SK02",
+      "core": [
+        "SK03",
+        "SK05",
+        "SK06",
+        "SK02"
+      ],
+      "stance": "在区域外侧转场，把追击群引过风卷、地龙和墨爪交叠；标记后用震岳破列。",
+      "counter": "高速侧翼、分散棘背弩蜥、Boss换位；区域过期前贪守会失去输出。",
+      "tradeoff": "高群体效率换重新布阵成本；第5/6槽补飞羽或霜线，减少区域主招的成型速度。",
+      "synergy": {
+        "name": "牵阵",
+        "activation": "任意两本路核心达到3重",
+        "markS": 2,
+        "pullU": 5,
+        "pullCooldownPerEnemyS": 0.5,
+        "elitePullMultiplier": 0.3,
+        "bossPullMultiplier": 0,
+        "markedBoulderArmorIgnore": 0.12,
+        "markedBoulderExtraKnockbackU": 10
+      },
+      "visualCue": "地面小篆标记，标记不另铺不透明底。"
+    }
+  ],
+  "skills": [
+    {
+      "id": "SK01",
+      "name": "回锋",
+      "purpose": "定向穿透弹",
+      "recommendedRoute": "R02",
+      "base": {
+        "damageHP": 14,
+        "intervalS": 1.05,
+        "count": 1,
+        "rangeU": 620
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW01",
+        "name": "折返千刃",
+        "relicName": "追影令",
+        "rule": "首次行程结束沿原路折返一次；命中表重置，折返伤害45%，最多再命中原穿透数。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "弹速480u/s，半径7u，基础穿透2；单弹同敌最多1次命中",
+      "display": {
+        "shortName": "回锋",
+        "roleLabel": "穿阵",
+        "detailRuleSource": "design-data.json#/skills/0"
+      }
+    },
+    {
+      "id": "SK02",
+      "name": "震岳",
+      "purpose": "滚石破列",
+      "recommendedRoute": "R03",
+      "base": {
+        "damageHP": 26,
+        "intervalS": 3.4,
+        "count": 1,
+        "rangeU": 560
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "range"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW02",
+        "name": "山海震岳",
+        "relicName": "山河玺",
+        "rule": "每轮前三枚滚石的首个有效命中可留灼烧，持续1.5s，每0.5s一次，单次为本次滚石20%；同来源灼烧对同敌不叠。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "弹速190u/s，半径24u，穿透4，每次碰到第3个新敌可转向一次，最多2次转向",
+      "display": {
+        "shortName": "震岳",
+        "roleLabel": "破甲",
+        "detailRuleSource": "design-data.json#/skills/1"
+      }
+    },
+    {
+      "id": "SK03",
+      "name": "风卷",
+      "purpose": "移动持续区",
+      "recommendedRoute": "R03",
+      "base": {
+        "damageHP": 6,
+        "intervalS": 3.6,
+        "count": 1,
+        "rangeU": 68
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "range"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW03",
+        "name": "万象风卷",
+        "relicName": "听风如意",
+        "rule": "每个旋风每1s对区内最近敌引雷一次，额外伤害为当前风卷单次120%，每风卷最多3次。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "区持续3.0s，移动65u/s，脉冲0.35s；同敌同区每脉冲1次；不叠同来源伤害",
+      "display": {
+        "shortName": "风卷",
+        "roleLabel": "布区",
+        "detailRuleSource": "design-data.json#/skills/2"
+      }
+    },
+    {
+      "id": "SK04",
+      "name": "星锤",
+      "purpose": "近圈环绕",
+      "recommendedRoute": "R01",
+      "base": {
+        "damageHP": 16,
+        "intervalS": 0.7,
+        "count": 1,
+        "rangeU": 118
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste",
+        "range"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW04",
+        "name": "陨星天锤",
+        "relicName": "陨星珠",
+        "rule": "首个有效环绕命中产生半径64u冲击，伤害为星锤40%，每敌冲击共享冷却1s。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "轨道基础角速3.8rad/s，随急速同倍率提高；每敌同技能共享0.70s/(1+.12*急速点)门限，数量只增覆盖不能绕过门限。",
+      "display": {
+        "shortName": "星锤",
+        "roleLabel": "环绕",
+        "detailRuleSource": "design-data.json#/skills/3"
+      }
+    },
+    {
+      "id": "SK05",
+      "name": "地龙",
+      "purpose": "预告定点刺击",
+      "recommendedRoute": "R03",
+      "base": {
+        "damageHP": 13,
+        "intervalS": 3.2,
+        "count": 2,
+        "rangeU": 58
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW05",
+        "name": "潜龙破地",
+        "relicName": "潜龙骨",
+        "rule": "刺击前0.25s将普通敌牵引12u一次；精英×0.3、Boss不移动。末段刺击额外35%。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "区持续1.4s，脉冲0.35s，每目标每轮最多4次；同一轮两区重叠同敌最多4次",
+      "display": {
+        "shortName": "地龙",
+        "roleLabel": "地刺",
+        "detailRuleSource": "design-data.json#/skills/4"
+      }
+    },
+    {
+      "id": "SK06",
+      "name": "墨爪",
+      "purpose": "陷阱持续区",
+      "recommendedRoute": "R03",
+      "base": {
+        "damageHP": 10,
+        "intervalS": 3.8,
+        "count": 1,
+        "rangeU": 82
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "range"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW06",
+        "name": "幽冥墨爪",
+        "relicName": "玄墨鼎",
+        "rule": "陷阱消退时半径100u爆裂，伤害为墨爪单次90%；同敌最多一次。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "持续2.4s，脉冲0.4s；同目标同来源每脉冲1次",
+      "display": {
+        "shortName": "墨爪",
+        "roleLabel": "陷阱",
+        "detailRuleSource": "design-data.json#/skills/5"
+      }
+    },
+    {
+      "id": "SK07",
+      "name": "气环",
+      "purpose": "近身脉冲",
+      "recommendedRoute": "R01",
+      "base": {
+        "damageHP": 6,
+        "intervalS": 0.85,
+        "count": 1,
+        "rangeU": 110
+      },
+      "allowedMods": [
+        "damage",
+        "haste",
+        "range"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW07",
+        "name": "无相气环",
+        "relicName": "流云伞",
+        "rule": "每第三次气环脉冲附加一次锯切，当前气环单次60%，不新增环绕物。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "每脉冲每敌1次，击退6u；无额外碰撞实体",
+      "display": {
+        "shortName": "气环",
+        "roleLabel": "近圈",
+        "detailRuleSource": "design-data.json#/skills/6"
+      }
+    },
+    {
+      "id": "SK08",
+      "name": "霜线",
+      "purpose": "冻结直线",
+      "recommendedRoute": "R02",
+      "base": {
+        "damageHP": 5,
+        "intervalS": 3.5,
+        "count": 1,
+        "rangeU": 600
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW08",
+        "name": "万里霜线",
+        "relicName": "凝霜玉",
+        "rule": "首次冻住目标产生半径64u冰爆，为霜线单次80%；冰爆不再次触发冰爆/路线穿透返还。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "弹速420u/s，半径8u，穿透3；冻结普通1.1s、甲虫0.77s、精英0.55s、Boss0.22s（无装备加成）；再控最短间隔普通0.6/精英1.5/Boss3s；按controls一次系数，不与通用默认连乘",
+      "display": {
+        "shortName": "霜线",
+        "roleLabel": "冻结",
+        "detailRuleSource": "design-data.json#/skills/7"
+      }
+    },
+    {
+      "id": "SK09",
+      "name": "飞羽",
+      "purpose": "扇形羽刃",
+      "recommendedRoute": "R02",
+      "base": {
+        "damageHP": 9,
+        "intervalS": 2.1,
+        "count": 3,
+        "rangeU": 570
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW09",
+        "name": "天羽流星",
+        "relicName": "天羽扇",
+        "rule": "每枚首命中后最多折向一个不同目标，折射伤害55%，不重复回到首目标。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "弹速370u/s，半径8u，穿透1；同一轮同敌最多2枚全伤，后续枚仅20%伤害",
+      "display": {
+        "shortName": "飞羽",
+        "roleLabel": "扇射",
+        "detailRuleSource": "design-data.json#/skills/8"
+      }
+    },
+    {
+      "id": "SK10",
+      "name": "雷引",
+      "purpose": "连锁电击",
+      "recommendedRoute": "R02",
+      "base": {
+        "damageHP": 20,
+        "intervalS": 2.9,
+        "count": 3,
+        "rangeU": 165
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW10",
+        "name": "九霄雷引",
+        "relicName": "鸣雷鼓",
+        "rule": "链末最多向两侧各分叉一次，为主链首击35%，每支只命中一个未中目标。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "同一链每敌只命中1次，后续跳伤害×0.85，跳数最大6",
+      "display": {
+        "shortName": "雷引",
+        "roleLabel": "连锁",
+        "detailRuleSource": "design-data.json#/skills/9"
+      }
+    },
+    {
+      "id": "SK11",
+      "name": "青刺",
+      "purpose": "全向爆发",
+      "recommendedRoute": "R01",
+      "base": {
+        "damageHP": 8,
+        "intervalS": 2.8,
+        "count": 8,
+        "rangeU": 480
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "haste"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW11",
+        "name": "万刺青莲",
+        "relicName": "青莲种",
+        "rule": "青刺到程或命中后半径50u绽爆，为青刺35%；同一轮同敌绽爆共享0.4s冷却。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "弹速300u/s，半径6u，穿透1；同轮同敌最多2枚全伤，其余20%",
+      "display": {
+        "shortName": "青刺",
+        "roleLabel": "全向",
+        "detailRuleSource": "design-data.json#/skills/10"
+      }
+    },
+    {
+      "id": "SK12",
+      "name": "两仪",
+      "purpose": "双轨环绕",
+      "recommendedRoute": "R01",
+      "base": {
+        "damageHP": 12,
+        "intervalS": 0.8,
+        "count": 2,
+        "rangeU": 156
+      },
+      "allowedMods": [
+        "damage",
+        "count",
+        "range"
+      ],
+      "normalRankCap": 10,
+      "breakthroughRank": 12,
+      "awakening": {
+        "id": "AW12",
+        "name": "太极两仪",
+        "relicName": "两仪镜",
+        "rule": "每1.2s内圈80u轻聚普通敌5u并追加两仪单次35%；精英×0.3、Boss不移动。"
+      },
+      "slotCost": 1,
+      "collisionAndPerTargetRule": "双轨相向基础角速2.6rad/s；每敌两仪共享0.80s门限，不能每帧接触都算伤害。",
+      "display": {
+        "shortName": "两仪",
+        "roleLabel": "双环",
+        "detailRuleSource": "design-data.json#/skills/11"
+      }
+    }
+  ],
+  "gear": [
+    {
+      "id": "GE01",
+      "name": "面具",
+      "primaryStat": "pickupU",
+      "baseValue": 10,
+      "purpose": "拾取覆盖/稳态",
+      "affixChoices": "pickup+8u 或 range+5%",
+      "relatedPages": [
+        "PG06",
+        "PG15"
+      ]
+    },
+    {
+      "id": "GE02",
+      "name": "项链",
+      "primaryStat": "critChance",
+      "baseValue": 0.02,
+      "purpose": "暴击或路线覆盖",
+      "affixChoices": "本类伤害+2.5..4% 或 range+5%",
+      "relatedPages": [
+        "PG06",
+        "PG15"
+      ]
+    },
+    {
+      "id": "GE03",
+      "name": "戒指",
+      "primaryStat": "damageBonus",
+      "baseValue": 0.04,
+      "purpose": "主招投入",
+      "affixChoices": "本类伤害+2.5..4% 或 pickup+8u",
+      "relatedPages": [
+        "PG06",
+        "PG15"
+      ]
+    },
+    {
+      "id": "GE04",
+      "name": "衣袍",
+      "primaryStat": "maxHp",
+      "baseValue": 12,
+      "purpose": "容错",
+      "affixChoices": "减伤+1..2% 或 maxHp+6",
+      "relatedPages": [
+        "PG06",
+        "PG15"
+      ]
+    },
+    {
+      "id": "GE05",
+      "name": "靴",
+      "primaryStat": "speedUPerS",
+      "baseValue": 6,
+      "purpose": "转场",
+      "affixChoices": "移速+2..4u/s 或 pickup+8u",
+      "relatedPages": [
+        "PG06",
+        "PG15"
+      ]
+    },
+    {
+      "id": "GE06",
+      "name": "印",
+      "primaryStat": "damageReduction",
+      "baseValue": 0.02,
+      "purpose": "站位防御/路线反制",
+      "affixChoices": "本类伤害+2.5..4% 或 freezeDuration+5%",
+      "relatedPages": [
+        "PG06",
+        "PG15"
+      ]
+    }
+  ],
+  "rarities": [
+    {
+      "id": "RA01",
+      "name": "素品",
+      "primaryMultiplier": 1.0,
+      "offenseAffix": 0.025
+    },
+    {
+      "id": "RA02",
+      "name": "良品",
+      "primaryMultiplier": 1.18,
+      "offenseAffix": 0.03
+    },
+    {
+      "id": "RA03",
+      "name": "珍品",
+      "primaryMultiplier": 1.4,
+      "offenseAffix": 0.035
+    },
+    {
+      "id": "RA04",
+      "name": "绝品",
+      "primaryMultiplier": 1.65,
+      "offenseAffix": 0.04
+    }
+  ],
+  "currencies": [
+    {
+      "id": "CU01",
+      "key": "coins",
+      "name": "铜钱",
+      "purpose": "稳定基础训练",
+      "sources": [
+        "普通/首通结算",
+        "有参与失败",
+        "成就",
+        "灵玉兑换",
+        "可选广告基础加领"
+      ],
+      "sinks": [
+        "UP02体魄",
+        "UP03身法",
+        "UP04聚灵"
+      ]
+    },
+    {
+      "id": "CU02",
+      "key": "ingots",
+      "name": "元宝",
+      "purpose": "武器与伙伴的跨系统取舍",
+      "sources": [
+        "普通/首通结算",
+        "实际Boss进度失败收益",
+        "少量成就",
+        "灵玉兑换"
+      ],
+      "sinks": [
+        "UP01武器",
+        "CO01/CO02解锁与喂养"
+      ]
+    },
+    {
+      "id": "CU03",
+      "key": "gems",
+      "name": "灵玉",
+      "purpose": "跨资源应急而不强制购买",
+      "sources": [
+        "胜利/首通",
+        "里程碑成就"
+      ],
+      "sinks": [
+        "3玉换90钱",
+        "5玉换8元宝"
+      ]
+    },
+    {
+      "id": "CU04",
+      "key": "essence",
+      "name": "灵息",
+      "purpose": "定向某招长期修炼",
+      "sources": [
+        "普通/首通结算",
+        "有参与失败",
+        "成就",
+        "灵果炼息",
+        "胜利所得待炼额度随离线释放",
+        "可选广告基础加领"
+      ],
+      "sinks": [
+        "UP05..UP16十二技能修炼"
+      ]
+    },
+    {
+      "id": "CU05",
+      "key": "fruits",
+      "name": "灵果",
+      "purpose": "修炼与同伴经验二选一",
+      "sources": [
+        "胜利/首通",
+        "成就"
+      ],
+      "sinks": [
+        "4果换60息",
+        "4果+4元宝给一个已拥有伙伴20XP"
+      ]
+    }
+  ],
+  "companions": [
+    {
+      "id": "CO01",
+      "name": "行云轮",
+      "kind": "mount",
+      "unlockAfterStage": "ST01",
+      "unlockIngots": 20,
+      "unlockState": {
+        "level": 1,
+        "xp": 0,
+        "equipped": true
+      },
+      "purpose": "转场与回收的舒适度，不增加隐藏全局伤害",
+      "effect": "每级移速+1u/s、拾取半径+0.5u；最高20级。",
+      "feed": {
+        "ingots": 4,
+        "xp": 10
+      },
+      "xpNext": [
+        30,
+        38,
+        46,
+        54,
+        62,
+        70,
+        78,
+        86,
+        94,
+        102,
+        110,
+        118,
+        126,
+        134,
+        142,
+        150,
+        158,
+        166,
+        174,
+        0
+      ],
+      "maxLevel": 20,
+      "relatedPages": [
+        "PG03",
+        "PG13"
+      ]
+    },
+    {
+      "id": "CO02",
+      "name": "赤鬃小兽",
+      "kind": "beast",
+      "unlockAfterStage": "ST02",
+      "unlockIngots": 25,
+      "unlockState": {
+        "level": 1,
+        "xp": 0,
+        "equipped": true
+      },
+      "purpose": "可见追击补刀与陪伴，不代替主角构筑",
+      "attack": {
+        "intervalS": 2.6,
+        "rangeU": 600,
+        "projectileSpeedUPerS": 340,
+        "count": 1,
+        "pierce": 1,
+        "inherits": "主角14基础近战×(1+0.08武器等级)，不继承12招修炼/数量/范围",
+        "attackShareAtLevel1": 0.3,
+        "attackSharePerLevel": 0.01,
+        "critChance": 0.05,
+        "critMultiplier": 1.6
+      },
+      "feed": {
+        "ingots": 4,
+        "xp": 10
+      },
+      "xpNext": [
+        30,
+        38,
+        46,
+        54,
+        62,
+        70,
+        78,
+        86,
+        94,
+        102,
+        110,
+        118,
+        126,
+        134,
+        142,
+        150,
+        158,
+        166,
+        174,
+        0
+      ],
+      "maxLevel": 20,
+      "relatedPages": [
+        "PG03",
+        "PG13"
+      ]
+    }
+  ],
+  "growth": [
+    {
+      "id": "UP01",
+      "name": "武器",
+      "currencyId": "CU02",
+      "formula": "6+3L+L^2",
+      "nextPrice": [
+        6,
+        10,
+        16,
+        24,
+        34,
+        46,
+        60,
+        76,
+        94,
+        114,
+        136,
+        160,
+        186,
+        214,
+        244,
+        276,
+        310,
+        346,
+        384,
+        424
+      ],
+      "effectPerLevel": {
+        "damageBonus": 0.08
+      },
+      "skillId": null,
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "一般伤害加算+8%"
+    },
+    {
+      "id": "UP02",
+      "name": "体魄",
+      "currencyId": "CU01",
+      "formula": "20+10L+2L^2",
+      "nextPrice": [
+        20,
+        32,
+        48,
+        68,
+        92,
+        120,
+        152,
+        188,
+        228,
+        272,
+        320,
+        372,
+        428,
+        488,
+        552,
+        620,
+        692,
+        768,
+        848,
+        932
+      ],
+      "effectPerLevel": {
+        "maxHp": 8
+      },
+      "skillId": null,
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "最大气血+8"
+    },
+    {
+      "id": "UP03",
+      "name": "身法",
+      "currencyId": "CU01",
+      "formula": "20+10L+2L^2",
+      "nextPrice": [
+        20,
+        32,
+        48,
+        68,
+        92,
+        120,
+        152,
+        188,
+        228,
+        272,
+        320,
+        372,
+        428,
+        488,
+        552,
+        620,
+        692,
+        768,
+        848,
+        932
+      ],
+      "effectPerLevel": {
+        "speedUPerS": 3
+      },
+      "skillId": null,
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "速度+3u/s"
+    },
+    {
+      "id": "UP04",
+      "name": "聚灵",
+      "currencyId": "CU01",
+      "formula": "20+10L+2L^2",
+      "nextPrice": [
+        20,
+        32,
+        48,
+        68,
+        92,
+        120,
+        152,
+        188,
+        228,
+        272,
+        320,
+        372,
+        428,
+        488,
+        552,
+        620,
+        692,
+        768,
+        848,
+        932
+      ],
+      "effectPerLevel": {
+        "pickupRadiusU": 6
+      },
+      "skillId": null,
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "拾取半径+6u"
+    },
+    {
+      "id": "UP05",
+      "name": "回锋修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK01",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP06",
+      "name": "震岳修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK02",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP07",
+      "name": "风卷修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK03",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP08",
+      "name": "星锤修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK04",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP09",
+      "name": "地龙修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK05",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP10",
+      "name": "墨爪修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK06",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP11",
+      "name": "气环修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK07",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP12",
+      "name": "霜线修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK08",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP13",
+      "name": "飞羽修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK09",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP14",
+      "name": "雷引修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK10",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP15",
+      "name": "青刺修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK11",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    },
+    {
+      "id": "UP16",
+      "name": "两仪修炼",
+      "currencyId": "CU04",
+      "formula": "90+20L+5L^2",
+      "nextPrice": [
+        90,
+        115,
+        150,
+        195,
+        250,
+        315,
+        390,
+        475,
+        570,
+        675,
+        790,
+        915,
+        1050,
+        1195,
+        1350,
+        1515,
+        1690,
+        1875,
+        2070,
+        2275
+      ],
+      "effectPerLevel": {
+        "matchingSkillDamageBonus": 0.035
+      },
+      "skillId": "SK12",
+      "maxLevel": 20,
+      "takesEffect": "下一次入卷",
+      "effectLabel": "对应招伤害加算+3.5%"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "AC01",
+      "name": "初试锋芒",
+      "condition": "首次有效挑战",
+      "metric": {
+        "qualifiedRuns": 1
+      },
+      "reward": {
+        "coins": 30,
+        "ingots": 0,
+        "gems": 0,
+        "essence": 10,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC02",
+      "name": "百敌退散",
+      "condition": "累计击败100敌",
+      "metric": {
+        "kills": 100
+      },
+      "reward": {
+        "coins": 50,
+        "ingots": 0,
+        "gems": 0,
+        "essence": 0,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC03",
+      "name": "千影渐退",
+      "condition": "累计击败1000敌",
+      "metric": {
+        "kills": 1000
+      },
+      "reward": {
+        "coins": 80,
+        "ingots": 0,
+        "gems": 0,
+        "essence": 40,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC04",
+      "name": "一卷告成",
+      "condition": "首通ST01",
+      "metric": {
+        "clearStage": "ST01"
+      },
+      "reward": {
+        "coins": 0,
+        "ingots": 4,
+        "gems": 0,
+        "essence": 0,
+        "fruits": 1
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC05",
+      "name": "山路渐明",
+      "condition": "首通ST03",
+      "metric": {
+        "clearStage": "ST03"
+      },
+      "reward": {
+        "coins": 0,
+        "ingots": 0,
+        "gems": 2,
+        "essence": 80,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC06",
+      "name": "归墟留名",
+      "condition": "首通ST06",
+      "metric": {
+        "clearStage": "ST06"
+      },
+      "reward": {
+        "coins": 0,
+        "ingots": 0,
+        "gems": 3,
+        "essence": 0,
+        "fruits": 2
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC07",
+      "name": "三法皆识",
+      "condition": "三推荐打法各完成1次有效挑战",
+      "metric": {
+        "qualifiedRoutes": 3
+      },
+      "reward": {
+        "coins": 80,
+        "ingots": 0,
+        "gems": 0,
+        "essence": 40,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC08",
+      "name": "初次觉醒",
+      "condition": "实际确认一次觉醒",
+      "metric": {
+        "evolutions": 1
+      },
+      "reward": {
+        "coins": 0,
+        "ingots": 0,
+        "gems": 0,
+        "essence": 80,
+        "fruits": 1
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC09",
+      "name": "百炼一招",
+      "condition": "任一技能局外修炼5级",
+      "metric": {
+        "masteryAtLeast": 5
+      },
+      "reward": {
+        "coins": 100,
+        "ingots": 2,
+        "gems": 0,
+        "essence": 0,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC10",
+      "name": "伙伴同行",
+      "condition": "同时解锁坐骑和神兽",
+      "metric": {
+        "ownedCompanions": 2
+      },
+      "reward": {
+        "coins": 80,
+        "ingots": 0,
+        "gems": 0,
+        "essence": 0,
+        "fruits": 2
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC11",
+      "name": "六器成阵",
+      "condition": "一局真实装备六槽",
+      "metric": {
+        "equippedSlots": 6
+      },
+      "reward": {
+        "coins": 0,
+        "ingots": 0,
+        "gems": 1,
+        "essence": 60,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    },
+    {
+      "id": "AC12",
+      "name": "百折再试",
+      "condition": "累计10次有效挑战",
+      "metric": {
+        "qualifiedRuns": 10
+      },
+      "reward": {
+        "coins": 120,
+        "ingots": 4,
+        "gems": 0,
+        "essence": 0,
+        "fruits": 0
+      },
+      "claimRule": "条件首次满足时在下一次合法事务内自动入账一次；幂等ledger，不需要另点成就页领取。",
+      "purpose": "给出一次性学习/探索里程碑，不作为隐藏的大额主线战力",
+      "relatedPages": [
+        "PG11",
+        "PG12",
+        "PG13",
+        "PG14"
+      ]
+    }
+  ],
+  "enemyNames": [
+    {
+      "id": "EN01",
+      "name": "翼蝠妖"
+    },
+    {
+      "id": "EN02",
+      "name": "雾灯魇"
+    },
+    {
+      "id": "EN03",
+      "name": "铁背甲虫"
+    },
+    {
+      "id": "EN04",
+      "name": "镰肢螳妖"
+    },
+    {
+      "id": "EN05",
+      "name": "棘背弩蜥"
+    },
+    {
+      "id": "EN06",
+      "name": "空壳怨像"
+    },
+    {
+      "id": "EL01",
+      "name": "岩甲犀卫"
+    },
+    {
+      "id": "EL02",
+      "name": "三瞳蛛猎"
+    },
+    {
+      "id": "BO01",
+      "name": "裂锋螳王"
+    },
+    {
+      "id": "BO02",
+      "name": "裂地獠兽"
+    },
+    {
+      "id": "BO03",
+      "name": "星核玄龟"
+    },
+    {
+      "id": "BO04",
+      "name": "玄羽鸦皇"
+    }
+  ],
+  "basicSweep": {
+    "id": "BASIC-SWEEP",
+    "name": "基础枪术",
+    "damageHP": 14,
+    "intervalS": 1.6,
+    "durationS": 1.1,
+    "angleDeg": 140,
+    "radiusU": 155,
+    "standingHeightU": 96,
+    "slotCost": 0,
+    "note": "独立基础枪术，不是SK01回锋，不可修炼或觉醒；当前仅侧向动作源可用"
+  },
+  "screens": [
+    "camp",
+    "stages",
+    "prepare",
+    "battle",
+    "choice",
+    "gearReward",
+    "awakening",
+    "pause",
+    "settings",
+    "down",
+    "result",
+    "growth",
+    "gear",
+    "companions",
+    "codex",
+    "achievements",
+    "help"
+  ],
+  "modals": [
+    "confirmDepart",
+    "resourceShort",
+    "locked",
+    "detail",
+    "loadError",
+    "saveError",
+    "saveConflict",
+    "fullSlots",
+    "maxLevel",
+    "adCancelled",
+    "adError",
+    "restartConfirm",
+    "upgradeConfirm"
+  ],
+  "fixturePolicy": "UI只读取Root固定情景样本，所有数字是设计显示，不能扣钱/扣HP/运行规则",
+  "idContract": {
+    "skills": "SK01..SK12",
+    "awakenings": "AW01..AW12",
+    "stage": "ST01..ST06",
+    "routes": "R01..R03",
+    "gearSlots": "GE01..GE06",
+    "rarities": "RA01..RA04",
+    "currencies": "CU01..CU05",
+    "companions": "CO01..CO02",
+    "growth": "UP01..UP16",
+    "achievements": "AC01..AC12"
+  },
+  "canonicalData": "design-data.json",
+  "rulesNotes": {
+    "control": "霜线无装备：普通1.1秒/甲虫0.77秒/精英0.55秒/Boss0.22秒，不连乘",
+    "lastRewards": "前三Boss与两精英共5次装备，最后Boss前整备第6装/第4箱；末Boss后不弹无用构筑",
+    "offer": "目标3个合法项，不足按实际合法数，无效治疗/第7招移除",
+    "enemy": "允许人形反派与妖怪/怪兽；当前名单仍候选，敌我/职业识别按enemyPresentationPolicy",
+    "choiceDisplay": "三张合法卡同屏；短名称+主前后变化，长规则另开详情，返回原选中项；普通1→2，箱最多+2，六槽/两觉醒",
+    "ordinaryRank": "普通强化（含前两组）每次+1重；1→2，不存在启蒙+2例外；箱最多+2"
+  },
+  "awakenings": [
+    {
+      "id": "AW01",
+      "skillId": "SK01",
+      "name": "折返千刃",
+      "relicName": "追影令",
+      "rule": "首次行程结束沿原路折返一次；命中表重置，折返伤害45%，最多再命中原穿透数。"
+    },
+    {
+      "id": "AW02",
+      "skillId": "SK02",
+      "name": "山海震岳",
+      "relicName": "山河玺",
+      "rule": "每轮前三枚滚石的首个有效命中可留灼烧，持续1.5s，每0.5s一次，单次为本次滚石20%；同来源灼烧对同敌不叠。"
+    },
+    {
+      "id": "AW03",
+      "skillId": "SK03",
+      "name": "万象风卷",
+      "relicName": "听风如意",
+      "rule": "每个旋风每1s对区内最近敌引雷一次，额外伤害为当前风卷单次120%，每风卷最多3次。"
+    },
+    {
+      "id": "AW04",
+      "skillId": "SK04",
+      "name": "陨星天锤",
+      "relicName": "陨星珠",
+      "rule": "首个有效环绕命中产生半径64u冲击，伤害为星锤40%，每敌冲击共享冷却1s。"
+    },
+    {
+      "id": "AW05",
+      "skillId": "SK05",
+      "name": "潜龙破地",
+      "relicName": "潜龙骨",
+      "rule": "刺击前0.25s将普通敌牵引12u一次；精英×0.3、Boss不移动。末段刺击额外35%。"
+    },
+    {
+      "id": "AW06",
+      "skillId": "SK06",
+      "name": "幽冥墨爪",
+      "relicName": "玄墨鼎",
+      "rule": "陷阱消退时半径100u爆裂，伤害为墨爪单次90%；同敌最多一次。"
+    },
+    {
+      "id": "AW07",
+      "skillId": "SK07",
+      "name": "无相气环",
+      "relicName": "流云伞",
+      "rule": "每第三次气环脉冲附加一次锯切，当前气环单次60%，不新增环绕物。"
+    },
+    {
+      "id": "AW08",
+      "skillId": "SK08",
+      "name": "万里霜线",
+      "relicName": "凝霜玉",
+      "rule": "首次冻住目标产生半径64u冰爆，为霜线单次80%；冰爆不再次触发冰爆/路线穿透返还。"
+    },
+    {
+      "id": "AW09",
+      "skillId": "SK09",
+      "name": "天羽流星",
+      "relicName": "天羽扇",
+      "rule": "每枚首命中后最多折向一个不同目标，折射伤害55%，不重复回到首目标。"
+    },
+    {
+      "id": "AW10",
+      "skillId": "SK10",
+      "name": "九霄雷引",
+      "relicName": "鸣雷鼓",
+      "rule": "链末最多向两侧各分叉一次，为主链首击35%，每支只命中一个未中目标。"
+    },
+    {
+      "id": "AW11",
+      "skillId": "SK11",
+      "name": "万刺青莲",
+      "relicName": "青莲种",
+      "rule": "青刺到程或命中后半径50u绽爆，为青刺35%；同一轮同敌绽爆共享0.4s冷却。"
+    },
+    {
+      "id": "AW12",
+      "skillId": "SK12",
+      "name": "太极两仪",
+      "relicName": "两仪镜",
+      "rule": "每1.2s内圈80u轻聚普通敌5u并追加两仪单次35%；精英×0.3、Boss不移动。"
+    }
+  ],
+  "gearObjects": [
+    {
+      "id": "GE01-RA01",
+      "slotId": "GE01",
+      "rarityId": "RA01",
+      "name": "素品面具",
+      "primaryStat": "pickupU",
+      "primaryValue": 10,
+      "offenseAffixIfMatching": 0.025,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "pickupU",
+          "value": 8
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE01-RA02",
+      "slotId": "GE01",
+      "rarityId": "RA02",
+      "name": "良品面具",
+      "primaryStat": "pickupU",
+      "primaryValue": 12,
+      "offenseAffixIfMatching": 0.03,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "pickupU",
+          "value": 8
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE01-RA03",
+      "slotId": "GE01",
+      "rarityId": "RA03",
+      "name": "珍品面具",
+      "primaryStat": "pickupU",
+      "primaryValue": 14,
+      "offenseAffixIfMatching": 0.035,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "pickupU",
+          "value": 8
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE01-RA04",
+      "slotId": "GE01",
+      "rarityId": "RA04",
+      "name": "绝品面具",
+      "primaryStat": "pickupU",
+      "primaryValue": 17,
+      "offenseAffixIfMatching": 0.04,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "pickupU",
+          "value": 8
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE02-RA01",
+      "slotId": "GE02",
+      "rarityId": "RA01",
+      "name": "素品项链",
+      "primaryStat": "critChance",
+      "primaryValue": 0.02,
+      "offenseAffixIfMatching": 0.025,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.025,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE02-RA02",
+      "slotId": "GE02",
+      "rarityId": "RA02",
+      "name": "良品项链",
+      "primaryStat": "critChance",
+      "primaryValue": 0.0236,
+      "offenseAffixIfMatching": 0.03,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.03,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE02-RA03",
+      "slotId": "GE02",
+      "rarityId": "RA03",
+      "name": "珍品项链",
+      "primaryStat": "critChance",
+      "primaryValue": 0.028,
+      "offenseAffixIfMatching": 0.035,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.035,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE02-RA04",
+      "slotId": "GE02",
+      "rarityId": "RA04",
+      "name": "绝品项链",
+      "primaryStat": "critChance",
+      "primaryValue": 0.033,
+      "offenseAffixIfMatching": 0.04,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.04,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "skillRangeBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE03-RA01",
+      "slotId": "GE03",
+      "rarityId": "RA01",
+      "name": "素品戒指",
+      "primaryStat": "damageBonus",
+      "primaryValue": 0.04,
+      "offenseAffixIfMatching": 0.025,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.025,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE03-RA02",
+      "slotId": "GE03",
+      "rarityId": "RA02",
+      "name": "良品戒指",
+      "primaryStat": "damageBonus",
+      "primaryValue": 0.0472,
+      "offenseAffixIfMatching": 0.03,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.03,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE03-RA03",
+      "slotId": "GE03",
+      "rarityId": "RA03",
+      "name": "珍品戒指",
+      "primaryStat": "damageBonus",
+      "primaryValue": 0.056,
+      "offenseAffixIfMatching": 0.035,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.035,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE03-RA04",
+      "slotId": "GE03",
+      "rarityId": "RA04",
+      "name": "绝品戒指",
+      "primaryStat": "damageBonus",
+      "primaryValue": 0.066,
+      "offenseAffixIfMatching": 0.04,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.04,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE04-RA01",
+      "slotId": "GE04",
+      "rarityId": "RA01",
+      "name": "素品衣袍",
+      "primaryStat": "maxHp",
+      "primaryValue": 12,
+      "offenseAffixIfMatching": 0.025,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "damageReduction",
+          "value": 0.01
+        },
+        {
+          "stat": "maxHp",
+          "value": 6
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE04-RA02",
+      "slotId": "GE04",
+      "rarityId": "RA02",
+      "name": "良品衣袍",
+      "primaryStat": "maxHp",
+      "primaryValue": 14,
+      "offenseAffixIfMatching": 0.03,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "damageReduction",
+          "value": 0.013
+        },
+        {
+          "stat": "maxHp",
+          "value": 6
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE04-RA03",
+      "slotId": "GE04",
+      "rarityId": "RA03",
+      "name": "珍品衣袍",
+      "primaryStat": "maxHp",
+      "primaryValue": 17,
+      "offenseAffixIfMatching": 0.035,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "damageReduction",
+          "value": 0.016
+        },
+        {
+          "stat": "maxHp",
+          "value": 6
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE04-RA04",
+      "slotId": "GE04",
+      "rarityId": "RA04",
+      "name": "绝品衣袍",
+      "primaryStat": "maxHp",
+      "primaryValue": 20,
+      "offenseAffixIfMatching": 0.04,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "damageReduction",
+          "value": 0.02
+        },
+        {
+          "stat": "maxHp",
+          "value": 6
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE05-RA01",
+      "slotId": "GE05",
+      "rarityId": "RA01",
+      "name": "素品靴",
+      "primaryStat": "speedUPerS",
+      "primaryValue": 6,
+      "offenseAffixIfMatching": 0.025,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "speedUPerS",
+          "value": 2
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE05-RA02",
+      "slotId": "GE05",
+      "rarityId": "RA02",
+      "name": "良品靴",
+      "primaryStat": "speedUPerS",
+      "primaryValue": 7,
+      "offenseAffixIfMatching": 0.03,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "speedUPerS",
+          "value": 3
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE05-RA03",
+      "slotId": "GE05",
+      "rarityId": "RA03",
+      "name": "珍品靴",
+      "primaryStat": "speedUPerS",
+      "primaryValue": 8,
+      "offenseAffixIfMatching": 0.035,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "speedUPerS",
+          "value": 3
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE05-RA04",
+      "slotId": "GE05",
+      "rarityId": "RA04",
+      "name": "绝品靴",
+      "primaryStat": "speedUPerS",
+      "primaryValue": 10,
+      "offenseAffixIfMatching": 0.04,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "speedUPerS",
+          "value": 4
+        },
+        {
+          "stat": "pickupU",
+          "value": 8
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE06-RA01",
+      "slotId": "GE06",
+      "rarityId": "RA01",
+      "name": "素品印",
+      "primaryStat": "damageReduction",
+      "primaryValue": 0.02,
+      "offenseAffixIfMatching": 0.025,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.025,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "freezeDurationBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE06-RA02",
+      "slotId": "GE06",
+      "rarityId": "RA02",
+      "name": "良品印",
+      "primaryStat": "damageReduction",
+      "primaryValue": 0.0236,
+      "offenseAffixIfMatching": 0.03,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.03,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "freezeDurationBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE06-RA03",
+      "slotId": "GE06",
+      "rarityId": "RA03",
+      "name": "珍品印",
+      "primaryStat": "damageReduction",
+      "primaryValue": 0.028,
+      "offenseAffixIfMatching": 0.035,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.035,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "freezeDurationBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    },
+    {
+      "id": "GE06-RA04",
+      "slotId": "GE06",
+      "rarityId": "RA04",
+      "name": "绝品印",
+      "primaryStat": "damageReduction",
+      "primaryValue": 0.033,
+      "offenseAffixIfMatching": 0.04,
+      "designStatus": "24种槽品质组合设计，不等于24件成品资产",
+      "affixAlternatives": [
+        {
+          "stat": "matchingClassDamageBonus",
+          "value": 0.04,
+          "chooseOneClass": [
+            "projectile",
+            "orbit",
+            "zone",
+            "chain"
+          ]
+        },
+        {
+          "stat": "freezeDurationBonus",
+          "value": 0.05
+        }
+      ],
+      "rollDesign": "每件恰好一个词条；两种备选等权，类别增伤的4类等权。候选掉落率，不在原型抽奖。"
+    }
+  ],
+  "limits": {
+    "skillSlots": 6,
+    "awakeningSlots": 2,
+    "gearSlots": 6,
+    "growthMaxLevel": 20
+  },
+  "enemyPresentationPolicy": {
+    "id": "ENEMY-PRESENTATION-REVIEW-2",
+    "authority": "用户2026-11-06更正；本版DESIGN.md/contract.md",
+    "supersedes": "D-009中全体敌方必须非人、禁止人形敌兵/Boss的通用限制；旧源留历史身份",
+    "allowedRepresentations": [
+      "人形反派",
+      "妖怪",
+      "怪兽"
+    ],
+    "humanEnemiesRequired": false,
+    "humanEnemiesForbidden": false,
+    "rosterStatus": "当前6常规/2精英/4Boss为沿用候选，不是用户批准名单；本次不整批换人",
+    "candidateSpeciesScope": "speciesContract.nonHuman描述该条候选身份，不是全体敌方准入条件",
+    "recognitionGate": [
+      "在375/390 CSS px手机宽的实际战斗尺寸，隐藏名字也能分清主角、友方与敌方。",
+      "人形反派由轮廓、服装/盔甲、武器、姿态及攻击预警共同突出身份，不能只是主角换色或改名。",
+      "普通敌、精英和Boss的威胁职责可由攻击器官或武器、前摇/执行/恢复及预警方向读懂。",
+      "妖怪/怪兽可保留非人身体与攻击来源；人形可使用符合身份的衣甲、手持武器和声音。",
+      "敌方强调不得依靠全部高亮/全屏特效，危险外沿、玩家与友方仍可辨。",
+      "可见攻击来源、危险范围/方向/时序与既有规则职责一致，外伸武器或装饰不新增暗伤或碰撞。"
+    ],
+    "verificationStatus": "design-requirements-only-current-phone-comparison-pending-art-root",
+    "preserved": [
+      "稳定内容ID",
+      "六卷79波",
+      "6常规/2精英/4Boss数量",
+      "12招/12觉醒/六槽/两觉醒",
+      "动作曝光/阶段/攻击几何与数值",
+      "已认可局部主角动作"
+    ],
+    "scope": "设计许可与识别判据；不批准具体名单、不授权新动作量产或真实游戏工作"
+  },
+  "choiceDisplayContract": {
+    "id": "CHOICE-COPY-REVIEW-2",
+    "scope": "display-only-authored-fixtures-no-rank-damage-economy-computation",
+    "targetWidthsCssPx": [
+      375,
+      390
+    ],
+    "simultaneousCards": 3,
+    "legality": "有3项合法项时三张同屏；不足按实际数，不补无效项，不横滑/竖滚才能找到第三项",
+    "cardFields": [
+      "icon",
+      "shortName",
+      "kindLabel",
+      "primaryChange",
+      "secondaryChange",
+      "selected"
+    ],
+    "hierarchy": "实体大图标→完整短名称→主要前后变化→至多一行副变化；详情另开",
+    "textBudgets": {
+      "shortNameMaxChineseCharacters": 4,
+      "primaryChangeMaxLines": 2,
+      "secondaryChangeMaxLines": 1,
+      "hideLongDescriptionOnCard": true,
+      "fontShrinkToFitAllowed": false
+    },
+    "kinds": {
+      "new": "新招",
+      "upgrade": "强化",
+      "utility": "通用",
+      "breakthrough": "突破"
+    },
+    "rankSemantics": {
+      "ordinary": "已学招式普通强化1重→2重；每次+1重，上限10重",
+      "chest": "箱最多+2重，上限12重；例如10重→12重",
+      "modification": "重数与改造点分列；不得将伤害点+1写成实际伤害只+1",
+      "new": "未学→1重，占用一个空技能槽",
+      "utility": "只显示实际通用变化，不写成招式重数"
+    },
+    "detailsFields": [
+      "完整招名",
+      "具体机制与范围含义",
+      "本次重数和改造点前后",
+      "合法性与上限",
+      "槽位/觉醒资格",
+      "相关反制"
+    ],
+    "selection": {
+      "select": "只选中，不提交；描边、勾选与文字共同标识",
+      "detail": "打开详情保留offerId、cards、selectedId和已应用次数",
+      "closeDetail": "回原三卡、原选择，不重抽/自动提交",
+      "confirmLabelTemplate": "确认·{完整招名}",
+      "noSelectionLabel": "先选一项",
+      "apply": "具名确认仅推进一次固定表现情景",
+      "pause": "暂停/恢复保留同一offer与selected，恢复后仍需明确确认"
+    },
+    "refresh": {
+      "label": "换一组",
+      "countTemplate": "剩余{remaining}次",
+      "semantics": "换组前展示2→1，不增加offer编号；无次数时说明已用完"
+    },
+    "counts": {
+      "skillSlots": 6,
+      "awakeningSlots": 2
+    },
+    "referenceInterpretation": "图12只继承三卡比较/材料与构图；1→3、伤害+1点、五槽及示例资源数不构成产品规则",
+    "visualAcceptance": "长规则进入详情后，375/390宽三卡及具名主按钮仍需C/Root实际同尺度核对；A未做视觉通过判定"
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "version": "final-design-public-render.20261106.1",
+  "scope": "presentation only; not full asset approval or game implementation",
+  "approvedHeroVersion": "hero-painted-motion.20261106-review.1",
+  "renderPolicy": {
+    "wholeFrameOnly": true,
+    "crossFade": false,
+    "opticalFlow": false,
+    "rotateWholeHero": false,
+    "mirrorExplicit": true,
+    "referenceHeightU": 96
+  },
+  "world": {
+    "file": "assets/map-source.png",
+    "width": 2600,
+    "height": 3600,
+    "drawPolicy": "uniform cover, no tile repetition; original dimensions unknown"
+  },
+  "clips": {
+    "hero-run": {
+      "label": "跑步",
+      "loop": true,
+      "canvas": [
+        627,
+        314
+      ],
+      "anchor": [
+        300,
+        298
+      ],
+      "referenceActorHeightPx": 261,
+      "durationMs": 800,
+      "frames": [
+        {
+          "file": "source/hero-approved/frames/run-final/01.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/02.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/03.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/04.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/05.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/06.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/07.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        },
+        {
+          "file": "source/hero-approved/frames/run-final/08.png",
+          "canvas": [
+            627,
+            314
+          ],
+          "durationMs": 100
+        }
+      ]
+    },
+    "hero-idle": {
+      "label": "横扫01待机",
+      "loop": false,
+      "canvas": [
+        512,
+        256
+      ],
+      "anchor": [
+        220,
+        247
+      ],
+      "referenceActorHeightPx": 228,
+      "frames": [
+        {
+          "file": "source/hero-approved/frames/sweep/01.png",
+          "durationMs": 1000,
+          "phase": "01-ready"
+        }
+      ]
+    },
+    "hero-sweep": {
+      "label": "横扫",
+      "loop": true,
+      "canvas": [
+        512,
+        256
+      ],
+      "anchor": [
+        220,
+        247
+      ],
+      "referenceActorHeightPx": 228,
+      "durationMs": 1100,
+      "frames": [
+        {
+          "file": "source/hero-approved/frames/sweep/01.png",
+          "anchor": [
+            220.0,
+            247
+          ],
+          "durationMs": 200.0,
+          "phase": "01-ready",
+          "displaySlot": 1,
+          "exposureCount": 6
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/02.png",
+          "anchor": [
+            226.0,
+            247
+          ],
+          "durationMs": 100.0,
+          "phase": "02-gather",
+          "displaySlot": 2,
+          "exposureCount": 3
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/04.png",
+          "anchor": [
+            216.0,
+            245
+          ],
+          "durationMs": 100.0,
+          "phase": "04-windup",
+          "displaySlot": 3,
+          "exposureCount": 3
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/05.png",
+          "anchor": [
+            212.5,
+            245
+          ],
+          "durationMs": 33.333333333333336,
+          "phase": "05-hips-lead",
+          "displaySlot": 4,
+          "exposureCount": 1
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/06.png",
+          "anchor": [
+            208.5,
+            240
+          ],
+          "durationMs": 33.333333333333336,
+          "phase": "06-fast-entry",
+          "displaySlot": 5,
+          "exposureCount": 1
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/07.png",
+          "anchor": [
+            184.0,
+            238
+          ],
+          "durationMs": 33.333333333333336,
+          "phase": "07-through",
+          "displaySlot": 6,
+          "exposureCount": 1
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/08.png",
+          "anchor": [
+            205.0,
+            238
+          ],
+          "durationMs": 66.66666666666667,
+          "phase": "08-fast-exit",
+          "displaySlot": 7,
+          "exposureCount": 2
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/09.png",
+          "anchor": [
+            214.5,
+            231
+          ],
+          "durationMs": 100.0,
+          "phase": "09-follow",
+          "displaySlot": 8,
+          "exposureCount": 3
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/10.png",
+          "anchor": [
+            209.5,
+            238
+          ],
+          "durationMs": 133.33333333333334,
+          "phase": "10-brake",
+          "displaySlot": 9,
+          "exposureCount": 4
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/11.png",
+          "anchor": [
+            213.0,
+            240
+          ],
+          "durationMs": 66.66666666666667,
+          "phase": "11-recover",
+          "displaySlot": 10,
+          "exposureCount": 2
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/02.png",
+          "anchor": [
+            226.0,
+            247
+          ],
+          "durationMs": 66.66666666666667,
+          "phase": "02-gather",
+          "displaySlot": 11,
+          "exposureCount": 2
+        },
+        {
+          "file": "source/hero-approved/frames/sweep/01.png",
+          "anchor": [
+            220.0,
+            247
+          ],
+          "durationMs": 166.66666666666666,
+          "phase": "01-ready",
+          "displaySlot": 12,
+          "exposureCount": 5
+        }
+      ]
+    },
+    "hero-fall": {
+      "loop": false,
+      "anchor": [
+        317,
+        245
+      ],
+      "referenceActorHeightPx": 267,
+      "durationMs": 860,
+      "frames": [
+        {
+          "file": "frames/hero-registered/005.png",
+          "canvas": [
+            768,
+            280
+          ],
+          "anchor": [
+            317,
+            245
+          ],
+          "referenceActorHeightPx": 267,
+          "durationMs": 110
+        },
+        {
+          "file": "frames/hero-registered/007.png",
+          "canvas": [
+            768,
+            280
+          ],
+          "anchor": [
+            317,
+            207
+          ],
+          "referenceActorHeightPx": 267,
+          "durationMs": 250
+        },
+        {
+          "file": "frames/hero-registered/008.png",
+          "canvas": [
+            768,
+            280
+          ],
+          "anchor": [
+            317,
+            205
+          ],
+          "referenceActorHeightPx": 267,
+          "durationMs": 500
+        }
+      ]
+    }
+  },
+  "legacy": {
+    "EN03-move-01": {
+      "file": "assets/legacy/EN03-move-01.png",
+      "canvas": [
+        130,
+        131
+      ],
+      "anchor": [
+        62.095238095238095,
+        99.15671641791045
+      ],
+      "referenceActorHeightPx": 127.8955223880597
+    },
+    "EN05-ready": {
+      "file": "assets/legacy/EN05-ready.png",
+      "canvas": [
+        168,
+        157
+      ],
+      "anchor": [
+        82.67403314917127,
+        118.95548961424332
+      ],
+      "referenceActorHeightPx": 160.053412462908
+    },
+    "PICK-XP01": {
+      "file": "assets/legacy/PICK-XP01.png",
+      "canvas": [
+        55,
+        99
+      ],
+      "anchor": [
+        26.634969325153374,
+        76.91482649842271
+      ],
+      "referenceActorHeightPx": 99
+    },
+    "SK01-world-body": {
+      "file": "assets/legacy/SK01-world-body.png",
+      "canvas": [
+        264,
+        261
+      ],
+      "anchor": [
+        183.64912280701753,
+        140.92245557350566
+      ],
+      "referenceActorHeightPx": 264
+    },
+    "SK08-world-body": {
+      "file": "assets/legacy/SK08-world-body.png",
+      "canvas": [
+        264,
+        255
+      ],
+      "anchor": [
+        138.95207667731628,
+        131.58940397350995
+      ],
+      "referenceActorHeightPx": 264
+    }
+  },
+  "audio": {
+    "knife-cast": {
+      "file": "audio/knife-cast.wav",
+      "gain": 0.6,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "hit": {
+      "file": "audio/hit.wav",
+      "gain": 0.7,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "armor-guard": {
+      "file": "audio/armor-guard.wav",
+      "gain": 0.7,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "hero-hurt": {
+      "file": "audio/hero-hurt.wav",
+      "gain": 0.95,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "monster-death": {
+      "file": "audio/monster-death.wav",
+      "gain": 0.85,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "bone-warning": {
+      "file": "audio/bone-warning.wav",
+      "gain": 1.0,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "xp-pickup": {
+      "file": "audio/xp-pickup.wav",
+      "gain": 0.42,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "level-up": {
+      "file": "audio/level-up.wav",
+      "gain": 0.78,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "cloth-menu": {
+      "file": "audio/cloth-menu.wav",
+      "gain": 0.6,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "segment-fail": {
+      "file": "audio/segment-fail.wav",
+      "gain": 0.86,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "mountain-air-loop": {
+      "file": "audio/mountain-air-loop.wav",
+      "gain": 1,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "footstep": {
+      "file": "audio/footstep.wav",
+      "gain": 0.28,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    },
+    "thorn-cast": {
+      "file": "audio/thorn-cast.wav",
+      "gain": 0.5,
+      "license": "project original procedural synthesis; reused design sublibrary; not final mixed sound design"
+    }
+  }
+}

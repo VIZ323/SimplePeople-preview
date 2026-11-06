@@ -1,0 +1,68 @@
+{
+  "version": "final-design-ui-coverage.20261106-review.2",
+  "status": "UI_HANDOFF_STOPPED_WRITING_AWAIT_ROOT_WHOLE_JOURNEY_REVIEW",
+  "screenCount": 17,
+  "modalCount": 13,
+  "actionCount": 39,
+  "screens": [
+    "camp",
+    "stages",
+    "prepare",
+    "battle",
+    "choice",
+    "gearReward",
+    "awakening",
+    "pause",
+    "settings",
+    "down",
+    "result",
+    "growth",
+    "gear",
+    "companions",
+    "codex",
+    "achievements",
+    "help"
+  ],
+  "modals": [
+    "confirmDepart",
+    "upgradeConfirm",
+    "resourceShort",
+    "locked",
+    "detail",
+    "loadError",
+    "saveError",
+    "saveConflict",
+    "fullSlots",
+    "maxLevel",
+    "adCancelled",
+    "adError",
+    "restartConfirm"
+  ],
+  "actualTemplates": "screens.js/theme.css; gallery shares identical render function",
+  "coreGate": "Root internal three-core gate only; no whole-package/user approval",
+  "boundedEvidence": {
+    "newStateFirstBatch": "review/expansion-check.json (34 fixed states)",
+    "affectedConfirmation": "review/expansion-confirmation.json (15 affected states)",
+    "observedLongModalFailure": "RESULT-SOURCES first confirmation exposed footer beyond667; corrected flex sizing; review/long-modal-confirmation.json verifies footer bottom633 of667 and scroller619/475",
+    "errors": [],
+    "failedResources": [],
+    "overflowCount": 0,
+    "smallButtonCount": 0,
+    "unobstructedHUD": "../review/core-reference-gate/battle-375x667.png; existing Root capture is unobstructed, choice-shaded images are not HUD evidence"
+  },
+  "lastNarrowDeltasAfterConfirmation": [
+    "awakening fifth step now pending arrow, selected is not applied",
+    "settings 34px spacing reserve for short-screen second switch",
+    "CO02 detail uses transparent cutout instead of portrait",
+    "growth per-level label clarified; Root literal upgradePreview receipt consumed",
+    "modal flex correction verified only in the observed long-result-source case"
+  ],
+  "notClaimed": [
+    "真实手机/真机14px认证",
+    "完整对比度/读屏/手柄/系统大字验证",
+    "真实经济/保存/广告/碰撞AI/升级计算",
+    "all 16 growth transitions; only Root supplied UP01 literal after receipt",
+    "完整人物方向/新角色或动画批准",
+    "用户完整命名版本批准"
+  ]
+}

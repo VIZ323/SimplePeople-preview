@@ -1,0 +1,196 @@
+{
+  "version": "final-design-ui-actions.20261106-review.2-retained.1",
+  "eventOwner": "../experience/app.js (Root)",
+  "binding": "event.target.closest(\"[data-action]\"); read dataset.action, dataset.id, dataset.tab; disabled native buttons stay inactive",
+  "actions": [
+    {
+      "name": "depart",
+      "meaning": "营地主出战，打开出发确认"
+    },
+    {
+      "name": "stages",
+      "meaning": "选卷页面/出发确认前往择卷"
+    },
+    {
+      "name": "chooseStage",
+      "meaning": "ST01–ST06，根保留锁定卷上下文"
+    },
+    {
+      "name": "prepare",
+      "meaning": "所选ST的整备"
+    },
+    {
+      "name": "chooseRoute",
+      "meaning": "RT稳定ID，替换当前配招选择"
+    },
+    {
+      "name": "start",
+      "meaning": "启动青溪代表表现旅程"
+    },
+    {
+      "name": "select",
+      "meaning": "卡/觉醒/器物取舍ID；仅选择"
+    },
+    {
+      "name": "confirmChoice",
+      "meaning": "确认当前具名选择，由根切固定后样本"
+    },
+    {
+      "name": "detail",
+      "meaning": "稳定内容ID或utility ID；打开详情"
+    },
+    {
+      "name": "close",
+      "meaning": "关闭顶层modal并恢复所选上下文"
+    },
+    {
+      "name": "back",
+      "meaning": "根返回栈"
+    },
+    {
+      "name": "pause",
+      "meaning": "保留choice/playing上下文"
+    },
+    {
+      "name": "resume",
+      "meaning": "显式恢复刚才上下文"
+    },
+    {
+      "name": "settings",
+      "meaning": "声音与画面"
+    },
+    {
+      "name": "toggleMute",
+      "meaning": "由根切静音标志与声音表现"
+    },
+    {
+      "name": "toggleReduced",
+      "meaning": "由根切减少动态标志"
+    },
+    {
+      "name": "restart",
+      "meaning": "打开restartConfirm"
+    },
+    {
+      "name": "confirmRestart",
+      "meaning": "根重置本次表现旅程"
+    },
+    {
+      "name": "revive",
+      "meaning": "free；本版只一次免费复起"
+    },
+    {
+      "name": "declineRevive",
+      "meaning": "进入独立失败结算固定情景"
+    },
+    {
+      "name": "settle",
+      "meaning": "结束行路结算"
+    },
+    {
+      "name": "returnCamp",
+      "meaning": "根应用固定归营后样本"
+    },
+    {
+      "name": "growth",
+      "meaning": "营地修行"
+    },
+    {
+      "name": "chooseGrowth",
+      "meaning": "UP稳定ID"
+    },
+    {
+      "name": "previewUpgrade",
+      "meaning": "UP/CO稳定ID，打开upgradeConfirm"
+    },
+    {
+      "name": "confirmPreview",
+      "meaning": "UP/CO稳定ID，切固定培养后样本"
+    },
+    {
+      "name": "gear",
+      "meaning": "器物；data-tab=current/last/codex"
+    },
+    {
+      "name": "chooseGear",
+      "meaning": "GE稳定ID"
+    },
+    {
+      "name": "companions",
+      "meaning": "同行伙伴"
+    },
+    {
+      "name": "chooseCompanion",
+      "meaning": "CO稳定ID"
+    },
+    {
+      "name": "codex",
+      "meaning": "图鉴；data-tab=skills/enemies"
+    },
+    {
+      "name": "chooseEntry",
+      "meaning": "SK/EN/EL/BO稳定ID"
+    },
+    {
+      "name": "achievements",
+      "meaning": "功绩，已达成自动入账说明"
+    },
+    {
+      "name": "claimPreview",
+      "meaning": "ad；可选加领情景，非逐条功绩领取"
+    },
+    {
+      "name": "help",
+      "meaning": "须知/恢复说明"
+    },
+    {
+      "name": "retryLoad",
+      "meaning": "原界面重试载入设计情景"
+    },
+    {
+      "name": "retrySave",
+      "meaning": "原结算重试记录设计情景"
+    },
+    {
+      "name": "cancel",
+      "meaning": "保存失败保留同一候选返回；冲突按Root只读返回，其他回原层"
+    },
+    {
+      "name": "refreshChoice",
+      "meaning": "整局免费换组设计样本；fixture.refreshRemaining 2→1→0，不换offer编号；Root唯一提交者"
+    },
+    {
+      "name": "previewOperation",
+      "meaning": "OP稳定ID；可附data-subject当前CO、data-variant=declineBoth；Root解析A literal并打开现有upgradeConfirm"
+    },
+    {
+      "name": "confirmOperation",
+      "meaning": "提交当前同operation/subject/variant的预写after一次；UI不计算"
+    },
+    {
+      "name": "toggleCompanion",
+      "meaning": "CO稳定ID；Root解析同行/暂歇literal，仍走共用确认层"
+    }
+  ],
+  "reservedButNotRendered": [
+    "nextBeat",
+    "collect",
+    "equipPreview"
+  ],
+  "reviewControls": "nextBeat/collect are review-shell actions, absent from product HUD",
+  "newModalId": "upgradeConfirm (Root explicit request)",
+  "modalContext": "state.modal overlays state.screen; inert underlay; Root owns focus restoration, return stack and scroll positions",
+  "phase": "full-template-handoff",
+  "newDetailIds": {
+    "RESULT-SOURCES": "Read fixture.result.base/firstExtra/achievementExtra/total only; no additional reward claim"
+  },
+  "tabEvents": "growth training/resources；gear current/last/codex；codex skills/enemies",
+  "gearStepEvents": {
+    "select candidateId": "只选择，不消费",
+    "confirmChoice at pick": "进入compare",
+    "select back-to-candidates": "回原两件并保留选中",
+    "confirmChoice at compare": "Root按comparison.after提交并显示gearReceipt",
+    "previewOperation OP-GEAR-OPPORTUNITY variant declineBoth": "Root完全匹配A literal HP/机会项，不执行通用治疗",
+    "confirmChoice with gearReceipt": "明确继续下一段，不再次提交"
+  }
+}
