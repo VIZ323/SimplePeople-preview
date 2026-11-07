@@ -1,0 +1,18 @@
+{
+  "releaseVersion": "inkblade30.20261107-review.2",
+  "publicURL": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.2/",
+  "sourceSHA": "fc6382a672a9bcfb1a457c5e2e519457a66c6a9a4051511b86ea4039f3706118",
+  "artVersion": "inkblade30-art.20261107.19",
+  "sourceGitCommit": "c55ded774f71a9c6e713a47ac20cf7d6965c2699",
+  "sourceTreeVerifiedAgainstCommit": true,
+  "sourceProjectFileCount": 171,
+  "resourceEntryCount": 141,
+  "engineVersion": "3.8.8",
+  "debug": false,
+  "platform": "web-mobile",
+  "resourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.2/",
+  "bytedanceResourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.2/bytedance-resources/",
+  "wechatResourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.2/wechat-resources/",
+  "bytedanceAppIDAvailable": false,
+  "wechatAppIDAvailable": false
+}
