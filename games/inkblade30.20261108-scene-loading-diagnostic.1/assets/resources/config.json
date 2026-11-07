@@ -1,0 +1,27 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "resources",
+    "deps": [],
+    "uuids": [
+        "c4a7d5bc-029f-41b8-802b-0af40502719c"
+    ],
+    "paths": {
+        "c4a7d5bc-029f-41b8-802b-0af40502719c": [
+            "inkblade/art",
+            "cc.JsonAsset",
+            1
+        ]
+    },
+    "scenes": {},
+    "packs": {},
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {},
+    "hasPreloadScript": true,
+    "dependencyRelationships": {}
+}

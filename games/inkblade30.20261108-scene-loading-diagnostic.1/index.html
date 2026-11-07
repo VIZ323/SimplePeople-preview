@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Cocos Creator | Inkblade30</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+<style>
+#inkblade-startup{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;padding:24px 20px;padding-top:calc(24px + env(safe-area-inset-top));padding-bottom:calc(24px + env(safe-area-inset-bottom));box-sizing:border-box;background:#071b1a;color:#f1e5c9;font-family:system-ui,-apple-system,sans-serif;text-align:center;touch-action:manipulation}
+#inkblade-startup[hidden]{display:none!important}#inkblade-startup>section{width:min(320px,100%)}#inkblade-startup h1{margin:0 0 25px;color:#f3dfae;font-size:30px;font-weight:500;line-height:1.45}#inkblade-startup p{margin:12px 0;font-size:18px;line-height:1.65}#inkblade-startup .load-note{font-size:16px}#inkblade-load-track{height:6px;border:1px solid #b89a5e;padding:1px;box-sizing:border-box;margin:25px 20px}#inkblade-load-fill{width:0;height:100%;background:#d7bc7c}#inkblade-startup button{margin:19px auto 0;min-width:160px;min-height:49px;padding:9px 20px;color:#f1e5c9;background:#173e41;border:1px solid #d7bc7c;font:inherit;font-size:19px;line-height:1.4}#inkblade-startup button:focus-visible{outline:2px solid #f3dfae;outline-offset:4px}#inkblade-startup button[hidden]{display:none}
+</style>
+</head>
+<body>
+<div id="inkblade-startup" role="status" aria-live="polite"><section>
+<h1 id="inkblade-load-title">展开山河</h1><p id="inkblade-load-message">正在唤起画面</p>
+<div id="inkblade-load-track" aria-hidden="true"><div id="inkblade-load-fill"></div></div>
+<p class="load-note" id="inkblade-load-count"></p><p class="load-note" id="inkblade-load-detail"></p>
+<button id="inkblade-load-reload" hidden type="button">重新载入</button>
+</section></div>
+<script>
+(function(){
+ var surface=document.getElementById('inkblade-startup'),title=document.getElementById('inkblade-load-title'),message=document.getElementById('inkblade-load-message'),count=document.getElementById('inkblade-load-count'),detail=document.getElementById('inkblade-load-detail'),track=document.getElementById('inkblade-load-track'),fill=document.getElementById('inkblade-load-fill'),reload=document.getElementById('inkblade-load-reload');
+ var state={phase:'engine',status:'loading',completed:0,total:null,nativeReady:false,startedAt:Date.now(),lastProgressAt:Date.now()},times=[{phase:'engine',at:Date.now()}];
+ function draw(){
+  surface.hidden=!!state.nativeReady;if(surface.hidden)return;
+  var failed=state.status==='failed';title.textContent=failed?'图卷未能展开':'展开山河';
+  message.textContent=failed?'请重新载入后，再选择要走的山道。':state.status==='slow'?'仍在载入，请稍候':state.phase==='manifest'?'正在核对图卷':state.phase==='bundle'?'正在展开图卷':state.phase==='critical'?'正在铺开营地':state.phase==='remaining'?'正在备齐行装':state.phase==='first-frame'?'正在铺开画面':'正在唤起画面';
+  count.textContent=!failed&&typeof state.total==='number'?'已备妥 '+state.completed+' / '+state.total+' 项':'';detail.textContent=failed?'已有行程不会被清除。':'';track.hidden=failed;fill.style.width=state.total>0?Math.max(0,Math.min(100,state.completed/state.total*100))+'%':'0';reload.hidden=!failed&&state.status!=='slow';
+ }
+ var timer=setInterval(function(){if(state.nativeReady){clearInterval(timer);return;}if(state.status==='loading'&&Date.now()-state.lastProgressAt>=15000){state.status='slow';draw();}},1000);
+ function bootstrapError(){if(!state.nativeReady)window.__inkbladeStartup.fail();}
+ window.__inkbladeStartup={update:function(next){if(next.phase!==state.phase)times.push({phase:next.phase,at:Date.now()});if(next.completed!==state.completed||next.phase!==state.phase)state.lastProgressAt=Date.now();for(var k in next)if(k!=='phaseTimes'&&k!=='failedKeys')state[k]=next[k];if(state.nativeReady){clearInterval(timer);window.removeEventListener('error',bootstrapError,true);window.removeEventListener('unhandledrejection',bootstrapError);}draw();},fail:function(){state.status='failed';state.nativeReady=false;draw();},snapshot:function(){return {startedAt:state.startedAt,phase:state.phase,status:state.status,phaseTimes:times.map(function(t){return {phase:t.phase,at:t.at};})};}};
+ reload.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();window.location.reload();});
+ surface.addEventListener('keydown',function(e){if(e.repeat&&(e.key==='Enter'||e.key===' '))e.preventDefault();});
+ window.addEventListener('error',bootstrapError,true);
+ window.addEventListener('unhandledrejection',bootstrapError);draw();
+})();
+</script>
+<script>
+// Opt-in resource diagnostics. This has no model, storage, request or input action API.
+(function(){
+ if(new URLSearchParams(window.location.search).get('startupAudit')!=='1'||window.__inkbladeStartupAudit)return;
+ var schema='inkblade30-startup-audit.20261107.v1',epoch=Date.now(),origin=performance.timeOrigin||epoch-performance.now();
+ var documentId='doc-'+Math.round(origin)+'-'+epoch,ordinal=0,active=null,retired=[],timer=null,suspended=false;
+ var docVisible=!document.hidden;
+ function now(){return Date.now();}
+ function mono(){return performance.now();}
+ function settle(load){var t=mono();if(!load.closed&&docVisible&&load.appVisible)load.visibleMs+=Math.max(0,t-load.clockAt);load.clockAt=t;}
+ function live(id){if(active&&active.id===id)return active;return retired.find(function(load){return load.id===id;})||null;}
+ function record(load,key,kind){if(!load.records[key])load.records[key]={key:key,kind:kind||'unknown',sha256:null,stage:'unrequested',requestedAtEpochMs:null,requestIssuedAtEpochMs:null,callbackAtEpochMs:null,callbackOutcome:null,validatedAtEpochMs:null,validationStage:null,countedAtEpochMs:null,errorAtEpochMs:null,errorCode:null,requestedVisibleMs:null};return load.records[key];}
+ function note(load,key,stage,detail){load.events.push({seq:++load.seq,atEpochMs:now(),key:key,stage:stage,detail:detail||null,stale:load!==active||load.closed});if(load.events.length>1024)load.events.shift();}
+ function publicRecord(load,r){var phaseDone=r.kind==='phase'&&r.validatedAtEpochMs!==null,end=r.countedAtEpochMs||r.errorAtEpochMs||(phaseDone?r.validatedAtEpochMs:null)||load.closedAtEpochMs||now(),pending=r.requestedAtEpochMs!==null&&r.countedAtEpochMs===null&&r.errorAtEpochMs===null&&!phaseDone;return {key:r.key,kind:r.kind,sha256:r.sha256,stage:r.stage,requestedAtEpochMs:r.requestedAtEpochMs,requestIssuedAtEpochMs:r.requestIssuedAtEpochMs,callbackAtEpochMs:r.callbackAtEpochMs,callbackOutcome:r.callbackOutcome,validatedAtEpochMs:r.validatedAtEpochMs,validationStage:r.validationStage,countedAtEpochMs:r.countedAtEpochMs,errorAtEpochMs:r.errorAtEpochMs,errorCode:r.errorCode,pending:pending,pendingAgeWallMs:r.requestedAtEpochMs===null?0:Math.max(0,end-r.requestedAtEpochMs),pendingAgeVisibleMs:r.requestedVisibleMs===null?0:Math.max(0,(r.terminalVisibleMs===undefined?load.visibleMs:r.terminalVisibleMs)-r.requestedVisibleMs),sameByteKeys:r.sha256?load.catalog.filter(function(key){return key!==r.key&&load.records[key].sha256===r.sha256;}):[]};}
+ function loadSnapshot(load){
+  settle(load);var all=Object.keys(load.records).map(function(key){return publicRecord(load,load.records[key]);}),batch=null;
+  if(load.batch){var expected=load.batch.expectedKeys.slice(),requested=[],complete=[],errors=[],pending=[],unrequested=[];
+   expected.forEach(function(key){var r=load.records[key];if(r.requestedAtEpochMs===null){unrequested.push(key);return;}requested.push(key);if(r.countedAtEpochMs!==null)complete.push(key);else if(r.errorAtEpochMs!==null)errors.push(key);else pending.push(key);});
+   batch={id:load.batch.id,kind:load.batch.kind,total:expected.length,expectedKeys:expected,requestedKeys:requested,completedKeys:complete,errorKeys:errors,pendingKeys:pending,unrequestedKeys:unrequested,counts:{total:expected.length,requested:requested.length,complete:complete.length,error:errors.length,pending:pending.length,unrequested:unrequested.length}};
+  }
+  return {id:load.id,artVersion:load.artVersion,phase:load.phase,status:load.status,appVisible:load.appVisible,closed:load.closed,startedAtEpochMs:load.startedAtEpochMs,closedAtEpochMs:load.closedAtEpochMs,nativeCount:{completed:load.completed,total:load.total},firstVisible:load.firstVisible,interactiveCritical:load.interactiveCritical,remainingReady:load.remainingReady,currentBatch:batch,catalogUnrequestedKeys:load.catalog.filter(function(key){return load.records[key].requestedAtEpochMs===null;}),lastCompletedKey:load.lastCompletedKey,records:all.filter(function(r){return r.kind!=='phase';}),phaseWaits:all.filter(function(r){return r.kind==='phase';}),wallAgeMs:Math.max(0,(load.closedAtEpochMs||now())-load.startedAtEpochMs),visibleAgeMs:load.visibleMs,cocosHeartbeat:{count:load.heartbeats,lastAtEpochMs:load.lastHeartbeatAtEpochMs,ageWallMs:load.lastHeartbeatAtEpochMs===null?null:Math.max(0,now()-load.lastHeartbeatAtEpochMs)},lateEventCount:load.lateEventCount,events:load.events.map(function(e){return Object.assign({},e);}),failures:load.failures.slice()};
+ }
+ function snapshot(){return {schema:schema,document:{id:documentId,startedAtEpochMs:epoch,timeOriginEpochMs:origin,visibilityState:document.visibilityState,hidden:document.hidden},activeLoadId:active?active.id:null,active:active?loadSnapshot(active):null,retiredLoads:retired.map(loadSnapshot),sourceBinding:{mode:'external-build-manifest',sourceSHA:null},semantics:{requested:'logical GameView asset request; not HTTP start',callback:'actual Cocos completion callback; not decode/upload evidence',validated:'registered frame created or Font assigned; not glyph evidence',counted:'actual native progress increment',age:'wall and document/app-visible elapsed; not a timeout',unobserved:['HTTP start/end','image decode','GPU upload','font download/glyph readiness']}};}
+ function close(load){if(load.closed)return;settle(load);load.closed=true;load.closedAtEpochMs=now();note(load,null,'load-closed');}
+ var sink={
+  openLoad:function(){if(active){close(active);retired.push(active);if(retired.length>4)retired.shift();}active={id:documentId+'/load-'+(++ordinal),startedAtEpochMs:now(),closedAtEpochMs:null,closed:false,clockAt:mono(),visibleMs:0,appVisible:true,artVersion:null,phase:'engine',status:'loading',completed:0,total:null,firstVisible:false,interactiveCritical:false,remainingReady:false,catalog:[],records:Object.create(null),batch:null,batchOrdinal:0,lastCompletedKey:null,events:[],seq:0,lateEventCount:0,failures:[],heartbeats:0,lastHeartbeatAtEpochMs:null};note(active,null,'load-opened');startTimer();draw();return active.id;},
+  catalog:function(id,art,defs){var load=live(id);if(!load)return;if(load!==active||load.closed){load.lateEventCount++;note(load,null,'stale-catalog');return;}load.artVersion=art;defs.forEach(function(def){var r=record(load,def.key,def.kind);r.kind=def.kind;r.sha256=def.sha256;if(!load.catalog.includes(def.key))load.catalog.push(def.key);});note(load,null,'catalog-registered',String(defs.length));},
+  batch:function(id,kind,keys){var load=live(id);if(!load)return;if(load!==active||load.closed){load.lateEventCount++;note(load,null,'stale-batch');return;}load.batch={id:id+'/batch-'+(++load.batchOrdinal),kind:kind,expectedKeys:keys.slice()};keys.forEach(function(key){record(load,key);});note(load,null,'batch-opened',kind);draw();},
+  event:function(id,key,stage,detail){var load=live(id);if(!load)return;settle(load);note(load,key,stage,detail);if(load!==active||load.closed){load.lateEventCount++;return;}var r=record(load,key,detail),t=now();
+   if(stage==='logical-requested'){if(r.requestedAtEpochMs===null){r.requestedAtEpochMs=t;r.requestedVisibleMs=load.visibleMs;}if(r.kind==='unknown')r.kind=detail||'unknown';if(r.stage==='unrequested')r.stage=stage;}
+   else if(stage==='bundle-load-called'){r.requestIssuedAtEpochMs=t;r.stage=stage;}
+   else if(stage==='asset-callback-success'||stage==='asset-callback-error'){r.callbackAtEpochMs=t;r.callbackOutcome=stage==='asset-callback-success'?'success':'error';r.stage=stage;if(r.callbackOutcome==='error'){r.errorAtEpochMs=t;r.errorCode='cocos-asset-callback-error';r.terminalVisibleMs=load.visibleMs;}}
+   else if(stage==='validated'){r.validatedAtEpochMs=t;r.validationStage=detail||null;r.stage=stage;if(r.kind==='phase')r.terminalVisibleMs=load.visibleMs;}
+   else if(stage==='counted'){r.countedAtEpochMs=t;r.stage=stage;r.terminalVisibleMs=load.visibleMs;load.lastCompletedKey=key;}
+   else if(stage==='prepare-error'){r.errorAtEpochMs=t;r.errorCode=r.errorCode||'asset-prepare-error';r.stage=stage;r.terminalVisibleMs=load.visibleMs;}
+  },
+  state:function(id,state){var load=live(id);if(!load)return;if(load!==active||load.closed){load.lateEventCount++;note(load,null,'stale-state');return;}settle(load);if(load.phase!==state.phase||load.status!==state.status)note(load,null,'native-state',state.phase+':'+state.status);load.phase=state.phase;load.status=state.status;load.completed=state.completed;load.total=state.total;load.appVisible=state.visible;load.firstVisible=state.firstVisible;load.interactiveCritical=state.interactiveCritical;load.remainingReady=state.remainingReady;load.failures=(state.failedKeys||[]).filter(function(key){return key==='initialize'||key==='remaining'||!!load.records[key];});draw();},
+  heartbeat:function(id){var load=live(id);if(!load||load!==active||load.closed)return;load.heartbeats++;load.lastHeartbeatAtEpochMs=now();},
+  closeLoad:function(id){var load=live(id);if(!load)return;close(load);if(load===active&&timer!==null){clearInterval(timer);timer=null;}draw();},
+  snapshot:snapshot
+ };
+ var style=document.createElement('style');style.textContent='#inkblade-startup-audit{position:fixed;z-index:2147483500;top:calc(8px + env(safe-area-inset-top));left:8px;right:8px;max-height:calc(50vh + 60px);overflow:auto;box-sizing:border-box;padding:10px 12px;background:#071b1a;color:#f1e5c9;border:1px solid #b89a5e;font:14px/1.4 system-ui,-apple-system,sans-serif;text-align:left;overflow-wrap:anywhere;touch-action:pan-y;overscroll-behavior:contain;font-variant-numeric:tabular-nums}#inkblade-startup-audit-summary{white-space:pre-wrap;margin:0}#inkblade-startup-audit-pending:empty{display:none}#inkblade-startup-audit-pending{margin-top:8px}#inkblade-startup-audit-pending>div{padding:5px 0;border-top:1px solid #335657}';document.head.appendChild(style);
+ var panel=document.createElement('section');panel.id='inkblade-startup-audit';panel.setAttribute('aria-label','只读启动诊断');var summary=document.createElement('p');summary.id='inkblade-startup-audit-summary';var pending=document.createElement('div');pending.id='inkblade-startup-audit-pending';panel.appendChild(summary);panel.appendChild(pending);document.body.appendChild(panel);
+ ['pointerdown','pointerup','pointermove','touchstart','touchmove','touchend','mousedown','mouseup','click','wheel','keydown'].forEach(function(type){panel.addEventListener(type,function(event){event.stopPropagation();});});
+ function seconds(ms){return (ms/1000).toFixed(1)+'s';}
+ function draw(){var s=snapshot(),load=s.active;if(!load){summary.textContent='启动诊断 · '+schema+'\n等待 Cocos load 实例\n'+documentId;return;}var b=load.currentBatch,c=b?b.counts:null;summary.textContent='启动诊断 · '+schema+'\n'+documentId+' / '+load.id.split('/').pop()+'\n'+(load.artVersion||'art 未读取')+' · '+load.phase+' / '+load.status+'\n'+(b?b.kind+' '+c.complete+'/'+c.total+' · pending '+c.pending+' / error '+c.error+' / unrequested '+c.unrequested:'等待 manifest / Bundle')+'\n最后计数：'+(load.lastCompletedKey||'无')+'\nwall '+seconds(load.wallAgeMs)+' · visible '+seconds(load.visibleAgeMs)+' · '+document.visibilityState+' / app '+(load.appVisible?'visible':'hidden')+'\nCocos tick age '+(load.cocosHeartbeat.ageWallMs===null?'尚无':seconds(load.cocosHeartbeat.ageWallMs))+' · HTTP / decode / upload 未观测';
+  var rows=load.phaseWaits.filter(function(r){return r.requestedAtEpochMs!==null&&r.validatedAtEpochMs===null&&r.errorAtEpochMs===null;});if(b)rows=rows.concat(load.records.filter(function(r){return b.pendingKeys.includes(r.key)||b.errorKeys.includes(r.key);}));
+  var old=Object.create(null);Array.from(pending.children).forEach(function(row){old[row.getAttribute('data-startup-audit-key')]=row;});rows.forEach(function(r){var row=old[r.key]||document.createElement('div');delete old[r.key];row.setAttribute('data-startup-audit-key',r.key);row.textContent=r.key+' · '+r.stage+'\nwall '+seconds(r.pendingAgeWallMs)+' / visible '+seconds(r.pendingAgeVisibleMs)+(r.errorCode?' · '+r.errorCode:'');pending.appendChild(row);});Object.keys(old).forEach(function(key){old[key].remove();});
+ }
+ function startTimer(){if(timer===null&&!suspended)timer=setInterval(draw,500);}
+ function visibility(){if(active)settle(active);docVisible=!document.hidden;draw();}
+ function pagehide(event){if(active)settle(active);suspended=true;if(timer!==null){clearInterval(timer);timer=null;}docVisible=false;document.removeEventListener('visibilitychange',visibility);if(!event.persisted){if(active)close(active);window.removeEventListener('pageshow',pageshow);window.removeEventListener('pagehide',pagehide);}}
+ function pageshow(event){if(!event.persisted)return;suspended=false;docVisible=!document.hidden;if(active)active.clockAt=mono();document.addEventListener('visibilitychange',visibility);startTimer();draw();}
+ document.addEventListener('visibilitychange',visibility);window.addEventListener('pagehide',pagehide);window.addEventListener('pageshow',pageshow);
+ window.__inkbladeStartup.audit=sink;window.__inkbladeStartupAudit=Object.freeze({snapshot:snapshot});startTimer();draw();
+})();
+</script>
+  <div id="GameDiv" cc_exact_fit_screen="true">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+      </div>
+    </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    System.import('./index.js').catch(function(err) { console.error(err); window.__inkbladeStartup && window.__inkbladeStartup.fail(); })
+</script>
+
+</body>
+</html>
