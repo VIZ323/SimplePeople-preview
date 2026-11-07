@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Cocos Creator | Inkblade30</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+<style>
+#inkblade-startup{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;padding:24px 20px;padding-top:calc(24px + env(safe-area-inset-top));padding-bottom:calc(24px + env(safe-area-inset-bottom));box-sizing:border-box;background:#071b1a;color:#f1e5c9;font-family:system-ui,-apple-system,sans-serif;text-align:center;touch-action:manipulation}
+#inkblade-startup[hidden]{display:none!important}#inkblade-startup>section{width:min(320px,100%)}#inkblade-startup h1{margin:0 0 25px;color:#f3dfae;font-size:30px;font-weight:500;line-height:1.45}#inkblade-startup p{margin:12px 0;font-size:18px;line-height:1.65}#inkblade-startup .load-note{font-size:16px}#inkblade-load-track{height:6px;border:1px solid #b89a5e;padding:1px;box-sizing:border-box;margin:25px 20px}#inkblade-load-fill{width:0;height:100%;background:#d7bc7c}#inkblade-startup button{margin:19px auto 0;min-width:160px;min-height:49px;padding:9px 20px;color:#f1e5c9;background:#173e41;border:1px solid #d7bc7c;font:inherit;font-size:19px;line-height:1.4}#inkblade-startup button:focus-visible{outline:2px solid #f3dfae;outline-offset:4px}#inkblade-startup button[hidden]{display:none}
+</style>
+</head>
+<body>
+<div id="inkblade-startup" role="status" aria-live="polite"><section>
+<h1 id="inkblade-load-title">展开山河</h1><p id="inkblade-load-message">正在唤起画面</p>
+<div id="inkblade-load-track" aria-hidden="true"><div id="inkblade-load-fill"></div></div>
+<p class="load-note" id="inkblade-load-count"></p><p class="load-note" id="inkblade-load-detail"></p>
+<button id="inkblade-load-reload" hidden type="button">重新载入</button>
+</section></div>
+<script>
+(function(){
+ var surface=document.getElementById('inkblade-startup'),title=document.getElementById('inkblade-load-title'),message=document.getElementById('inkblade-load-message'),count=document.getElementById('inkblade-load-count'),detail=document.getElementById('inkblade-load-detail'),track=document.getElementById('inkblade-load-track'),fill=document.getElementById('inkblade-load-fill'),reload=document.getElementById('inkblade-load-reload');
+ var state={phase:'engine',status:'loading',completed:0,total:null,nativeReady:false,startedAt:Date.now(),lastProgressAt:Date.now()},times=[{phase:'engine',at:Date.now()}];
+ function draw(){
+  surface.hidden=!!state.nativeReady;if(surface.hidden)return;
+  var failed=state.status==='failed';title.textContent=failed?'图卷未能展开':'展开山河';
+  message.textContent=failed?'请重新载入后，再选择要走的山道。':state.status==='slow'?'仍在载入，请稍候':state.phase==='manifest'?'正在核对图卷':state.phase==='bundle'?'正在展开图卷':state.phase==='critical'?'正在铺开营地':state.phase==='remaining'?'正在备齐行装':state.phase==='first-frame'?'正在铺开画面':'正在唤起画面';
+  count.textContent=!failed&&typeof state.total==='number'?'已备妥 '+state.completed+' / '+state.total+' 项':'';detail.textContent=failed?'已有行程不会被清除。':'';track.hidden=failed;fill.style.width=state.total>0?Math.max(0,Math.min(100,state.completed/state.total*100))+'%':'0';reload.hidden=!failed&&state.status!=='slow';
+ }
+ var timer=setInterval(function(){if(state.nativeReady){clearInterval(timer);return;}if(state.status==='loading'&&Date.now()-state.lastProgressAt>=15000){state.status='slow';draw();}},1000);
+ function bootstrapError(){if(!state.nativeReady)window.__inkbladeStartup.fail();}
+ window.__inkbladeStartup={update:function(next){if(next.phase!==state.phase)times.push({phase:next.phase,at:Date.now()});if(next.completed!==state.completed||next.phase!==state.phase)state.lastProgressAt=Date.now();for(var k in next)if(k!=='phaseTimes'&&k!=='failedKeys')state[k]=next[k];if(state.nativeReady){clearInterval(timer);window.removeEventListener('error',bootstrapError,true);window.removeEventListener('unhandledrejection',bootstrapError);}draw();},fail:function(){state.status='failed';state.nativeReady=false;draw();},snapshot:function(){return {startedAt:state.startedAt,phase:state.phase,status:state.status,phaseTimes:times.map(function(t){return {phase:t.phase,at:t.at};})};}};
+ reload.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();window.location.reload();});
+ surface.addEventListener('keydown',function(e){if(e.repeat&&(e.key==='Enter'||e.key===' '))e.preventDefault();});
+ window.addEventListener('error',bootstrapError,true);
+ window.addEventListener('unhandledrejection',bootstrapError);draw();
+})();
+</script>
+  <div id="GameDiv" cc_exact_fit_screen="true">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+      </div>
+    </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    System.import('./index.js').catch(function(err) { console.error(err); window.__inkbladeStartup && window.__inkbladeStartup.fail(); })
+</script>
+
+</body>
+</html>
