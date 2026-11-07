@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "latestVersion": "v0.2.0-stage.1",
+  "latestVersion": "inkblade30.20261107-review.2",
   "releases": [
     {
       "version": "v0.2.0-stage.1",
@@ -32,6 +32,42 @@
         "缺少正式小游戏AppID与广告位；广告/上架不属于此阶段已通过内容",
         "历史v17交付ZIP及旧平台/性能报告不作为本阶段验证结果"
       ]
+    },
+    {
+      "version": "inkblade30.20261107-review.1",
+      "status": "published",
+      "prerelease": true,
+      "sourceCommit": "b83fc351cd47e0af8c040e7cecf595a628bf1c47",
+      "tag": "inkblade30.20261107-review.1",
+      "tagCommit": "50b8f8f0a0ece8fbf6648363beb0c7c71717db6a",
+      "sourceSHA256": "804113cca5b38b23eb115b89c19f1f89cc2c736e45b5fe9de4efc34f705b3c64",
+      "artVersion": "inkblade30-art.20261107.14",
+      "buildSHA256": "889f88c1bc3ead4c5178427700ce6be60a6299f13cd479de431d28a79521b65b",
+      "previewUrl": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/",
+      "releaseUrl": "https://github.com/VIZ323/SimplePeople-preview/releases/tag/inkblade30.20261107-review.1",
+      "publishedAt": "2026-11-07T06:31:38Z"
+    },
+    {
+      "version": "inkblade30.20261107-review.2",
+      "status": "published",
+      "prerelease": true,
+      "sourceCommit": "c55ded774f71a9c6e713a47ac20cf7d6965c2699",
+      "tag": "inkblade30.20261107-review.2",
+      "tagCommit": "ac89685fd9500b4df6b3ede3d4b5f5b9bb9c27cd",
+      "sourceSHA256": "fc6382a672a9bcfb1a457c5e2e519457a66c6a9a4051511b86ea4039f3706118",
+      "artVersion": "inkblade30-art.20261107.19",
+      "buildSHA256": "031a526913507686cfd85e33d6bee0b08428c0b5299abc1c9ef40b21b1b9aa75",
+      "previewUrl": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.2/",
+      "releaseUrl": "https://github.com/VIZ323/SimplePeople-preview/releases/tag/inkblade30.20261107-review.2",
+      "publishedAt": "2026-11-07T09:07:23Z",
+      "acceptanceStatus": "pending-supervisor-and-user-final-review",
+      "historical30FunctionSamplesComplete": true,
+      "currentSourceFull30Replay": false,
+      "wholeGameQualityComplete": false,
+      "onlineFilesVerified": 896,
+      "onlineInteractionChecks": 10,
+      "deviceCertified": false,
+      "appIDAvailable": false
     }
   ]
 }
