@@ -68,6 +68,36 @@
       "onlineInteractionChecks": 10,
       "deviceCertified": false,
       "appIDAvailable": false
+    },
+    {
+      "version": "inkblade30.20261107-review.3",
+      "status": "published",
+      "prerelease": true,
+      "sourceCommit": "4ef70cd60bfcf4dc4e1f7628fa9aa826ec481107",
+      "sourceSHA256": "7cc99c1fc12f420eabcd97b673a23f507f7cc38ec435072ae2c4a168f2c13813",
+      "artVersion": "inkblade30-art.20261107.21",
+      "buildSHA256": "673e29c23d5ed338bb97dfc421de3aab66e1fc45dfd7553263ed334c16db28dd",
+      "previewUrl": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.3/",
+      "acceptanceStatus": "pending-supervisor-and-user-final-review",
+      "historical30FunctionSamplesComplete": true,
+      "currentSourceFull30Replay": false,
+      "wholeGameQualityComplete": false,
+      "deviceCertified": false,
+      "appIDAvailable": false,
+      "releaseUrl": "https://github.com/VIZ323/SimplePeople-preview/releases/tag/inkblade30.20261107-review.3",
+      "releaseId": 437560297,
+      "publishedAt": "2026-11-07T12:23:08Z",
+      "tag": "inkblade30.20261107-review.3",
+      "tagCommit": "e0d9d14cc547d9d57781ea2578b4054c3f80344c",
+      "publishedUniqueFiles": 902,
+      "onlineInteractionChecks": 5,
+      "physicalDeviceObservation": "P1_OPEN_PHONE_STARTUP_STALL_123_OF_129",
+      "latestEligible": false,
+      "knownIssues": [
+        "Physical iPhone startup stalled123/129 after more than ten minutes and one bounded reload; no current phone gameplay/menu pass.",
+        "Console retains two unattributed404 and two noncancelable touchstart warnings.",
+        "Full art/motion, current full30 replay, balance, audio, performance and native SDK acceptance incomplete."
+      ]
     }
   ]
 }
