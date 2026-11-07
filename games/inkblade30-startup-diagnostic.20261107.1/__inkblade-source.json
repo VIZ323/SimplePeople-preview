@@ -1,0 +1,22 @@
+{
+  "classification": "DIAGNOSTIC_NOT_STAGE_RELEASE",
+  "diagnosticVersion": "inkblade30-startup-diagnostic.20261107.1",
+  "publicURL": "https://viz323.github.io/SimplePeople-preview/games/inkblade30-startup-diagnostic.20261107.1/",
+  "diagnosticURL": "https://viz323.github.io/SimplePeople-preview/games/inkblade30-startup-diagnostic.20261107.1/?startupAudit=1",
+  "diagnosticQuery": "startupAudit=1",
+  "defaultOff": true,
+  "sourceIteration": "source22",
+  "sourceSHA": "1d8c551d0a87ef883200d0a540f9594f73ad5c1068bc8c1188b6663f4ffe4878",
+  "sourceGitCommit": "0407084c879c09821648fe445e90c5c4a6a37649",
+  "sourceProjectFileCount": 175,
+  "sourceTreeVerifiedAgainstCommit": true,
+  "artVersion": "inkblade30-art.20261107.21",
+  "resourceEntryCount": 142,
+  "engineVersion": "3.8.8",
+  "debug": false,
+  "platform": "web-mobile",
+  "resourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30-startup-diagnostic.20261107.1/",
+  "noStageAcceptance": true,
+  "noMatchingMiniBuilds": true,
+  "noReleaseTagRegistryOrLatestPromotion": true
+}
