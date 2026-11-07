@@ -1,0 +1,17 @@
+{
+  "releaseVersion": "inkblade30.20261107-review.1",
+  "publicURL": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/",
+  "sourceSHA": "804113cca5b38b23eb115b89c19f1f89cc2c736e45b5fe9de4efc34f705b3c64",
+  "artVersion": "inkblade30-art.20261107.14",
+  "sourceGitCommit": "b83fc351cd47e0af8c040e7cecf595a628bf1c47",
+  "sourceTreeVerifiedAgainstCommit": true,
+  "platform": "web-mobile",
+  "engineVersion": "3.8.8",
+  "debug": false,
+  "buildPipeline": "remote-bundle.importer-guard.v1",
+  "buildToolSHA256": "ec10e9fc8962396cf6266fd9d900f60a9b654fe659ad88c616f72599f88070f3",
+  "localTestHost": false,
+  "resourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/",
+  "bytedanceResourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/bytedance-resources/",
+  "bytedanceAppIDAvailable": false
+}

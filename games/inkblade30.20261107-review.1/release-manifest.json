@@ -1,0 +1,3761 @@
+{
+  "schema": "inkblade30-fixed-preview.v1",
+  "ready": true,
+  "releaseVersion": "inkblade30.20261107-review.1",
+  "publicURL": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/",
+  "sourceSHA": "804113cca5b38b23eb115b89c19f1f89cc2c736e45b5fe9de4efc34f705b3c64",
+  "artVersion": "inkblade30-art.20261107.14",
+  "sourceGitCommit": "b83fc351cd47e0af8c040e7cecf595a628bf1c47",
+  "sourceTreeVerifiedAgainstCommit": true,
+  "platform": "web-mobile",
+  "engineVersion": "3.8.8",
+  "debug": false,
+  "buildPipeline": "remote-bundle.importer-guard.v1",
+  "buildToolSHA256": "ec10e9fc8962396cf6266fd9d900f60a9b654fe659ad88c616f72599f88070f3",
+  "localTestHost": false,
+  "resourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/",
+  "bytedanceResourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/bytedance-resources/",
+  "bytedanceAppIDAvailable": false,
+  "sourceManifestSHA256": "c2185adb259f1813746cf49fa36152110b291e5f7ab73801e102b7f02b5b99cc",
+  "sourceProjectFileCount": 168,
+  "sourceProjectDirty": false,
+  "sourceDirtyScope": "Only the manifest-listed game project files; unrelated workspace work is excluded.",
+  "webBuild": {
+    "platform": "web-mobile",
+    "sourceSHA": "804113cca5b38b23eb115b89c19f1f89cc2c736e45b5fe9de4efc34f705b3c64",
+    "artVersion": "inkblade30-art.20261107.14",
+    "debug": false,
+    "resourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/",
+    "buildToolSHA256": "ec10e9fc8962396cf6266fd9d900f60a9b654fe659ad88c616f72599f88070f3",
+    "finishedAt": "2026-11-07T05:35:12.347Z",
+    "code": 36,
+    "passed": true,
+    "semanticsPassed": true,
+    "semanticCheckCount": 16,
+    "importerGuard": {
+      "passed": true,
+      "status": "healthy-no-recovery",
+      "experimentalRecoveryAllowed": false,
+      "guardSHA": "9ce172afa9c1bb633fc49d89698f42ab62e82f1179779948617aa8fb97b06c1c",
+      "installedChanges": []
+    },
+    "licenseFiles": [
+      {
+        "file": "MaShanZheng-OFL.txt",
+        "bytes": 4397,
+        "sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08"
+      },
+      {
+        "file": "NotoSansSC-OFL.txt",
+        "bytes": 4388,
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      },
+      {
+        "file": "CocosEngine-MIT.txt",
+        "bytes": 1164,
+        "sha256": "e8799a9198184e8cc31e45e66521b1cca52f9099a932de7a56abb9d212311318"
+      },
+      {
+        "file": "SystemJS-MIT.txt",
+        "bytes": 1085,
+        "sha256": "447a5e34d6189b14b33ec18eef645aada07646cb2ec89f8532df89049a976705"
+      },
+      {
+        "file": "core-js-MIT.txt",
+        "bytes": 1064,
+        "sha256": "4003e24135fde907d7069bb73aad64092cfe662b26914296f2f7f1e16e1f15a6"
+      },
+      {
+        "file": "regenerator-runtime-MIT.txt",
+        "bytes": 1080,
+        "sha256": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd"
+      },
+      {
+        "file": "CocosModuleSystem-package.json",
+        "bytes": 1291,
+        "sha256": "013c033a16d5c08522b0d86abf4c3983dd8944cfd59e565271b12ecb5c616d06"
+      },
+      {
+        "file": "CocosModuleSystem-NOTICE.txt",
+        "bytes": 1133,
+        "sha256": "1a23d293825c5285d266873ef0bf4414e59a75873577c85761049b53611c18eb"
+      },
+      {
+        "file": "ISC-reference.txt",
+        "bytes": 822,
+        "sha256": "f2ff9e66e9a9acdbffbcbf2ae4ff184d923325ce1a98d20ac64f3dd450263f3a"
+      }
+    ]
+  },
+  "bytedanceBuild": {
+    "platform": "bytedance-mini-game",
+    "sourceSHA": "804113cca5b38b23eb115b89c19f1f89cc2c736e45b5fe9de4efc34f705b3c64",
+    "artVersion": "inkblade30-art.20261107.14",
+    "debug": false,
+    "resourceServer": "https://viz323.github.io/SimplePeople-preview/games/inkblade30.20261107-review.1/bytedance-resources/",
+    "buildToolSHA256": "ec10e9fc8962396cf6266fd9d900f60a9b654fe659ad88c616f72599f88070f3",
+    "finishedAt": "2026-11-07T05:38:08.335Z",
+    "code": 36,
+    "passed": true,
+    "semanticsPassed": true,
+    "semanticCheckCount": 16,
+    "importerGuard": {
+      "passed": true,
+      "status": "healthy-no-recovery",
+      "experimentalRecoveryAllowed": false,
+      "guardSHA": "9ce172afa9c1bb633fc49d89698f42ab62e82f1179779948617aa8fb97b06c1c",
+      "installedChanges": []
+    },
+    "licenseFiles": [
+      {
+        "file": "MaShanZheng-OFL.txt",
+        "bytes": 4397,
+        "sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08"
+      },
+      {
+        "file": "NotoSansSC-OFL.txt",
+        "bytes": 4388,
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+      },
+      {
+        "file": "CocosEngine-MIT.txt",
+        "bytes": 1164,
+        "sha256": "e8799a9198184e8cc31e45e66521b1cca52f9099a932de7a56abb9d212311318"
+      },
+      {
+        "file": "SystemJS-MIT.txt",
+        "bytes": 1085,
+        "sha256": "447a5e34d6189b14b33ec18eef645aada07646cb2ec89f8532df89049a976705"
+      },
+      {
+        "file": "core-js-MIT.txt",
+        "bytes": 1064,
+        "sha256": "4003e24135fde907d7069bb73aad64092cfe662b26914296f2f7f1e16e1f15a6"
+      },
+      {
+        "file": "regenerator-runtime-MIT.txt",
+        "bytes": 1080,
+        "sha256": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd"
+      },
+      {
+        "file": "CocosModuleSystem-package.json",
+        "bytes": 1291,
+        "sha256": "013c033a16d5c08522b0d86abf4c3983dd8944cfd59e565271b12ecb5c616d06"
+      },
+      {
+        "file": "CocosModuleSystem-NOTICE.txt",
+        "bytes": 1133,
+        "sha256": "1a23d293825c5285d266873ef0bf4414e59a75873577c85761049b53611c18eb"
+      },
+      {
+        "file": "ISC-reference.txt",
+        "bytes": 822,
+        "sha256": "f2ff9e66e9a9acdbffbcbf2ae4ff184d923325ce1a98d20ac64f3dd450263f3a"
+      }
+    ],
+    "localTest": true,
+    "mainBytes": 2050597,
+    "remoteBytes": 26042331,
+    "mainPublished": false,
+    "remotePath": "bytedance-resources/"
+  },
+  "qa": {
+    "currentUIInternalRestoreGate": true,
+    "viewports": [
+      "375x667",
+      "390x844"
+    ],
+    "realModelAndTouchOnly": true,
+    "victorySaveTransitionRepaired": true,
+    "continuousTouchAcrossCheckpoints": true,
+    "physicalDevice": false,
+    "audioListening": false,
+    "all30Accepted": false,
+    "lastActuallyClearedStage": 22,
+    "ST23": "two saved escort failures; second not settled; no third attempt or CP24",
+    "completeHeroFallContinuity": false,
+    "remainingWorldAssetsAndActionsComplete": false,
+    "userFinalAcceptance": false
+  },
+  "payloadFiles": 596,
+  "payloadBytes": 54269717,
+  "payload": [
+    {
+      "file": "__inkblade-source.json",
+      "bytes": 910,
+      "sha256": "976ea8c72cd7b5277b81e1de3fb00c74f1cd05662c749d0ca303ddc4e4fdd3cc",
+      "kind": "web"
+    },
+    {
+      "file": "application.js",
+      "bytes": 3302,
+      "sha256": "359f85dd922e2568aa991af95a5c356a0102042c8918252987bfbd37f2153eb2",
+      "kind": "web"
+    },
+    {
+      "file": "assets/internal/config.json",
+      "bytes": 1925,
+      "sha256": "ed5fe4286ac7ccc8bc08188296502480f98cf956e74dc04780afa9b58fc60385",
+      "kind": "web"
+    },
+    {
+      "file": "assets/internal/import/0b/0b0f7a282.json",
+      "bytes": 183708,
+      "sha256": "4436abc5b0607e56136f40624532487c1843327950c3ada497ed3986e70218d1",
+      "kind": "web"
+    },
+    {
+      "file": "assets/internal/index.js",
+      "bytes": 45110,
+      "sha256": "19bd675acfdd6f12d4bfec92fa4fa354b57c1dee7256325dce20ebfc5657b58c",
+      "kind": "web"
+    },
+    {
+      "file": "assets/main/config.json",
+      "bytes": 578,
+      "sha256": "664dcf546a6c5e17f16555311e725e7c57aad34697e1346f96546d0e8d36558c",
+      "kind": "web"
+    },
+    {
+      "file": "assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json",
+      "bytes": 192,
+      "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39",
+      "kind": "web"
+    },
+    {
+      "file": "assets/main/import/cd/cdb92621-a0fa-4469-9381-3a575e6757fd.json",
+      "bytes": 1589,
+      "sha256": "0a37fabe6dff57e1cbb2d0a3aafc02d3242881cbea00e20711a9d22b6b2d2cfa",
+      "kind": "web"
+    },
+    {
+      "file": "assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json",
+      "bytes": 480,
+      "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d",
+      "kind": "web"
+    },
+    {
+      "file": "assets/main/index.js",
+      "bytes": 218837,
+      "sha256": "1ffbb174dfdec698fdf64e5dc89eb07e7a3cecef0b2e97c4e4d3a80b1da38ba7",
+      "kind": "web"
+    },
+    {
+      "file": "assets/resources/config.json",
+      "bytes": 328,
+      "sha256": "6f9c2b9298e4e51d203bf211619c6aff1878dcd8c01166a029aa48802baaed4b",
+      "kind": "web"
+    },
+    {
+      "file": "assets/resources/import/89/89519a27-f41f-471b-91ee-c9381a169d0a.json",
+      "bytes": 79829,
+      "sha256": "427a75a55448f027bd2cc3e9dc6d249578c6c0d8f6c0d267e3d4202e5a7416ba",
+      "kind": "web"
+    },
+    {
+      "file": "assets/resources/index.js",
+      "bytes": 605,
+      "sha256": "51a07ab61ee49561d29734ff6ee095b0d8a47998bbe30a6f1973bf3c8b7faa25",
+      "kind": "web"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/config.json",
+      "bytes": 20128,
+      "sha256": "403be0016b353ca8e3d6601de77b1a051bcaeca5fd0d930f7b6516ff26001299",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/01/01296d35-590d-4342-a014-3070f40eb810.json",
+      "bytes": 4600,
+      "sha256": "ddcac66624095f2432fba078b147568850be97a3aef5192648802b36c241a2af",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/04/04a692db-44c8-4881-85f7-c4a255dceee7.json",
+      "bytes": 123,
+      "sha256": "46718b4dc77d64059c03c23e34343f9bf0bdd4d50f6742d7d00249c0fc31b70e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/05/059edc9b-11ee-4dd9-9b65-63c2be9be648.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/07/078022cb-0022-4ade-9c57-0c3014296830.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/09/09b95ad9b.json",
+      "bytes": 5322,
+      "sha256": "d49f07d7b1d271c3c44d3325d5b8d1bcd4fbfd5b992649190b3d1be6a67e182e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/0a/0a21178f-2086-41e4-80d8-ec645892ed39.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/0a/0aa9531f-ae58-493e-bbb2-3ba10e74766e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/0b/0bee1dac-2ade-400b-a740-804dc2fa0825.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/0d/0dc9350d-58ee-4e1d-bc47-251a20c699f5.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/0e/0ea159aa-1aa0-44c1-8a53-2c3144569e09.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/0f/0f503667-ada3-4ef9-a555-c1e92d53bb78.json",
+      "bytes": 121,
+      "sha256": "3895f57fbf327427f2c926fefaae8807d44c271c747eb32e0fc3bead77687c1c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/16/16f1c889-1869-4508-9eba-ad3d8364d1f5.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/17/1771782d-bc5c-410d-aab7-79bb2c08a2b0.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/19/19371561-5eee-4cbb-90c1-d36e28fff1ec.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/1a/1ae9da42-d6c0-4c63-9a58-be389d0a8ec8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/1b/1b4779a2-2ed1-4881-a498-728799320a31.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/1e/1e2eb2f8-182d-455b-9144-c83cff7d1066.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/20/20677f9b-78f3-4c29-bfeb-3f67b2283505.json",
+      "bytes": 124,
+      "sha256": "3e0a2b91397926887c0dd87a576aa07822548dc0fbe7f2c0f25683f3ea2e80c3",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/21/21c7de6b-6fd6-42fe-8156-261a3658a2b6.json",
+      "bytes": 125,
+      "sha256": "06008859ce51409b4339e6dfeedc8f9fe70b6809ac25806ca441035d9d668996",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/22/225b4440-b960-4238-9607-5cc8df8c074c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/24/24bbaf4a-2a86-41d2-8c6f-a2dc1e7f27ce.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/25/251018b8-95d7-4b50-be57-160302e84995.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/28/2806339d-164f-4d95-8fd2-24efb65b93f4.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/28/282c8495-095c-4178-a1dd-75afe96993ce.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/28/2858a624-51df-47cb-a1bf-0579ad8dcd12.json",
+      "bytes": 127,
+      "sha256": "c9d214bbf630a6fac5742a923176c5782edec7dfbb61229da0d99c204a245447",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/28/289da68e-06ea-4ccd-9159-89124bcf574a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/29/2974ecf6-2f2a-4a6c-b054-ef1d67d0eef5.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/2d/2d17875b-b428-4058-8fe3-488e392e5983.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/2e/2e362ef5-3920-4f60-a50c-a54a28c7fd0f.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/30/30985460-93dc-43e3-9b33-210ee0a9452c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/31/31219bcf-f3fd-40b3-afe2-e1c40e53a790.json",
+      "bytes": 122,
+      "sha256": "61e1526ea17f686a8cf1c2e07be73743b40584cf6b0c78db2e2d6d117a574463",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/31/31c4804b-7079-4bb2-a3ff-32371c4b8873.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/36/36ca05ca-d317-462e-8100-9c16ca9c5311.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/39/39950995-bf79-4de5-895b-524acd5ca364.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/3a/3a7dcefc-3353-45d7-a7c4-90834cb62590.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/3a/3a8894ba-e7df-431b-b817-5bfcd5f3de50.json",
+      "bytes": 122,
+      "sha256": "c0bb675e2b4705be801c148c25c7757ec5358f4dde1cfd27d7c84c6d70360c15",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/3c/3cbe9341-6b8e-4536-8977-2dfc34c2a6ed.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/3d/3d48ae1d-dfe3-4819-a7e1-9feb2e4f29ea.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/3f/3fc42f34-2f8f-4e80-be20-43ebe0f2bb9e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/40/4049279e-6669-4d98-a139-807c28ba6290.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/42/42c7c840-d0e3-4fb9-8622-888526fdd61d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/43/430cbedc-ad8c-4ad0-a84c-ea8d8f5dbbcd.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/44/448356af-6d8e-4bf8-b116-73e4e8afc3c6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/47/4717f1bd-3343-4c37-904f-595e9067eaaf.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/48/48bf4b14-8bc6-421e-a89d-dcc7b5bb3573.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/4a/4afc665f-33be-4495-bc12-1b5e430b629f.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/4b/4bb3aeed-7f64-486f-a31c-3a2908b176a9.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/4b/4bc4ecab-aeb5-45e1-8cf8-6a5bf7021f13.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/4c/4ca1d829-2810-4126-916d-e4ad8caeb1d8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/4f/4f5a2f47-242f-41f7-b5b3-bde255bb826d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/4f/4f9afcbf-5c80-4c16-b5cc-c5f062576056.json",
+      "bytes": 120,
+      "sha256": "59653d511f073fe996e135052f0e6d8c7df4a072d07c8b0cb4cb73fa2b479a42",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/52/5254073a-4685-4057-ab79-9bdbd302243e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/54/542de1e1-9c11-4753-b9b9-261ebe7f5f87.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/57/577226db-0523-42f1-ac87-44984d7f62a4.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/58/58d650e4-e3c5-4e1d-b34c-c736005d19da.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/5c/5c965c0b-89b3-4770-9a92-7c4e9de6cd54.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/5d/5ddfd52f-43c0-446f-b76c-aee7471eb382.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/5e/5e2efcd6-cc15-4f48-b4f2-d08116c2ba1b.json",
+      "bytes": 4588,
+      "sha256": "749a91940a3612d9d9d9fea029e4b1543c959a334b7d1f5c8689501d6e7d902e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/5e/5e83b5dc-bc79-4d69-b78a-0b828e1780d4.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/5f/5fff183b-d357-4e32-8683-95d5a7890090.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/60/6098c2a7-7e2b-4abd-bf75-a274bba56c9c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/6f/6f11ff89-fb79-4d5f-89bf-3d1a066f6e67.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/6f/6f6b48c3-ddc8-4986-8e42-77e4ed67c909.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/73/732e6c42-b62f-48cc-9596-4597f88ee8d3.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/75/7563b926-93d0-4051-bee1-4b078149d72d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/75/7598b4c1-0e44-4917-b7dc-e343696afc8f.json",
+      "bytes": 122,
+      "sha256": "bb534dc5cffe9d9d0c1ecc4e2a18c469a09dfc672c40d5767231a3f5db9406fd",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/76/76cdd725-296f-4cf9-8739-37f02da2b242.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/7d/7d149ad3-a647-4851-b5a5-c8acaf896b85.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/82/827637ea-85db-49b8-98f9-63c259052c0c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/82/82b77816-2ff7-4df8-b3a8-7f405ef079c7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/82/82f38f54-c6b3-4906-96b8-52069eb9e317.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/85/85997120-ce50-4bc8-bab5-c27917c3f714.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/85/85dfbb94-80c8-46f7-b63b-890b4893b299.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/86/861ae34d-e366-433f-a644-4007e7909fae.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/86/86b4c417-3316-408e-8b94-dbe6d347977e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/8b/8b81feaf-5412-400a-a69d-658c3520a60d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/8d/8d285ccc-5e11-4e6f-b204-c0bcac8ab5c7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/90/9039043d-fbfd-4d1f-a845-9030df8cef2a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/91/915d73c2-6f3c-437e-8880-7951e56992a2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/93/93c787d1-13e7-4d07-a8ba-617f0303d693.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/95/9530673b-d4f7-4854-9b49-ae46b60e392c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/9f/9fa5a6c0-baf6-46ab-a1e7-33585f19c279.json",
+      "bytes": 120,
+      "sha256": "07cf09ce6a780a5bfdf05870fdb62602bf4f602fd8daec113314994a2d45ac64",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/a0/a07bd064-b085-47c2-a99c-92ab3a67c9c8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/a0/a081d531-431b-4b52-bb82-7045c2046c87.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/a1/a1b17f50-a5ee-41fe-bdb6-5b97f3c34be4.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/a3/a3be5822-d9c8-40a3-8c66-7ece8f1085c7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/a5/a5b014f5-8186-402e-8a4d-9631fe9081ec.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/a5/a5f02587-9d8a-4a26-a55b-a9a7134967be.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ae/ae3019e4-2b9a-4461-8204-d9cb403ce719.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/af/af2a68a6-b2c0-46e1-9992-56cce332b32e.json",
+      "bytes": 101,
+      "sha256": "a449cfec9d9f25a765e85848e1c33ab9c1470a6c84b01c7868b1b8b23b7ef70d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/b0/b098d18e-f0c7-4ab7-ab8f-fa14f228de0a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/b0/b0a6402e-aaee-4d6e-a0d7-98b1383c54ca.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/b4/b4f899bc-d03e-46f9-8456-81c2b5749af4.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/b9/b982be2a-52f5-4852-a618-d8b1f6aec928.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ba/ba6b16d3-217d-49e9-8b6e-50b4942377e7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/bc/bc553129-6567-4bf5-8dc6-d8ba9d30458e.json",
+      "bytes": 120,
+      "sha256": "717a37ab124d4dc8f53a4dc99b743cbf083b4bca916d424a6c5059dca55cfa2c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/bc/bc682788-0384-469b-91c0-36efbbfc9bd9.json",
+      "bytes": 123,
+      "sha256": "bd927b4140648bf45febf090fcadb7b887839b7df0589b59c4edbdefd6a2eba0",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/bc/bc6ca8c2-dba1-41e0-a836-328e24371e64.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/bd/bd4d54d8-f7c7-4ea3-a74f-738fdaf0ae12.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/bd/bd4d87ed-6519-42d9-862a-802f272d8334.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/be/be4ca200-b6c9-498f-ac07-b1f18cbfb0e8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/bf/bf6db881-6142-4a3b-8b30-1b6ba5fc7111.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/c0/c0427c65-6b58-46e3-8f8b-cf8223324fd1.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/c3/c34d537e-e478-430e-afc5-29e10cfb78a5.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/c5/c5d75c96-9e19-442f-b706-6cc5aa4b4e81.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/c6/c62f4e5b-2164-4956-92bf-3800c767c005.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/c6/c6ae35e8-e4c6-4dcb-95c3-89ae884694e2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/cf/cf054276-5146-4787-84fe-98a5efa4e74f.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/cf/cf6f9688-7100-45e6-abcf-4b56a1b59e75.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/d5/d54d1384-b543-4b06-b0d9-7965479f0570.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/d7/d7b3665e-1324-4c77-8520-c1ab3c2b03a1.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/db/dbe57841-5825-48d8-8b96-0a2bbb6bab5e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/dc/dc98a84e-f3f5-482a-b6db-06cf7697522d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/dd/ddd2cf1b-fcf5-4060-b977-d7fdd3e7c11a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/de/de428ec9-d646-4b07-b5d4-fb874b3b536e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e1/e15c96f8-eb5d-4536-ab35-b21b71d7f7f7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e1/e1ab0aef-126a-4d84-994d-42795615ddc2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e4/e42c96cf-858c-4cb6-bfd4-6f6380866f10.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e5/e52f27ed-06fb-40f1-8dfd-2627cc10e285.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e5/e59eb41c-bb53-4b8a-9bfa-769edb415f2b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e5/e5e1f474-e433-4b9c-ac5b-ccd63cbea1e8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e6/e62eec44-a462-4b9f-83bd-90f5b77c0ad9.json",
+      "bytes": 4590,
+      "sha256": "b8bea4cb2dd677429ce240cd0f2062ec7ed709b317552724c834b72096514132",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/e7/e7c94614-71f8-46db-92f7-d18d70a858b3.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/eb/ebb59d2c-d940-4eda-bfac-46a329c00790.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ec/ecd32b4d-f765-45f5-bd85-3c047ceca36d.json",
+      "bytes": 115,
+      "sha256": "c8648235bffbfa0beb91cf7d57ff4cc36e717b8ccddfe926682105d87eaf7c4f",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ed/ed19f4ee-4e34-4ffe-b487-cb89c89481b8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ed/ed69e2c7-4836-40c4-b86a-c3587e19b7c7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ee/ee86d2b6-5fc6-4040-b76e-ac248505ab3b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ee/ee97e7d3-c9b3-4aa0-84b2-05bfeacaa1b8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ee/eef403a0-2cf1-4375-85d5-d008ed2c9938.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f2/f28ccdea-6345-4bd4-94f1-193cb0cdb1e0.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f2/f29c4ffd-4668-42b1-b7e9-3e3c50aa6a5b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f3/f3ff338f-b254-4849-8b05-d265de6f9266.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f4/f496359b-a480-4da6-9e2d-8ecb8992343f.json",
+      "bytes": 99,
+      "sha256": "99c48afbeceef118d333a24e9bc850ce13e3aab65204c0fbc442b98f6f780fc9",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f7/f7c17525-d7b2-4f4e-bd97-b4ddbf28ad88.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f7/f7ce7b35-8551-4e3d-b820-d7ffa4891b7f.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/f8/f8a7f25a-eda7-4d00-97d5-cc2476fd7420.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/fb/fb1b1973-fba8-4489-a2c2-c6f0641ade08.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/fd/fdc3f8ec-d928-4507-a0eb-490ebef949a8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/fe/feb276ee-b029-4ac0-8774-4e1250ed8acf.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ff/ff14fbf6-cc8e-49aa-9015-33da229379c0.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/import/ff/ffb91ca7-551a-4abe-95e6-22df401369de.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/04/04a692db-44c8-4881-85f7-c4a255dceee7.wav",
+      "bytes": 124844,
+      "sha256": "014c3a0bab8138bc57cbcc63374ed40ad54e36ed5b701509c9dd94b1f3b00fa5",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/05/059edc9b-11ee-4dd9-9b65-63c2be9be648.png",
+      "bytes": 149406,
+      "sha256": "b9f28f133853587f811bc1e604b1ea60fd80a9cf48d563579613026c82b86a2b",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/07/078022cb-0022-4ade-9c57-0c3014296830.png",
+      "bytes": 21082,
+      "sha256": "30b839ed16a8cf7ae9111b16ebdc3c0ab7c3cc2a39e4c721b4dac6a8ff890dca",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/0a/0a21178f-2086-41e4-80d8-ec645892ed39.png",
+      "bytes": 169249,
+      "sha256": "56c945b6682f069318fd27f56672efacb6fe2a4ff7cf6f53039d58a655104521",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/0a/0aa9531f-ae58-493e-bbb2-3ba10e74766e.png",
+      "bytes": 88190,
+      "sha256": "4f7f8ca87b6402b363497854a7d16296acffe0730634ef297195912936c32145",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/0b/0bee1dac-2ade-400b-a740-804dc2fa0825.png",
+      "bytes": 50174,
+      "sha256": "0c692b001cb6e9e7fe25d0ba6aad0083493045a0eb5fd3dc172187bb952b82bd",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/0d/0dc9350d-58ee-4e1d-bc47-251a20c699f5.png",
+      "bytes": 79009,
+      "sha256": "337a3e9865c6b2ad2eee14a030f22869472e217ebc0b3aceb5b3bf7c1800d52c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/0e/0ea159aa-1aa0-44c1-8a53-2c3144569e09.png",
+      "bytes": 14870,
+      "sha256": "844da1d03308f1624132c58c78eba4ab2b35c4753cac1c9d620a21cab79bb816",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/0f/0f503667-ada3-4ef9-a555-c1e92d53bb78.wav",
+      "bytes": 25004,
+      "sha256": "7bcb386976bffd8eaf9af4d28f228415d6318693b10d1e2e632efd769389cd49",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/16/16f1c889-1869-4508-9eba-ad3d8364d1f5.png",
+      "bytes": 78198,
+      "sha256": "5864972fc6931467fd326f01bdcfbf4ac139e92d409daf2e56b28f9f847530f7",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/17/1771782d-bc5c-410d-aab7-79bb2c08a2b0.png",
+      "bytes": 261189,
+      "sha256": "46d60b8cea28613d0bdf6e7c23afcb6c0c8f324be0fe77a0a7e560ed7ce4ee71",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/19/19371561-5eee-4cbb-90c1-d36e28fff1ec.png",
+      "bytes": 20146,
+      "sha256": "db90fa15a8bb36ebae3915e5392e751657ffe226f18f4ca7fc09c81ee6dc63ac",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/1a/1ae9da42-d6c0-4c63-9a58-be389d0a8ec8.png",
+      "bytes": 57451,
+      "sha256": "d12e548232f277946b8d233da735174eb7f9ad20700f8c2a3161b6bda2a8cac1",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/1b/1b4779a2-2ed1-4881-a498-728799320a31.png",
+      "bytes": 23648,
+      "sha256": "e5532be6189720619d40094fdf73d91aaf8fb93812ba16cd07785eee3c77145c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/1e/1e2eb2f8-182d-455b-9144-c83cff7d1066.png",
+      "bytes": 3285595,
+      "sha256": "eb9529b5d6f798ce78beab2b8f10391fadc1cb629855969fc9fd624aeed3b3bc",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/20/20677f9b-78f3-4c29-bfeb-3f67b2283505.wav",
+      "bytes": 113324,
+      "sha256": "1cfd5032e38743d76d045e7065ec55364e566770de9ea5f67f0ef40acc171e2b",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/21/21c7de6b-6fd6-42fe-8156-261a3658a2b6.wav",
+      "bytes": 55724,
+      "sha256": "4823a1c76f48bba7438fa3ff8240c4d6d05685f87f1c815e3c5f8bb1b80786bf",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/22/225b4440-b960-4238-9607-5cc8df8c074c.png",
+      "bytes": 74541,
+      "sha256": "46f9284a2fcdd6e5ad864608da61f93585cc19ba1bec175b476728724622184c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/24/24bbaf4a-2a86-41d2-8c6f-a2dc1e7f27ce.png",
+      "bytes": 73823,
+      "sha256": "a2cda3659f804235af9dc2f4e7623924ca6ba2bdf6c54e450606cf025f53fb59",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/25/251018b8-95d7-4b50-be57-160302e84995.png",
+      "bytes": 22697,
+      "sha256": "487b05d33d6b69f3ebe592234fcd57e76147965da0116b0eaa19276286b4be20",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/28/2806339d-164f-4d95-8fd2-24efb65b93f4.png",
+      "bytes": 58825,
+      "sha256": "7f9baa93265eaf4b4546ab7bd9065edea837819dfde4b19735888fb2c4ee9f49",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/28/282c8495-095c-4178-a1dd-75afe96993ce.png",
+      "bytes": 23730,
+      "sha256": "ca73f15b4766b307f717f4950754c48b032876f090e1bdec91f8c22b896910c3",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/28/2858a624-51df-47cb-a1bf-0579ad8dcd12.wav",
+      "bytes": 2880044,
+      "sha256": "9fd843702b99a14ac61f7202f44e4afd949220dbb04fd58f224676081317c1b0",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/28/289da68e-06ea-4ccd-9159-89124bcf574a.png",
+      "bytes": 99423,
+      "sha256": "9b82034ff6bad2a6f58ede3ef9744bab22f88b60ecd9da11329e96f106e08bcf",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/29/2974ecf6-2f2a-4a6c-b054-ef1d67d0eef5.png",
+      "bytes": 6329,
+      "sha256": "2da754da0d1143f9ba4fa23322fd2a161a71e904bca60f70f6ef5296aae4bd41",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/2d/2d17875b-b428-4058-8fe3-488e392e5983.png",
+      "bytes": 24861,
+      "sha256": "38e8be006e3c85370385cedd8b2e93468a63d1c784fe9ffa51b877195c3bf7e8",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/2e/2e362ef5-3920-4f60-a50c-a54a28c7fd0f.png",
+      "bytes": 116362,
+      "sha256": "b0a2a032aa03af3e5ee94878327800b0aa92a09f5e8b6fb1e42639090c7d1b5e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/30/30985460-93dc-43e3-9b33-210ee0a9452c.png",
+      "bytes": 173240,
+      "sha256": "2aa021a46afa91e21e9936b5dc8e97e82e35b16e8c537886fc614907e33211cd",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/31/31219bcf-f3fd-40b3-afe2-e1c40e53a790.wav",
+      "bytes": 21164,
+      "sha256": "83d645fcf12d014b7fa415504f69172178381f12cb43a0679f254b909b37711f",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/31/31c4804b-7079-4bb2-a3ff-32371c4b8873.png",
+      "bytes": 369581,
+      "sha256": "2532122bb59e65229aaf5dc5a55e217a0226aaae4047a76833101f62b0639658",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/36/36ca05ca-d317-462e-8100-9c16ca9c5311.png",
+      "bytes": 159914,
+      "sha256": "6d4d65358b97a626452bfa124e1e67f8232ccdb9c6f0b4740ca2b3bf20998ff6",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/39/39950995-bf79-4de5-895b-524acd5ca364.png",
+      "bytes": 171555,
+      "sha256": "b96e73db8d3ddb5f8af24778d0e29e6a17595e450dffb893f28303d72ba7430a",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/3a/3a7dcefc-3353-45d7-a7c4-90834cb62590.png",
+      "bytes": 50630,
+      "sha256": "fc10063bf9a77f52e1fc7f01d285c82514dfb5f50faee181775aaad7f166dd44",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/3a/3a8894ba-e7df-431b-b817-5bfcd5f3de50.wav",
+      "bytes": 21164,
+      "sha256": "fd581ed52a2d5e1a4658047fc6379ae5a690ce978a28c4b47ac4ac3ce6e6839c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/3c/3cbe9341-6b8e-4536-8977-2dfc34c2a6ed.png",
+      "bytes": 60818,
+      "sha256": "d6eef5fe16ed4a022b3387e1d1667f14ce40f29a605d42808af1206f2ab0d955",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/3d/3d48ae1d-dfe3-4819-a7e1-9feb2e4f29ea.png",
+      "bytes": 38464,
+      "sha256": "f348c0f9519b9afdea1d0ad701fa995864d39e2895c76b9ecf91937804a7e994",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/3f/3fc42f34-2f8f-4e80-be20-43ebe0f2bb9e.png",
+      "bytes": 264183,
+      "sha256": "6de899f66ce595bba45889391e1e069f11388da91053121b806a018fadd9696b",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/40/4049279e-6669-4d98-a139-807c28ba6290.png",
+      "bytes": 147572,
+      "sha256": "2419664bd07c798f0532b4fa2a556b2d6fa221815103e3a49d3686d745f92d6e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/42/42c7c840-d0e3-4fb9-8622-888526fdd61d.png",
+      "bytes": 210326,
+      "sha256": "75c74c539083dfc7de6b08bd97695bad777478e6de23072d6633db644fe18fa2",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/43/430cbedc-ad8c-4ad0-a84c-ea8d8f5dbbcd.png",
+      "bytes": 23293,
+      "sha256": "88bec87eadb8f6cdff3f24f73b06b622359179a23c9fbfc79dd005a5e599f952",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/44/448356af-6d8e-4bf8-b116-73e4e8afc3c6.png",
+      "bytes": 8012,
+      "sha256": "774a224d1a4d4ccf1fc375cc6bb925000698fb14e10d88f5664acaeab1335d02",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/47/4717f1bd-3343-4c37-904f-595e9067eaaf.png",
+      "bytes": 28005,
+      "sha256": "a969bdd857c31e0ee8703d38d85df3ade907b3e0e87e4f7098789f2d92e6a0c2",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/48/48bf4b14-8bc6-421e-a89d-dcc7b5bb3573.png",
+      "bytes": 1523413,
+      "sha256": "9aacd882feb46cba0d04292890ef80a1c89a86c498a35ae46c1c36ec49f81316",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/4a/4afc665f-33be-4495-bc12-1b5e430b629f.png",
+      "bytes": 163586,
+      "sha256": "0ddcc51bd9cebe42738c74e75324c519cd0b1f72e037da99ae7ef3730bbc1f37",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/4b/4bb3aeed-7f64-486f-a31c-3a2908b176a9.png",
+      "bytes": 22275,
+      "sha256": "b177471350f348e63ff8aa577882946815b91f8af6173e47726d307c9f062e1a",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/4b/4bc4ecab-aeb5-45e1-8cf8-6a5bf7021f13.png",
+      "bytes": 152450,
+      "sha256": "d328d5dde86faf0cb2f8d633b6f301204c542bcdbfa7fccbb521889881949b8e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/4c/4ca1d829-2810-4126-916d-e4ad8caeb1d8.png",
+      "bytes": 62160,
+      "sha256": "a61e8821f18d7397a6f8556b50ab20a2fb0b0e148a7a996a63c0bf04db781e12",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/4f/4f5a2f47-242f-41f7-b5b3-bde255bb826d.png",
+      "bytes": 20857,
+      "sha256": "86c1e1b4a5d8b74f3c215d5efd7c5046d088fdfc99c450c6893a84a09368be1e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/4f/4f9afcbf-5c80-4c16-b5cc-c5f062576056.wav",
+      "bytes": 28844,
+      "sha256": "17c30ef63b26f7f1bc8844e51f195609d147f12850714e70185a188cfeea59b5",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/52/5254073a-4685-4057-ab79-9bdbd302243e.png",
+      "bytes": 26460,
+      "sha256": "1530f8f346a43c71bf259b4d1ac4871dc8bf4e313c717abcb0995b27209d5645",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/54/542de1e1-9c11-4753-b9b9-261ebe7f5f87.png",
+      "bytes": 38622,
+      "sha256": "0025cf8a5395d17efd6949e4883dd0804c7c220534bec6d948b6e0b40cebaec5",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/57/577226db-0523-42f1-ac87-44984d7f62a4.png",
+      "bytes": 19577,
+      "sha256": "1aee526934e49541c5d0ae7edb1203d266a68ab23b7d3415d9e9f9543fcdb47d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/58/58d650e4-e3c5-4e1d-b34c-c736005d19da.png",
+      "bytes": 26473,
+      "sha256": "fd949ec168b53a406f84705ec7a5446f096b476364f40101299df89ae0801e44",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/5c/5c965c0b-89b3-4770-9a92-7c4e9de6cd54.png",
+      "bytes": 49013,
+      "sha256": "b5b061ab243e34c6e9f68b444d810ee57e793773295cbff200786cc69921fd1e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/5d/5ddfd52f-43c0-446f-b76c-aee7471eb382.png",
+      "bytes": 60304,
+      "sha256": "be317495360064627f2f28757a4b9934cb7b0c4617a8640e926df9acdcfb921a",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/5e/5e83b5dc-bc79-4d69-b78a-0b828e1780d4.png",
+      "bytes": 11399,
+      "sha256": "276e00b925d2def100e9175ce9e281f356fad906bb53ae5d106c3f9dfbe1f360",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/5f/5fff183b-d357-4e32-8683-95d5a7890090.png",
+      "bytes": 16281,
+      "sha256": "208779249b1e82b0a02639c93d5cbf78cfe58bbb70d2480c0e38e46ccf17ab7c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/60/6098c2a7-7e2b-4abd-bf75-a274bba56c9c.png",
+      "bytes": 32024,
+      "sha256": "109c7d211524a694a727b20bfa959593c286300c3e086274ea59109844331517",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/6f/6f11ff89-fb79-4d5f-89bf-3d1a066f6e67.png",
+      "bytes": 51673,
+      "sha256": "fb6aa5d665a85c97918acff86fdac41a73badbdf44d5353e06ba52058349478c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/6f/6f6b48c3-ddc8-4986-8e42-77e4ed67c909.png",
+      "bytes": 23499,
+      "sha256": "b38d1bec202fcbba1ea77b00db8d91b32276d81eeb451a600493072e1e1c89d4",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/73/732e6c42-b62f-48cc-9596-4597f88ee8d3.png",
+      "bytes": 145736,
+      "sha256": "58dc6c9e56a3847c2da8ecefa7ecbc0c00e9eca041c6ad338a0100c1c69a5023",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/75/7563b926-93d0-4051-bee1-4b078149d72d.png",
+      "bytes": 155065,
+      "sha256": "799ac7cd2d43f09720eca784dbf51a8dcf95cd1eaf665472d2a3d94eb860d773",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/75/7598b4c1-0e44-4917-b7dc-e343696afc8f.wav",
+      "bytes": 23084,
+      "sha256": "ad225c554c1788ce2e73f399d9323943f96dfacfe82270c947c179fbaf16a5e6",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/76/76cdd725-296f-4cf9-8739-37f02da2b242.png",
+      "bytes": 159560,
+      "sha256": "fd4534d4cef1d2379435cc0ef927124b4bff66e664ddd6a91ffd30500905d880",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/7d/7d149ad3-a647-4851-b5a5-c8acaf896b85.png",
+      "bytes": 186897,
+      "sha256": "bf45001717a0fb5b0745b0fe45afd7331f0c9a69f6cf024dff9e719c07b40564",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/82/827637ea-85db-49b8-98f9-63c259052c0c.png",
+      "bytes": 48533,
+      "sha256": "2bcd78469664140530212235fbe0338577f520f739d54592cf02fcd5b4d2acf7",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/82/82b77816-2ff7-4df8-b3a8-7f405ef079c7.png",
+      "bytes": 344076,
+      "sha256": "aaa28a7e8d3811b3ccce73e04a081320ebb63a942090bd546171c65e6263254c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/82/82f38f54-c6b3-4906-96b8-52069eb9e317.png",
+      "bytes": 176957,
+      "sha256": "edc27c97877a39306bd61e3cef8a7b477df14554b13166ecd4cf0e7b5f85ce9d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/85/85997120-ce50-4bc8-bab5-c27917c3f714.png",
+      "bytes": 14462,
+      "sha256": "e07a443cbaa6d28f8437a47a05dfbcbcd5f1854af130c3c5ee6dc68af0b52a53",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/85/85dfbb94-80c8-46f7-b63b-890b4893b299.png",
+      "bytes": 46295,
+      "sha256": "6733bcca4d8d4178a5993f58c4d431bac515991af96cc496a7a5e56734afcc31",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/86/861ae34d-e366-433f-a644-4007e7909fae.png",
+      "bytes": 23513,
+      "sha256": "e158730bf15045d8fbc95f1734a2b609f193fb7f2d3e2ec5a42736c5afca1313",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/86/86b4c417-3316-408e-8b94-dbe6d347977e.png",
+      "bytes": 106720,
+      "sha256": "a8105e01e605e1f791d87236c0a2caadb6e57ae2a75fc551f355b4a3b9804447",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/8b/8b81feaf-5412-400a-a69d-658c3520a60d.png",
+      "bytes": 374220,
+      "sha256": "dabc0c9f3c971c645e34648f2a561ec7e03f496871a46398286821c275991ea6",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/8d/8d285ccc-5e11-4e6f-b204-c0bcac8ab5c7.png",
+      "bytes": 17269,
+      "sha256": "45eacdb49e0787a98a2760e45b2919d1b5a95c618b3be1408e4d1f50e866cbef",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/90/9039043d-fbfd-4d1f-a845-9030df8cef2a.png",
+      "bytes": 3295510,
+      "sha256": "ce6c4fca75ea2854cc32d0c1c5c85805bcbd3b00522e9bc11311348e88aab307",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/91/915d73c2-6f3c-437e-8880-7951e56992a2.png",
+      "bytes": 27713,
+      "sha256": "b272db11403de6f2c6f3f56f85c54a86e3950000ffbb0a1029079ef754855949",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/93/93c787d1-13e7-4d07-a8ba-617f0303d693.png",
+      "bytes": 26636,
+      "sha256": "e0d3f38e4d1af746ac32230085c708e650541c5bc5aed41e071e0a82e767d1ca",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/95/9530673b-d4f7-4854-9b49-ae46b60e392c.png",
+      "bytes": 15384,
+      "sha256": "a99a5adc633f7994bc01bbb2ab9b2f440a1e79bb5471f9ff8df136c0476eff64",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/9f/9fa5a6c0-baf6-46ab-a1e7-33585f19c279.wav",
+      "bytes": 81644,
+      "sha256": "d3029ae5c69d08dd73087b18604de05de6dd7df1d12672e067b862e1ba9c0e4a",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/a0/a07bd064-b085-47c2-a99c-92ab3a67c9c8.png",
+      "bytes": 11060,
+      "sha256": "329706d8a0b01d864970f23ee0e561cfa36a57c7b65ae00c0cd188cbaee12328",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/a0/a081d531-431b-4b52-bb82-7045c2046c87.png",
+      "bytes": 148715,
+      "sha256": "300877d5089b87201d6dcd7a94295485545a2e3f8c630dc97c19f4c1ee780f28",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/a1/a1b17f50-a5ee-41fe-bdb6-5b97f3c34be4.png",
+      "bytes": 142671,
+      "sha256": "f332052f1300c9d8526c90467fe11403d9ab63c41873b9492f8cdaa4c1032ba0",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/a3/a3be5822-d9c8-40a3-8c66-7ece8f1085c7.png",
+      "bytes": 49418,
+      "sha256": "afa3abd7f3517a4e01f63459f8f036e1e39b1e806402311a05b1d05b40d0ba63",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/a5/a5b014f5-8186-402e-8a4d-9631fe9081ec.png",
+      "bytes": 22330,
+      "sha256": "fda30424d6fd1817dd6396464bd9a807b7b54f0bb519ea0add008963c9677bd7",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/a5/a5f02587-9d8a-4a26-a55b-a9a7134967be.png",
+      "bytes": 1988261,
+      "sha256": "c2f5a31d86668139b8aa8c38a81abb48778c8193f5e990e5900dc5b61d81d034",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ae/ae3019e4-2b9a-4461-8204-d9cb403ce719.png",
+      "bytes": 19226,
+      "sha256": "61641baf4faf4106ae9fe208dbee6f0f4975f7987c6d164352de1cf6af7bd474",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/af/af2a68a6-b2c0-46e1-9992-56cce332b32e/Title.ttf",
+      "bytes": 504856,
+      "sha256": "839635c3bc3b56e812ea1e72ad13522e2a8bb30d774035408358c09afc891d41",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/b0/b098d18e-f0c7-4ab7-ab8f-fa14f228de0a.png",
+      "bytes": 229387,
+      "sha256": "6282ed30b53b417a42cd3112582e7e376d0e35bea0445d34ea515ac14a894106",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/b0/b0a6402e-aaee-4d6e-a0d7-98b1383c54ca.png",
+      "bytes": 51581,
+      "sha256": "da17e35e4a0e87f84c77a6a27c9d106b2096d20b5fb5d0193eed11aec007a7b8",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/b4/b4f899bc-d03e-46f9-8456-81c2b5749af4.png",
+      "bytes": 16607,
+      "sha256": "934b727f9e80268d20c2a4392f685a74950a097e4a3043fee9a6db94d1892fc5",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/b9/b982be2a-52f5-4852-a618-d8b1f6aec928.png",
+      "bytes": 28860,
+      "sha256": "625b7ce696508421ba61fca144ccebe56247f51517ebac5eabf8105e3f0f5552",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ba/ba6b16d3-217d-49e9-8b6e-50b4942377e7.png",
+      "bytes": 2255677,
+      "sha256": "c67c2944fb614055027ed48c2296f9afa0a31e1d44846400bc675a6564ef5c15",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/bc/bc553129-6567-4bf5-8dc6-d8ba9d30458e.wav",
+      "bytes": 5804,
+      "sha256": "9865a92f69292612ead9924e988054bb169cbff960c26107b5b4db0ccf410927",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/bc/bc682788-0384-469b-91c0-36efbbfc9bd9.wav",
+      "bytes": 26924,
+      "sha256": "36556c55e0704f44ac84573ee9363dd98e6c6b79df5516d2ec265bcb5a905574",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/bc/bc6ca8c2-dba1-41e0-a836-328e24371e64.png",
+      "bytes": 23414,
+      "sha256": "e9c71b290caef564e2c7dd4192eeacf7855a7aa32f55d3ed6c894b73f1e01347",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/bd/bd4d54d8-f7c7-4ea3-a74f-738fdaf0ae12.png",
+      "bytes": 178994,
+      "sha256": "db7d25fb511fcaa01621cd75edaf09729c24a25b29206d975ee8555d5b9c9b21",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/bd/bd4d87ed-6519-42d9-862a-802f272d8334.png",
+      "bytes": 376028,
+      "sha256": "7f92dd8c3550491cf02f675d1abb65ad87bba49496b73ed3e52dc60e2aeb6efb",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/be/be4ca200-b6c9-498f-ac07-b1f18cbfb0e8.png",
+      "bytes": 50517,
+      "sha256": "ceadcbebb990aac7042a97728630de1c523597471b1e321f459a93eb12a7621c",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/bf/bf6db881-6142-4a3b-8b30-1b6ba5fc7111.png",
+      "bytes": 9284,
+      "sha256": "62d2b8442ab92c2f2f52e942a0ad74e4fa9d4286bc658dc7256bc28b7d893883",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/c0/c0427c65-6b58-46e3-8f8b-cf8223324fd1.png",
+      "bytes": 291557,
+      "sha256": "24d98634dc3af51e07bdee65177b7381f4cddb22e7825d7b78353cded52c9f6a",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/c3/c34d537e-e478-430e-afc5-29e10cfb78a5.png",
+      "bytes": 16203,
+      "sha256": "18c667a41013b473630d3dfc040ddec769653bb3a55efdb2394613b2ad3d864d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/c5/c5d75c96-9e19-442f-b706-6cc5aa4b4e81.png",
+      "bytes": 15877,
+      "sha256": "b0ae1c5352f60107cc470edef08ec32398eb6cdd25c29ea6038cdc8fa22be754",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/c6/c62f4e5b-2164-4956-92bf-3800c767c005.png",
+      "bytes": 24578,
+      "sha256": "d187e129348aac1e1d42c97cf697c5879271c1761bc5c0ed79d431e8fe1827cd",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/c6/c6ae35e8-e4c6-4dcb-95c3-89ae884694e2.png",
+      "bytes": 12086,
+      "sha256": "72eebddf0d6a482718d5ea7bd177b766e067db22f99a9cbc68c0d28610458fef",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/cf/cf054276-5146-4787-84fe-98a5efa4e74f.png",
+      "bytes": 31987,
+      "sha256": "73149d0786d79a67d877d584f4822e023f9492fa463c2aad42da557b3ae685e9",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/cf/cf6f9688-7100-45e6-abcf-4b56a1b59e75.png",
+      "bytes": 24300,
+      "sha256": "2ed8703648b991a00d109e57a05a3a5764656b94f7e3dac7514f135a294a0e48",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/d5/d54d1384-b543-4b06-b0d9-7965479f0570.png",
+      "bytes": 34905,
+      "sha256": "88b404c6f7290227ed938d5e7673f2e2f505ae63a03a7dc43cce7db9f6f598e6",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/d7/d7b3665e-1324-4c77-8520-c1ab3c2b03a1.png",
+      "bytes": 176710,
+      "sha256": "934f7826234b84f16c1553951e135cbb3f7e1d326249b3c6a110f195f506d48e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/db/dbe57841-5825-48d8-8b96-0a2bbb6bab5e.png",
+      "bytes": 44839,
+      "sha256": "652148c1ddb81fe603ae288e5de978c20ca62754087a7b1019086264e6b80b46",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/dc/dc98a84e-f3f5-482a-b6db-06cf7697522d.png",
+      "bytes": 22815,
+      "sha256": "1c814300345c029e6f7358a6781ab2f3311b54012edfee6d5938413d48538586",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/dd/ddd2cf1b-fcf5-4060-b977-d7fdd3e7c11a.png",
+      "bytes": 178994,
+      "sha256": "db7d25fb511fcaa01621cd75edaf09729c24a25b29206d975ee8555d5b9c9b21",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/de/de428ec9-d646-4b07-b5d4-fb874b3b536e.png",
+      "bytes": 21230,
+      "sha256": "de7034db46ea09d041cb9396d7cc601aea594a47865c78dbc42587a7c81db859",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e1/e15c96f8-eb5d-4536-ab35-b21b71d7f7f7.png",
+      "bytes": 19726,
+      "sha256": "17e0fa060c2502fa3931041fa36d4e615823af647a1f7e24ad9c758551584f53",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e1/e1ab0aef-126a-4d84-994d-42795615ddc2.png",
+      "bytes": 33418,
+      "sha256": "174086e060fe054ca25234e7bc283bbcfb8d68d8a3cde72fab4cfa7eecaeffac",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e4/e42c96cf-858c-4cb6-bfd4-6f6380866f10.png",
+      "bytes": 22120,
+      "sha256": "4c948e39485de247d0ca9a645ff28434899de5e0c8eab47bf5e2756481cabffb",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e5/e52f27ed-06fb-40f1-8dfd-2627cc10e285.png",
+      "bytes": 43450,
+      "sha256": "8068f0de62332ee68aa42f3bba818884fa1cdce5aebb8792404cb3ff17214bad",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e5/e59eb41c-bb53-4b8a-9bfa-769edb415f2b.png",
+      "bytes": 18762,
+      "sha256": "102c47d6bb9a67930f7a7b6d52ad65b343d23a7ab2ea8be05a4380e20fb32a41",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e5/e5e1f474-e433-4b9c-ac5b-ccd63cbea1e8.png",
+      "bytes": 9234,
+      "sha256": "4de197bcc63788a0dc98b0c4715167b1334ef564cf636e6e1fc880db2fdaa9ee",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/e7/e7c94614-71f8-46db-92f7-d18d70a858b3.png",
+      "bytes": 28388,
+      "sha256": "9bb8ffec19ad2d43fd48caa86b134b00c6014a87d3115bd5e624cca679d054dd",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/eb/ebb59d2c-d940-4eda-bfac-46a329c00790.png",
+      "bytes": 141750,
+      "sha256": "9428434b5511506db2234b449401ca05ef9b758e2f51f343c65f2b0d3c61dd72",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ec/ecd32b4d-f765-45f5-bd85-3c047ceca36d.wav",
+      "bytes": 15404,
+      "sha256": "50c3e7a122e2ee41263eaed65c63ea4817bb29ca7e17ec01f52f86dea41bb6ac",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ed/ed19f4ee-4e34-4ffe-b487-cb89c89481b8.png",
+      "bytes": 17046,
+      "sha256": "3be1ec89835977a47492071512609acd0abd150dbaf425a3515263ec3c2e76fa",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ed/ed69e2c7-4836-40c4-b86a-c3587e19b7c7.png",
+      "bytes": 63804,
+      "sha256": "a59b4187729a726542fbfd564f7a56342285c4d611c2b81214e239da4d80821e",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ee/ee86d2b6-5fc6-4040-b76e-ac248505ab3b.png",
+      "bytes": 38908,
+      "sha256": "dfc5079359adb5d10b97d04624302470e7871d2c219e0d1d319be1698d95d018",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ee/ee97e7d3-c9b3-4aa0-84b2-05bfeacaa1b8.png",
+      "bytes": 48898,
+      "sha256": "76aeb117b3a6c6c58e86adef55a2aa8bf0f71aa23c6148f7b7e53cfb9e5aaae7",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ee/eef403a0-2cf1-4375-85d5-d008ed2c9938.png",
+      "bytes": 35645,
+      "sha256": "f837f7181c4f7a4a369dae78a313ac47ca702ed2624cb995f706d7dfda115f43",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f2/f28ccdea-6345-4bd4-94f1-193cb0cdb1e0.png",
+      "bytes": 54495,
+      "sha256": "ca9ec29d29765e6c07ab4952d8542c4e48e3addcf2753d073076313e3d7ab488",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f2/f29c4ffd-4668-42b1-b7e9-3e3c50aa6a5b.png",
+      "bytes": 38752,
+      "sha256": "61bd0d6617d192e9bed9c5e608e2c34d10302b98cc3a120ff02057bcd533b63d",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f3/f3ff338f-b254-4849-8b05-d265de6f9266.png",
+      "bytes": 90295,
+      "sha256": "28dbe403362b3b8a1a887ca557a5a530eb2863990fa1bfd1daecaad45e52dc77",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f4/f496359b-a480-4da6-9e2d-8ecb8992343f/Body.ttf",
+      "bytes": 198768,
+      "sha256": "9138f0e0c5d45557967f3fa8aea17dda890f12da4b6a81073cf2a74c93b7b656",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f7/f7c17525-d7b2-4f4e-bd97-b4ddbf28ad88.png",
+      "bytes": 67352,
+      "sha256": "291906fb8154cbdb501ffb02b05105b1dc42b72e6e96a47548bf0e49de0d5b66",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f7/f7ce7b35-8551-4e3d-b820-d7ffa4891b7f.png",
+      "bytes": 22232,
+      "sha256": "ce170cec20f0aa8e2cdb7e8fce65e31494876bd758c7bc7d2614d383612218bf",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/f8/f8a7f25a-eda7-4d00-97d5-cc2476fd7420.png",
+      "bytes": 38316,
+      "sha256": "f7b02727d02e67acff0c01dbf7551c6ddd011b9c3731ba0d36d3f17b618d5bb7",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/fb/fb1b1973-fba8-4489-a2c2-c6f0641ade08.png",
+      "bytes": 145048,
+      "sha256": "ddde7301b7c4d361c2c81f584a09359efbf639af1fee1299517676aab1d51297",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/fd/fdc3f8ec-d928-4507-a0eb-490ebef949a8.png",
+      "bytes": 38864,
+      "sha256": "7c693562c59d3ca0aa162ceb99b4ab2f9672894b03aea49da223f6a51f1c88ef",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/fe/feb276ee-b029-4ac0-8774-4e1250ed8acf.png",
+      "bytes": 183236,
+      "sha256": "6a624eae4ec459f8a4acef6b9d2af3824c9001b4608606619623c67a6f27f4ab",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ff/ff14fbf6-cc8e-49aa-9015-33da229379c0.png",
+      "bytes": 22255,
+      "sha256": "4b323169d7b5547462784c569e3f3f8a95732a6ad54a6b8feb494bab4cb20957",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "bytedance-resources/remote/inkblade-content/native/ff/ffb91ca7-551a-4abe-95e6-22df401369de.png",
+      "bytes": 176759,
+      "sha256": "3a8707e42ef05568758a0d8855260b96dd7215378fb29bc52865cd10f5cd493a",
+      "kind": "bytedance-remote"
+    },
+    {
+      "file": "cocos-js/cc.js",
+      "bytes": 1559915,
+      "sha256": "4a3f78975ef8e48f8108c6774780405f04d78205243e9a088c0187246ab19cec",
+      "kind": "web"
+    },
+    {
+      "file": "index.html",
+      "bytes": 2088,
+      "sha256": "352ad4dc0468f69973ab53f04134bef3904df9d4214f9c28fcbc75a6c75cacff",
+      "kind": "web"
+    },
+    {
+      "file": "index.js",
+      "bytes": 818,
+      "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/CocosEngine-MIT.txt",
+      "bytes": 1164,
+      "sha256": "e8799a9198184e8cc31e45e66521b1cca52f9099a932de7a56abb9d212311318",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/CocosModuleSystem-NOTICE.txt",
+      "bytes": 1133,
+      "sha256": "1a23d293825c5285d266873ef0bf4414e59a75873577c85761049b53611c18eb",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/CocosModuleSystem-package.json",
+      "bytes": 1291,
+      "sha256": "013c033a16d5c08522b0d86abf4c3983dd8944cfd59e565271b12ecb5c616d06",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/core-js-MIT.txt",
+      "bytes": 1064,
+      "sha256": "4003e24135fde907d7069bb73aad64092cfe662b26914296f2f7f1e16e1f15a6",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/ISC-reference.txt",
+      "bytes": 822,
+      "sha256": "f2ff9e66e9a9acdbffbcbf2ae4ff184d923325ce1a98d20ac64f3dd450263f3a",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/MaShanZheng-OFL.txt",
+      "bytes": 4397,
+      "sha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/NotoSansSC-OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/regenerator-runtime-MIT.txt",
+      "bytes": 1080,
+      "sha256": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd",
+      "kind": "web"
+    },
+    {
+      "file": "licenses/SystemJS-MIT.txt",
+      "bytes": 1085,
+      "sha256": "447a5e34d6189b14b33ec18eef645aada07646cb2ec89f8532df89049a976705",
+      "kind": "web"
+    },
+    {
+      "file": "README.zh-CN.md",
+      "bytes": 951,
+      "sha256": "76994e2cdd11ca2845191a85c5f5e860cc93644eb5448786e72f55adf4d8e8ed",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/config.json",
+      "bytes": 20133,
+      "sha256": "e8da8a1d02b9c086854d6b0bf027f4188ff30fa5b7c104e1a456ab9297d3fed0",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/00/008a7ae6-c517-4874-b66c-6c507b77caa5.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/01/01486d15-a21c-43a1-bb33-b6ead54bf943.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/05/0573fbaa-247a-48d1-9c66-02cb0ffb6466.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/05/05a78eb3-3a93-40bd-9754-f36daf6e9381.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/07/073ecd7c-75a9-4ffa-9d29-a383a246ca78.json",
+      "bytes": 127,
+      "sha256": "c9d214bbf630a6fac5742a923176c5782edec7dfbb61229da0d99c204a245447",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/09/0959df8d-4bab-452f-abd5-8a9b4a9da6e9.json",
+      "bytes": 99,
+      "sha256": "99c48afbeceef118d333a24e9bc850ce13e3aab65204c0fbc442b98f6f780fc9",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/0a/0a328758-51a6-4ea5-95ed-0592f2492d81.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/0a/0abfb539-0c06-4ba3-bd52-71c45fdf4506.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/0a/0ac8f581-f8a4-4408-8277-71d90d84870b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/0b/0b091e13f.json",
+      "bytes": 5322,
+      "sha256": "5a2aafa18df7796ff1a94ca19f4d8b113e770c6659fd03dc3927696197f7d87f",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/0d/0df445fb-5572-4e9f-a171-41ce912a0ffc.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/15/15987bd2-c279-4092-bba6-589103298e6c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/18/18362265-4239-4daa-9b26-6ed4b3d7a13d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/1b/1b3ce777-3803-4579-b85e-dd9eb7f32e68.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/1c/1c4713dd-dc44-445a-8538-6695094ab2df.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/1c/1c8bb7a7-e569-4ba2-b378-400642053b4e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/1c/1c9c73fe-c2ee-437f-a520-19ae6c7b2b11.json",
+      "bytes": 120,
+      "sha256": "717a37ab124d4dc8f53a4dc99b743cbf083b4bca916d424a6c5059dca55cfa2c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/1e/1ecf1f29-a337-4a8b-a513-52f25ffeddb9.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/23/231ca33c-2ac7-4880-ae82-ab08e7d6edfd.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/23/2341594c-b950-46a1-a794-e35c83ace0d9.json",
+      "bytes": 125,
+      "sha256": "06008859ce51409b4339e6dfeedc8f9fe70b6809ac25806ca441035d9d668996",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/23/2342b6bb-154c-4ea3-a184-91061112981b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/2b/2b4f9474-2d6e-49eb-aba3-58371e87b0e1.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/2c/2c098b28-6918-401b-82cd-2c4ce6251a2c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/2d/2dee6cd2-dd27-4cca-9cc5-fbc214a6c625.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/2f/2fe2bfcc-f67c-4301-8874-1a1fab9403cb.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/30/30deb3c2-598f-454a-84a2-949107b917ca.json",
+      "bytes": 123,
+      "sha256": "46718b4dc77d64059c03c23e34343f9bf0bdd4d50f6742d7d00249c0fc31b70e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/31/31c1e317-63bf-44fe-8e2d-08500bb3767b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/34/344a0451-18fb-4cc7-bcac-1eae881270a6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/36/36e53ad2-3921-4d16-ab08-f6da2a9a9a85.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/37/37932288-d7e3-4b98-8046-c26dd0afa664.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/37/37e8a87b-359d-4553-8530-ea540487494e.json",
+      "bytes": 4600,
+      "sha256": "ddcac66624095f2432fba078b147568850be97a3aef5192648802b36c241a2af",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/44/444916e3-1326-4f01-b286-d7d9127d8998.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/47/475d14b7-0d94-4211-b513-27462191ba80.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/48/48120bac-a0b8-4793-8863-17eb5d9efc9a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/4a/4a6a59ab-fdfb-476b-b513-255849e7b7b6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/4e/4ef7d241-b72a-46f2-bedd-7e687a1a1589.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/50/5035f795-4b1b-4e46-8833-d98f94650af2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/51/518e7a4b-a17f-4b3b-9d44-bddceef479dc.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/52/52ad7a0e-f11a-4407-9c52-2352f2aca444.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/54/54e5f0a7-4a0f-4b6c-9c4a-45a6b6e220d1.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/57/57507b8e-4d37-4f75-9321-4d660d4a9ac6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/58/58421f46-4705-4aae-ab47-e38e5e179341.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/58/58654135-6e21-4083-8aef-62f9adff2a43.json",
+      "bytes": 120,
+      "sha256": "07cf09ce6a780a5bfdf05870fdb62602bf4f602fd8daec113314994a2d45ac64",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/58/589dbced-951d-4354-8a6a-7d7b0fd43e13.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/59/59bddb65-5f97-4801-99ce-1f33cae147ef.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/60/601bb5dc-3b78-4c86-820b-53a204cc1dfc.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/62/6236c6a9-135d-4848-bbac-e4d87ed1be09.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/62/62a51d5f-fddf-44b7-93ea-bdc4085205ea.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/64/642ebc0e-596e-4e3f-ba18-7885b1b3ec65.json",
+      "bytes": 4590,
+      "sha256": "b8bea4cb2dd677429ce240cd0f2062ec7ed709b317552724c834b72096514132",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/65/6533cc57-b748-4fee-9d71-6be3eee6dd68.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/65/65ecc2b0-e5e9-404d-97dc-e4329e7c1ae3.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/68/682f38a0-ef4d-4e05-9785-f2d5ed0ff6e8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/69/69ac3341-892f-464f-a5bc-41e4def289b0.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/6c/6c1a7c46-00bc-4d5b-bded-1801b1f98018.json",
+      "bytes": 123,
+      "sha256": "bd927b4140648bf45febf090fcadb7b887839b7df0589b59c4edbdefd6a2eba0",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/6d/6d736815-ad04-45d1-9e85-8af2cdf8e8a0.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/6d/6dfeb9e3-8794-4098-abb8-95b6c21e0b82.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/6f/6fb4dc9d-ee85-4606-81e2-39669f12f274.json",
+      "bytes": 120,
+      "sha256": "59653d511f073fe996e135052f0e6d8c7df4a072d07c8b0cb4cb73fa2b479a42",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/6f/6ff3b39a-7238-407b-a8dc-0022928b60c7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/72/7236e33b-c71a-49c8-80c9-7228bd09dd25.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/74/74f7213e-9749-4d3f-af66-a7f5b2fc4e55.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/76/769372fe-409c-4ab1-a5c3-754a0a55e026.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/77/77442e4d-ccb3-4882-9543-003eec901e71.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/78/786947c3-a36c-47a8-84d4-2b98870837df.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/7a/7a673542-2a68-4cc0-90f8-98a6e472185b.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/7a/7aa8cbb0-18dd-4674-9a14-217a8a16cd60.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/7d/7df9301e-523b-4b8b-b7f4-dd3e554fa2de.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/7d/7dfb9bd7-ceb3-419f-8de9-05b48779fb7c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/7e/7e6c2532-6691-4d43-8427-06c41fa15e1e.json",
+      "bytes": 122,
+      "sha256": "bb534dc5cffe9d9d0c1ecc4e2a18c469a09dfc672c40d5767231a3f5db9406fd",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/7e/7e7d5824-e1fd-49b6-bd0b-7928f2bcd2ae.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/81/81d42a64-9a51-4bf4-b1ce-44a3fa491146.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/83/8325d733-bed4-4251-8199-c900a7af4eeb.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/85/856f9874-8f9f-4cb4-bf64-51b934d31103.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/87/8744f17e-9f96-4711-a2da-1f078aedd9a2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/89/890c9a81-a67b-44f1-b201-726c27c9ad91.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/8a/8a6f5592-59f4-4203-95cd-0949939ae486.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/8a/8af50939-d9ab-4168-a783-255f58a3267c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/8b/8b354c24-e333-4065-a220-ce801a1768a7.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/8e/8e8c68be-22c8-407e-ab3a-a6257e50b3d5.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/8e/8ebdece1-b59b-4cd3-8350-160c869f8b56.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/90/90904619-7e01-4697-900c-f36c2e46d8b9.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/95/95f5e52b-d05b-487d-9b44-6f959e4ea7d9.json",
+      "bytes": 4588,
+      "sha256": "749a91940a3612d9d9d9fea029e4b1543c959a334b7d1f5c8689501d6e7d902e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/97/97003ab3-e6b2-4118-bfc1-b51ca4355382.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/97/97a13f10-e6f5-45fc-9d2c-2e38fa275642.json",
+      "bytes": 124,
+      "sha256": "3e0a2b91397926887c0dd87a576aa07822548dc0fbe7f2c0f25683f3ea2e80c3",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/99/996eaf52-6b0c-44d5-8d9a-519cec123263.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/99/998d5324-cf5d-475f-9276-cf5e773cedb2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/9d/9db220e8-7103-431f-b433-a94f4e5da7ab.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/9d/9dc0a6e3-1341-4401-9ad6-f60f5c8dd93e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/9f/9f4bf1b6-ed5c-424c-bde1-5f34e6a96ae2.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/a1/a1aea54a-434a-4507-a04d-1597d8870c1d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/a4/a4908e8f-a80a-4c99-beef-3e1b4eaeac85.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/a7/a7a372a6-0945-4e64-bcd8-ce765350c3f6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/a7/a7d1947e-737e-47f3-9093-6785f74c5420.json",
+      "bytes": 122,
+      "sha256": "c0bb675e2b4705be801c148c25c7757ec5358f4dde1cfd27d7c84c6d70360c15",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/a9/a9e7e936-1328-49ba-b2f6-937144d32f7e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ab/ab57df7c-8136-4e1b-9ed7-aacc7e1b07d8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ac/ac93343b-50cf-4242-aa06-2304a5875ecb.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/b0/b0bc62d3-6d3e-4682-ae27-53e82d2b6e48.json",
+      "bytes": 115,
+      "sha256": "c8648235bffbfa0beb91cf7d57ff4cc36e717b8ccddfe926682105d87eaf7c4f",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/b4/b43073a9-a291-4928-92e9-49d0913c1412.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/b5/b581b3cc-5212-4c13-bb90-f81d41db7855.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/b5/b58a739c-6255-4555-adca-6d8f9434c68a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/b6/b6e1394b-ee00-4c10-8f68-a995aefc9b64.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/b9/b9d7b116-2a16-4828-8fbe-1d4d6afbe957.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/be/be687474-2453-443b-a6e9-b3ba3037873c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/bf/bfbb50d1-1422-4ef4-a8ab-f762d03d7264.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c2/c240e307-9c47-49e2-9766-ebc2e1d2ad11.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c4/c48ca8a5-8cc2-4667-9c8e-bce4f9d7ed05.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c5/c5631539-0b0d-4967-b437-425023d04576.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c6/c65205ad-bf23-433d-b9c4-f6cf690a7410.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c8/c8b20bbb-e7a4-4b60-b32f-af90978be505.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c9/c91ea273-88ce-4c0e-8b81-85f04bd147d6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/c9/c929794f-8099-45b7-b069-18f9f7ff498c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/cc/cc11fdd9-98e3-4a41-a38c-a2c63b500fe1.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ce/cef997aa-e99f-453c-99e4-7b58689483f6.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/cf/cf5d5dc5-0c9d-43c5-a0bc-9d4abfa1f71c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/cf/cf99de2a-a29c-4fa3-9c91-22075b70d5b9.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/d1/d166d737-4a11-4141-a04b-c8c170ce220c.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/d3/d3f9c743-39cd-43a2-95d6-4608528d5728.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/d4/d4c3ba3f-2e67-43af-be84-c80512a80143.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/d4/d4d5df60-b6c5-4736-89c1-a389ccb5d2ab.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/d9/d98d8f8c-7793-47dd-9caf-5f9c5c6ff37d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/db/db4dd64a-42a1-4f32-ac34-33424bd03b64.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/de/de5e04e8-2e65-413d-b7c1-d3e7b86b9313.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/df/df4f40c9-95da-4bd6-8f3d-f692e7bdbd14.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e1/e13e8291-12a8-4af7-b9e2-f7c4ab8fbef8.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e2/e222f5e0-7db1-46f3-9211-fa6d70eb8d67.json",
+      "bytes": 121,
+      "sha256": "3895f57fbf327427f2c926fefaae8807d44c271c747eb32e0fc3bead77687c1c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e2/e2a9f7e8-c2ac-4c29-99c6-43d814dfa462.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e3/e331bfef-f6e7-46e9-8134-ee101fa5dd25.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e4/e4afcada-678e-4db8-b489-beccd1060503.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e6/e6d2a88d-a4f9-460b-b84d-06853f29456d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/e9/e975f4c1-f99b-4bff-8a66-d032c5e17909.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ea/eafb3e60-cc43-4c0e-bcb7-33c902c5fb35.json",
+      "bytes": 101,
+      "sha256": "a449cfec9d9f25a765e85848e1c33ab9c1470a6c84b01c7868b1b8b23b7ef70d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ed/ed0deb23-740c-4800-b237-550cae989c1d.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ed/ed13f096-41f2-4677-aacc-21328e0d69db.json",
+      "bytes": 122,
+      "sha256": "61e1526ea17f686a8cf1c2e07be73743b40584cf6b0c78db2e2d6d117a574463",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ed/edb0fb09-37e9-4ff8-9812-aa8132c10d57.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f4/f44419be-65f9-4018-b27b-d11676a2d102.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f4/f4fc153a-25ec-4953-949f-c96ccebb578a.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f5/f5aa0300-3db5-4da9-a1a4-46e432b49650.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f5/f5bf5b50-fb1f-40a3-9757-c1c40e62a3e9.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f7/f789196b-8b30-4662-9dba-80c3868997aa.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f8/f800a5fb-f9e8-4b8e-af3f-5303112c07af.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f8/f87793c6-6019-4d1e-a6b3-419bd82b578e.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/f9/f99664cc-158b-43d6-a04e-212c15c5aff3.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/import/ff/fffd2b5e-609b-4d9b-a12f-e19e1a597339.json",
+      "bytes": 72,
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/index.js",
+      "bytes": 626,
+      "sha256": "84232dad79e471f6723464b145907248c22a380c02106cb21b64d173b8f5d497",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/00/008a7ae6-c517-4874-b66c-6c507b77caa5.png",
+      "bytes": 176759,
+      "sha256": "3a8707e42ef05568758a0d8855260b96dd7215378fb29bc52865cd10f5cd493a",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/01/01486d15-a21c-43a1-bb33-b6ead54bf943.png",
+      "bytes": 1988261,
+      "sha256": "c2f5a31d86668139b8aa8c38a81abb48778c8193f5e990e5900dc5b61d81d034",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/05/0573fbaa-247a-48d1-9c66-02cb0ffb6466.png",
+      "bytes": 28860,
+      "sha256": "625b7ce696508421ba61fca144ccebe56247f51517ebac5eabf8105e3f0f5552",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/05/05a78eb3-3a93-40bd-9754-f36daf6e9381.png",
+      "bytes": 28388,
+      "sha256": "9bb8ffec19ad2d43fd48caa86b134b00c6014a87d3115bd5e624cca679d054dd",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/07/073ecd7c-75a9-4ffa-9d29-a383a246ca78.wav",
+      "bytes": 2880044,
+      "sha256": "9fd843702b99a14ac61f7202f44e4afd949220dbb04fd58f224676081317c1b0",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/09/0959df8d-4bab-452f-abd5-8a9b4a9da6e9/Body.ttf",
+      "bytes": 198768,
+      "sha256": "9138f0e0c5d45557967f3fa8aea17dda890f12da4b6a81073cf2a74c93b7b656",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/0a/0a328758-51a6-4ea5-95ed-0592f2492d81.png",
+      "bytes": 90295,
+      "sha256": "28dbe403362b3b8a1a887ca557a5a530eb2863990fa1bfd1daecaad45e52dc77",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/0a/0abfb539-0c06-4ba3-bd52-71c45fdf4506.png",
+      "bytes": 23730,
+      "sha256": "ca73f15b4766b307f717f4950754c48b032876f090e1bdec91f8c22b896910c3",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/0a/0ac8f581-f8a4-4408-8277-71d90d84870b.png",
+      "bytes": 186897,
+      "sha256": "bf45001717a0fb5b0745b0fe45afd7331f0c9a69f6cf024dff9e719c07b40564",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/0d/0df445fb-5572-4e9f-a171-41ce912a0ffc.png",
+      "bytes": 159560,
+      "sha256": "fd4534d4cef1d2379435cc0ef927124b4bff66e664ddd6a91ffd30500905d880",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/15/15987bd2-c279-4092-bba6-589103298e6c.png",
+      "bytes": 22255,
+      "sha256": "4b323169d7b5547462784c569e3f3f8a95732a6ad54a6b8feb494bab4cb20957",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/18/18362265-4239-4daa-9b26-6ed4b3d7a13d.png",
+      "bytes": 49013,
+      "sha256": "b5b061ab243e34c6e9f68b444d810ee57e793773295cbff200786cc69921fd1e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/1b/1b3ce777-3803-4579-b85e-dd9eb7f32e68.png",
+      "bytes": 78198,
+      "sha256": "5864972fc6931467fd326f01bdcfbf4ac139e92d409daf2e56b28f9f847530f7",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/1c/1c4713dd-dc44-445a-8538-6695094ab2df.png",
+      "bytes": 51673,
+      "sha256": "fb6aa5d665a85c97918acff86fdac41a73badbdf44d5353e06ba52058349478c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/1c/1c8bb7a7-e569-4ba2-b378-400642053b4e.png",
+      "bytes": 142671,
+      "sha256": "f332052f1300c9d8526c90467fe11403d9ab63c41873b9492f8cdaa4c1032ba0",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/1c/1c9c73fe-c2ee-437f-a520-19ae6c7b2b11.wav",
+      "bytes": 5804,
+      "sha256": "9865a92f69292612ead9924e988054bb169cbff960c26107b5b4db0ccf410927",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/1e/1ecf1f29-a337-4a8b-a513-52f25ffeddb9.png",
+      "bytes": 22697,
+      "sha256": "487b05d33d6b69f3ebe592234fcd57e76147965da0116b0eaa19276286b4be20",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/23/231ca33c-2ac7-4880-ae82-ab08e7d6edfd.png",
+      "bytes": 15384,
+      "sha256": "a99a5adc633f7994bc01bbb2ab9b2f440a1e79bb5471f9ff8df136c0476eff64",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/23/2341594c-b950-46a1-a794-e35c83ace0d9.wav",
+      "bytes": 55724,
+      "sha256": "4823a1c76f48bba7438fa3ff8240c4d6d05685f87f1c815e3c5f8bb1b80786bf",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/23/2342b6bb-154c-4ea3-a184-91061112981b.png",
+      "bytes": 369581,
+      "sha256": "2532122bb59e65229aaf5dc5a55e217a0226aaae4047a76833101f62b0639658",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/2b/2b4f9474-2d6e-49eb-aba3-58371e87b0e1.png",
+      "bytes": 1523413,
+      "sha256": "9aacd882feb46cba0d04292890ef80a1c89a86c498a35ae46c1c36ec49f81316",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/2c/2c098b28-6918-401b-82cd-2c4ce6251a2c.png",
+      "bytes": 147572,
+      "sha256": "2419664bd07c798f0532b4fa2a556b2d6fa221815103e3a49d3686d745f92d6e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/2d/2dee6cd2-dd27-4cca-9cc5-fbc214a6c625.png",
+      "bytes": 22330,
+      "sha256": "fda30424d6fd1817dd6396464bd9a807b7b54f0bb519ea0add008963c9677bd7",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/2f/2fe2bfcc-f67c-4301-8874-1a1fab9403cb.png",
+      "bytes": 152450,
+      "sha256": "d328d5dde86faf0cb2f8d633b6f301204c542bcdbfa7fccbb521889881949b8e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/30/30deb3c2-598f-454a-84a2-949107b917ca.wav",
+      "bytes": 124844,
+      "sha256": "014c3a0bab8138bc57cbcc63374ed40ad54e36ed5b701509c9dd94b1f3b00fa5",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/31/31c1e317-63bf-44fe-8e2d-08500bb3767b.png",
+      "bytes": 3295510,
+      "sha256": "ce6c4fca75ea2854cc32d0c1c5c85805bcbd3b00522e9bc11311348e88aab307",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/34/344a0451-18fb-4cc7-bcac-1eae881270a6.png",
+      "bytes": 17269,
+      "sha256": "45eacdb49e0787a98a2760e45b2919d1b5a95c618b3be1408e4d1f50e866cbef",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/36/36e53ad2-3921-4d16-ab08-f6da2a9a9a85.png",
+      "bytes": 374220,
+      "sha256": "dabc0c9f3c971c645e34648f2a561ec7e03f496871a46398286821c275991ea6",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/37/37932288-d7e3-4b98-8046-c26dd0afa664.png",
+      "bytes": 38464,
+      "sha256": "f348c0f9519b9afdea1d0ad701fa995864d39e2895c76b9ecf91937804a7e994",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/44/444916e3-1326-4f01-b286-d7d9127d8998.png",
+      "bytes": 99423,
+      "sha256": "9b82034ff6bad2a6f58ede3ef9744bab22f88b60ecd9da11329e96f106e08bcf",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/47/475d14b7-0d94-4211-b513-27462191ba80.png",
+      "bytes": 16607,
+      "sha256": "934b727f9e80268d20c2a4392f685a74950a097e4a3043fee9a6db94d1892fc5",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/48/48120bac-a0b8-4793-8863-17eb5d9efc9a.png",
+      "bytes": 155065,
+      "sha256": "799ac7cd2d43f09720eca784dbf51a8dcf95cd1eaf665472d2a3d94eb860d773",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/4a/4a6a59ab-fdfb-476b-b513-255849e7b7b6.png",
+      "bytes": 88190,
+      "sha256": "4f7f8ca87b6402b363497854a7d16296acffe0730634ef297195912936c32145",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/4e/4ef7d241-b72a-46f2-bedd-7e687a1a1589.png",
+      "bytes": 63804,
+      "sha256": "a59b4187729a726542fbfd564f7a56342285c4d611c2b81214e239da4d80821e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/50/5035f795-4b1b-4e46-8833-d98f94650af2.png",
+      "bytes": 23648,
+      "sha256": "e5532be6189720619d40094fdf73d91aaf8fb93812ba16cd07785eee3c77145c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/51/518e7a4b-a17f-4b3b-9d44-bddceef479dc.png",
+      "bytes": 35645,
+      "sha256": "f837f7181c4f7a4a369dae78a313ac47ca702ed2624cb995f706d7dfda115f43",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/52/52ad7a0e-f11a-4407-9c52-2352f2aca444.png",
+      "bytes": 20146,
+      "sha256": "db90fa15a8bb36ebae3915e5392e751657ffe226f18f4ca7fc09c81ee6dc63ac",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/54/54e5f0a7-4a0f-4b6c-9c4a-45a6b6e220d1.png",
+      "bytes": 43450,
+      "sha256": "8068f0de62332ee68aa42f3bba818884fa1cdce5aebb8792404cb3ff17214bad",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/57/57507b8e-4d37-4f75-9321-4d660d4a9ac6.png",
+      "bytes": 171555,
+      "sha256": "b96e73db8d3ddb5f8af24778d0e29e6a17595e450dffb893f28303d72ba7430a",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/58/58421f46-4705-4aae-ab47-e38e5e179341.png",
+      "bytes": 60818,
+      "sha256": "d6eef5fe16ed4a022b3387e1d1667f14ce40f29a605d42808af1206f2ab0d955",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/58/58654135-6e21-4083-8aef-62f9adff2a43.wav",
+      "bytes": 81644,
+      "sha256": "d3029ae5c69d08dd73087b18604de05de6dd7df1d12672e067b862e1ba9c0e4a",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/58/589dbced-951d-4354-8a6a-7d7b0fd43e13.png",
+      "bytes": 210326,
+      "sha256": "75c74c539083dfc7de6b08bd97695bad777478e6de23072d6633db644fe18fa2",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/59/59bddb65-5f97-4801-99ce-1f33cae147ef.png",
+      "bytes": 21230,
+      "sha256": "de7034db46ea09d041cb9396d7cc601aea594a47865c78dbc42587a7c81db859",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/60/601bb5dc-3b78-4c86-820b-53a204cc1dfc.png",
+      "bytes": 21082,
+      "sha256": "30b839ed16a8cf7ae9111b16ebdc3c0ab7c3cc2a39e4c721b4dac6a8ff890dca",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/62/6236c6a9-135d-4848-bbac-e4d87ed1be09.png",
+      "bytes": 178994,
+      "sha256": "db7d25fb511fcaa01621cd75edaf09729c24a25b29206d975ee8555d5b9c9b21",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/62/62a51d5f-fddf-44b7-93ea-bdc4085205ea.png",
+      "bytes": 6329,
+      "sha256": "2da754da0d1143f9ba4fa23322fd2a161a71e904bca60f70f6ef5296aae4bd41",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/65/6533cc57-b748-4fee-9d71-6be3eee6dd68.png",
+      "bytes": 106720,
+      "sha256": "a8105e01e605e1f791d87236c0a2caadb6e57ae2a75fc551f355b4a3b9804447",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/65/65ecc2b0-e5e9-404d-97dc-e4329e7c1ae3.png",
+      "bytes": 261189,
+      "sha256": "46d60b8cea28613d0bdf6e7c23afcb6c0c8f324be0fe77a0a7e560ed7ce4ee71",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/68/682f38a0-ef4d-4e05-9785-f2d5ed0ff6e8.png",
+      "bytes": 22275,
+      "sha256": "b177471350f348e63ff8aa577882946815b91f8af6173e47726d307c9f062e1a",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/69/69ac3341-892f-464f-a5bc-41e4def289b0.png",
+      "bytes": 11399,
+      "sha256": "276e00b925d2def100e9175ce9e281f356fad906bb53ae5d106c3f9dfbe1f360",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/6c/6c1a7c46-00bc-4d5b-bded-1801b1f98018.wav",
+      "bytes": 26924,
+      "sha256": "36556c55e0704f44ac84573ee9363dd98e6c6b79df5516d2ec265bcb5a905574",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/6d/6d736815-ad04-45d1-9e85-8af2cdf8e8a0.png",
+      "bytes": 9234,
+      "sha256": "4de197bcc63788a0dc98b0c4715167b1334ef564cf636e6e1fc880db2fdaa9ee",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/6d/6dfeb9e3-8794-4098-abb8-95b6c21e0b82.png",
+      "bytes": 159914,
+      "sha256": "6d4d65358b97a626452bfa124e1e67f8232ccdb9c6f0b4740ca2b3bf20998ff6",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/6f/6fb4dc9d-ee85-4606-81e2-39669f12f274.wav",
+      "bytes": 28844,
+      "sha256": "17c30ef63b26f7f1bc8844e51f195609d147f12850714e70185a188cfeea59b5",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/6f/6ff3b39a-7238-407b-a8dc-0022928b60c7.png",
+      "bytes": 27713,
+      "sha256": "b272db11403de6f2c6f3f56f85c54a86e3950000ffbb0a1029079ef754855949",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/72/7236e33b-c71a-49c8-80c9-7228bd09dd25.png",
+      "bytes": 14462,
+      "sha256": "e07a443cbaa6d28f8437a47a05dfbcbcd5f1854af130c3c5ee6dc68af0b52a53",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/74/74f7213e-9749-4d3f-af66-a7f5b2fc4e55.png",
+      "bytes": 16281,
+      "sha256": "208779249b1e82b0a02639c93d5cbf78cfe58bbb70d2480c0e38e46ccf17ab7c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/76/769372fe-409c-4ab1-a5c3-754a0a55e026.png",
+      "bytes": 50174,
+      "sha256": "0c692b001cb6e9e7fe25d0ba6aad0083493045a0eb5fd3dc172187bb952b82bd",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/77/77442e4d-ccb3-4882-9543-003eec901e71.png",
+      "bytes": 26636,
+      "sha256": "e0d3f38e4d1af746ac32230085c708e650541c5bc5aed41e071e0a82e767d1ca",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/78/786947c3-a36c-47a8-84d4-2b98870837df.png",
+      "bytes": 22232,
+      "sha256": "ce170cec20f0aa8e2cdb7e8fce65e31494876bd758c7bc7d2614d383612218bf",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/7a/7a673542-2a68-4cc0-90f8-98a6e472185b.png",
+      "bytes": 20857,
+      "sha256": "86c1e1b4a5d8b74f3c215d5efd7c5046d088fdfc99c450c6893a84a09368be1e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/7a/7aa8cbb0-18dd-4674-9a14-217a8a16cd60.png",
+      "bytes": 19726,
+      "sha256": "17e0fa060c2502fa3931041fa36d4e615823af647a1f7e24ad9c758551584f53",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/7d/7df9301e-523b-4b8b-b7f4-dd3e554fa2de.png",
+      "bytes": 169249,
+      "sha256": "56c945b6682f069318fd27f56672efacb6fe2a4ff7cf6f53039d58a655104521",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/7d/7dfb9bd7-ceb3-419f-8de9-05b48779fb7c.png",
+      "bytes": 376028,
+      "sha256": "7f92dd8c3550491cf02f675d1abb65ad87bba49496b73ed3e52dc60e2aeb6efb",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/7e/7e6c2532-6691-4d43-8427-06c41fa15e1e.wav",
+      "bytes": 23084,
+      "sha256": "ad225c554c1788ce2e73f399d9323943f96dfacfe82270c947c179fbaf16a5e6",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/7e/7e7d5824-e1fd-49b6-bd0b-7928f2bcd2ae.png",
+      "bytes": 19577,
+      "sha256": "1aee526934e49541c5d0ae7edb1203d266a68ab23b7d3415d9e9f9543fcdb47d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/81/81d42a64-9a51-4bf4-b1ce-44a3fa491146.png",
+      "bytes": 19226,
+      "sha256": "61641baf4faf4106ae9fe208dbee6f0f4975f7987c6d164352de1cf6af7bd474",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/83/8325d733-bed4-4251-8199-c900a7af4eeb.png",
+      "bytes": 3285595,
+      "sha256": "eb9529b5d6f798ce78beab2b8f10391fadc1cb629855969fc9fd624aeed3b3bc",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/85/856f9874-8f9f-4cb4-bf64-51b934d31103.png",
+      "bytes": 50630,
+      "sha256": "fc10063bf9a77f52e1fc7f01d285c82514dfb5f50faee181775aaad7f166dd44",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/87/8744f17e-9f96-4711-a2da-1f078aedd9a2.png",
+      "bytes": 79009,
+      "sha256": "337a3e9865c6b2ad2eee14a030f22869472e217ebc0b3aceb5b3bf7c1800d52c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/89/890c9a81-a67b-44f1-b201-726c27c9ad91.png",
+      "bytes": 51581,
+      "sha256": "da17e35e4a0e87f84c77a6a27c9d106b2096d20b5fb5d0193eed11aec007a7b8",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/8a/8a6f5592-59f4-4203-95cd-0949939ae486.png",
+      "bytes": 148715,
+      "sha256": "300877d5089b87201d6dcd7a94295485545a2e3f8c630dc97c19f4c1ee780f28",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/8a/8af50939-d9ab-4168-a783-255f58a3267c.png",
+      "bytes": 38622,
+      "sha256": "0025cf8a5395d17efd6949e4883dd0804c7c220534bec6d948b6e0b40cebaec5",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/8b/8b354c24-e333-4065-a220-ce801a1768a7.png",
+      "bytes": 50517,
+      "sha256": "ceadcbebb990aac7042a97728630de1c523597471b1e321f459a93eb12a7621c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/8e/8e8c68be-22c8-407e-ab3a-a6257e50b3d5.png",
+      "bytes": 145048,
+      "sha256": "ddde7301b7c4d361c2c81f584a09359efbf639af1fee1299517676aab1d51297",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/8e/8ebdece1-b59b-4cd3-8350-160c869f8b56.png",
+      "bytes": 16203,
+      "sha256": "18c667a41013b473630d3dfc040ddec769653bb3a55efdb2394613b2ad3d864d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/90/90904619-7e01-4697-900c-f36c2e46d8b9.png",
+      "bytes": 74541,
+      "sha256": "46f9284a2fcdd6e5ad864608da61f93585cc19ba1bec175b476728724622184c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/97/97003ab3-e6b2-4118-bfc1-b51ca4355382.png",
+      "bytes": 38864,
+      "sha256": "7c693562c59d3ca0aa162ceb99b4ab2f9672894b03aea49da223f6a51f1c88ef",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/97/97a13f10-e6f5-45fc-9d2c-2e38fa275642.wav",
+      "bytes": 113324,
+      "sha256": "1cfd5032e38743d76d045e7065ec55364e566770de9ea5f67f0ef40acc171e2b",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/99/996eaf52-6b0c-44d5-8d9a-519cec123263.png",
+      "bytes": 12086,
+      "sha256": "72eebddf0d6a482718d5ea7bd177b766e067db22f99a9cbc68c0d28610458fef",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/99/998d5324-cf5d-475f-9276-cf5e773cedb2.png",
+      "bytes": 24578,
+      "sha256": "d187e129348aac1e1d42c97cf697c5879271c1761bc5c0ed79d431e8fe1827cd",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/9d/9db220e8-7103-431f-b433-a94f4e5da7ab.png",
+      "bytes": 264183,
+      "sha256": "6de899f66ce595bba45889391e1e069f11388da91053121b806a018fadd9696b",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/9d/9dc0a6e3-1341-4401-9ad6-f60f5c8dd93e.png",
+      "bytes": 32024,
+      "sha256": "109c7d211524a694a727b20bfa959593c286300c3e086274ea59109844331517",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/9f/9f4bf1b6-ed5c-424c-bde1-5f34e6a96ae2.png",
+      "bytes": 149406,
+      "sha256": "b9f28f133853587f811bc1e604b1ea60fd80a9cf48d563579613026c82b86a2b",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/a1/a1aea54a-434a-4507-a04d-1597d8870c1d.png",
+      "bytes": 24861,
+      "sha256": "38e8be006e3c85370385cedd8b2e93468a63d1c784fe9ffa51b877195c3bf7e8",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/a4/a4908e8f-a80a-4c99-beef-3e1b4eaeac85.png",
+      "bytes": 48898,
+      "sha256": "76aeb117b3a6c6c58e86adef55a2aa8bf0f71aa23c6148f7b7e53cfb9e5aaae7",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/a7/a7a372a6-0945-4e64-bcd8-ce765350c3f6.png",
+      "bytes": 17046,
+      "sha256": "3be1ec89835977a47492071512609acd0abd150dbaf425a3515263ec3c2e76fa",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/a7/a7d1947e-737e-47f3-9093-6785f74c5420.wav",
+      "bytes": 21164,
+      "sha256": "fd581ed52a2d5e1a4658047fc6379ae5a690ce978a28c4b47ac4ac3ce6e6839c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/a9/a9e7e936-1328-49ba-b2f6-937144d32f7e.png",
+      "bytes": 23414,
+      "sha256": "e9c71b290caef564e2c7dd4192eeacf7855a7aa32f55d3ed6c894b73f1e01347",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ab/ab57df7c-8136-4e1b-9ed7-aacc7e1b07d8.png",
+      "bytes": 67352,
+      "sha256": "291906fb8154cbdb501ffb02b05105b1dc42b72e6e96a47548bf0e49de0d5b66",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ac/ac93343b-50cf-4242-aa06-2304a5875ecb.png",
+      "bytes": 44839,
+      "sha256": "652148c1ddb81fe603ae288e5de978c20ca62754087a7b1019086264e6b80b46",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/b0/b0bc62d3-6d3e-4682-ae27-53e82d2b6e48.wav",
+      "bytes": 15404,
+      "sha256": "50c3e7a122e2ee41263eaed65c63ea4817bb29ca7e17ec01f52f86dea41bb6ac",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/b4/b43073a9-a291-4928-92e9-49d0913c1412.png",
+      "bytes": 49418,
+      "sha256": "afa3abd7f3517a4e01f63459f8f036e1e39b1e806402311a05b1d05b40d0ba63",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/b5/b581b3cc-5212-4c13-bb90-f81d41db7855.png",
+      "bytes": 48533,
+      "sha256": "2bcd78469664140530212235fbe0338577f520f739d54592cf02fcd5b4d2acf7",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/b5/b58a739c-6255-4555-adca-6d8f9434c68a.png",
+      "bytes": 73823,
+      "sha256": "a2cda3659f804235af9dc2f4e7623924ca6ba2bdf6c54e450606cf025f53fb59",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/b6/b6e1394b-ee00-4c10-8f68-a995aefc9b64.png",
+      "bytes": 145736,
+      "sha256": "58dc6c9e56a3847c2da8ecefa7ecbc0c00e9eca041c6ad338a0100c1c69a5023",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/b9/b9d7b116-2a16-4828-8fbe-1d4d6afbe957.png",
+      "bytes": 229387,
+      "sha256": "6282ed30b53b417a42cd3112582e7e376d0e35bea0445d34ea515ac14a894106",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/be/be687474-2453-443b-a6e9-b3ba3037873c.png",
+      "bytes": 62160,
+      "sha256": "a61e8821f18d7397a6f8556b50ab20a2fb0b0e148a7a996a63c0bf04db781e12",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/bf/bfbb50d1-1422-4ef4-a8ab-f762d03d7264.png",
+      "bytes": 178994,
+      "sha256": "db7d25fb511fcaa01621cd75edaf09729c24a25b29206d975ee8555d5b9c9b21",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c2/c240e307-9c47-49e2-9766-ebc2e1d2ad11.png",
+      "bytes": 344076,
+      "sha256": "aaa28a7e8d3811b3ccce73e04a081320ebb63a942090bd546171c65e6263254c",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c4/c48ca8a5-8cc2-4667-9c8e-bce4f9d7ed05.png",
+      "bytes": 38908,
+      "sha256": "dfc5079359adb5d10b97d04624302470e7871d2c219e0d1d319be1698d95d018",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c5/c5631539-0b0d-4967-b437-425023d04576.png",
+      "bytes": 28005,
+      "sha256": "a969bdd857c31e0ee8703d38d85df3ade907b3e0e87e4f7098789f2d92e6a0c2",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c6/c65205ad-bf23-433d-b9c4-f6cf690a7410.png",
+      "bytes": 24300,
+      "sha256": "2ed8703648b991a00d109e57a05a3a5764656b94f7e3dac7514f135a294a0e48",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c8/c8b20bbb-e7a4-4b60-b32f-af90978be505.png",
+      "bytes": 34905,
+      "sha256": "88b404c6f7290227ed938d5e7673f2e2f505ae63a03a7dc43cce7db9f6f598e6",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c9/c91ea273-88ce-4c0e-8b81-85f04bd147d6.png",
+      "bytes": 46295,
+      "sha256": "6733bcca4d8d4178a5993f58c4d431bac515991af96cc496a7a5e56734afcc31",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/c9/c929794f-8099-45b7-b069-18f9f7ff498c.png",
+      "bytes": 116362,
+      "sha256": "b0a2a032aa03af3e5ee94878327800b0aa92a09f5e8b6fb1e42639090c7d1b5e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/cc/cc11fdd9-98e3-4a41-a38c-a2c63b500fe1.png",
+      "bytes": 54495,
+      "sha256": "ca9ec29d29765e6c07ab4952d8542c4e48e3addcf2753d073076313e3d7ab488",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ce/cef997aa-e99f-453c-99e4-7b58689483f6.png",
+      "bytes": 183236,
+      "sha256": "6a624eae4ec459f8a4acef6b9d2af3824c9001b4608606619623c67a6f27f4ab",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/cf/cf5d5dc5-0c9d-43c5-a0bc-9d4abfa1f71c.png",
+      "bytes": 163586,
+      "sha256": "0ddcc51bd9cebe42738c74e75324c519cd0b1f72e037da99ae7ef3730bbc1f37",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/cf/cf99de2a-a29c-4fa3-9c91-22075b70d5b9.png",
+      "bytes": 26460,
+      "sha256": "1530f8f346a43c71bf259b4d1ac4871dc8bf4e313c717abcb0995b27209d5645",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/d1/d166d737-4a11-4141-a04b-c8c170ce220c.png",
+      "bytes": 14870,
+      "sha256": "844da1d03308f1624132c58c78eba4ab2b35c4753cac1c9d620a21cab79bb816",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/d3/d3f9c743-39cd-43a2-95d6-4608528d5728.png",
+      "bytes": 291557,
+      "sha256": "24d98634dc3af51e07bdee65177b7381f4cddb22e7825d7b78353cded52c9f6a",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/d4/d4c3ba3f-2e67-43af-be84-c80512a80143.png",
+      "bytes": 173240,
+      "sha256": "2aa021a46afa91e21e9936b5dc8e97e82e35b16e8c537886fc614907e33211cd",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/d4/d4d5df60-b6c5-4736-89c1-a389ccb5d2ab.png",
+      "bytes": 38316,
+      "sha256": "f7b02727d02e67acff0c01dbf7551c6ddd011b9c3731ba0d36d3f17b618d5bb7",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/d9/d98d8f8c-7793-47dd-9caf-5f9c5c6ff37d.png",
+      "bytes": 23293,
+      "sha256": "88bec87eadb8f6cdff3f24f73b06b622359179a23c9fbfc79dd005a5e599f952",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/db/db4dd64a-42a1-4f32-ac34-33424bd03b64.png",
+      "bytes": 2255677,
+      "sha256": "c67c2944fb614055027ed48c2296f9afa0a31e1d44846400bc675a6564ef5c15",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/de/de5e04e8-2e65-413d-b7c1-d3e7b86b9313.png",
+      "bytes": 57451,
+      "sha256": "d12e548232f277946b8d233da735174eb7f9ad20700f8c2a3161b6bda2a8cac1",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/df/df4f40c9-95da-4bd6-8f3d-f692e7bdbd14.png",
+      "bytes": 23513,
+      "sha256": "e158730bf15045d8fbc95f1734a2b609f193fb7f2d3e2ec5a42736c5afca1313",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e1/e13e8291-12a8-4af7-b9e2-f7c4ab8fbef8.png",
+      "bytes": 26473,
+      "sha256": "fd949ec168b53a406f84705ec7a5446f096b476364f40101299df89ae0801e44",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e2/e222f5e0-7db1-46f3-9211-fa6d70eb8d67.wav",
+      "bytes": 25004,
+      "sha256": "7bcb386976bffd8eaf9af4d28f228415d6318693b10d1e2e632efd769389cd49",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e2/e2a9f7e8-c2ac-4c29-99c6-43d814dfa462.png",
+      "bytes": 11060,
+      "sha256": "329706d8a0b01d864970f23ee0e561cfa36a57c7b65ae00c0cd188cbaee12328",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e3/e331bfef-f6e7-46e9-8134-ee101fa5dd25.png",
+      "bytes": 60304,
+      "sha256": "be317495360064627f2f28757a4b9934cb7b0c4617a8640e926df9acdcfb921a",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e4/e4afcada-678e-4db8-b489-beccd1060503.png",
+      "bytes": 8012,
+      "sha256": "774a224d1a4d4ccf1fc375cc6bb925000698fb14e10d88f5664acaeab1335d02",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e6/e6d2a88d-a4f9-460b-b84d-06853f29456d.png",
+      "bytes": 9284,
+      "sha256": "62d2b8442ab92c2f2f52e942a0ad74e4fa9d4286bc658dc7256bc28b7d893883",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/e9/e975f4c1-f99b-4bff-8a66-d032c5e17909.png",
+      "bytes": 58825,
+      "sha256": "7f9baa93265eaf4b4546ab7bd9065edea837819dfde4b19735888fb2c4ee9f49",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ea/eafb3e60-cc43-4c0e-bcb7-33c902c5fb35/Title.ttf",
+      "bytes": 504856,
+      "sha256": "839635c3bc3b56e812ea1e72ad13522e2a8bb30d774035408358c09afc891d41",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ed/ed0deb23-740c-4800-b237-550cae989c1d.png",
+      "bytes": 176957,
+      "sha256": "edc27c97877a39306bd61e3cef8a7b477df14554b13166ecd4cf0e7b5f85ce9d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ed/ed13f096-41f2-4677-aacc-21328e0d69db.wav",
+      "bytes": 21164,
+      "sha256": "83d645fcf12d014b7fa415504f69172178381f12cb43a0679f254b909b37711f",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ed/edb0fb09-37e9-4ff8-9812-aa8132c10d57.png",
+      "bytes": 15877,
+      "sha256": "b0ae1c5352f60107cc470edef08ec32398eb6cdd25c29ea6038cdc8fa22be754",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f4/f44419be-65f9-4018-b27b-d11676a2d102.png",
+      "bytes": 18762,
+      "sha256": "102c47d6bb9a67930f7a7b6d52ad65b343d23a7ab2ea8be05a4380e20fb32a41",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f4/f4fc153a-25ec-4953-949f-c96ccebb578a.png",
+      "bytes": 23499,
+      "sha256": "b38d1bec202fcbba1ea77b00db8d91b32276d81eeb451a600493072e1e1c89d4",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f5/f5aa0300-3db5-4da9-a1a4-46e432b49650.png",
+      "bytes": 22120,
+      "sha256": "4c948e39485de247d0ca9a645ff28434899de5e0c8eab47bf5e2756481cabffb",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f5/f5bf5b50-fb1f-40a3-9757-c1c40e62a3e9.png",
+      "bytes": 38752,
+      "sha256": "61bd0d6617d192e9bed9c5e608e2c34d10302b98cc3a120ff02057bcd533b63d",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f7/f789196b-8b30-4662-9dba-80c3868997aa.png",
+      "bytes": 141750,
+      "sha256": "9428434b5511506db2234b449401ca05ef9b758e2f51f343c65f2b0d3c61dd72",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f8/f800a5fb-f9e8-4b8e-af3f-5303112c07af.png",
+      "bytes": 176710,
+      "sha256": "934f7826234b84f16c1553951e135cbb3f7e1d326249b3c6a110f195f506d48e",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f8/f87793c6-6019-4d1e-a6b3-419bd82b578e.png",
+      "bytes": 33418,
+      "sha256": "174086e060fe054ca25234e7bc283bbcfb8d68d8a3cde72fab4cfa7eecaeffac",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/f9/f99664cc-158b-43d6-a04e-212c15c5aff3.png",
+      "bytes": 22815,
+      "sha256": "1c814300345c029e6f7358a6781ab2f3311b54012edfee6d5938413d48538586",
+      "kind": "web"
+    },
+    {
+      "file": "remote/inkblade-content/native/ff/fffd2b5e-609b-4d9b-a12f-e19e1a597339.png",
+      "bytes": 31987,
+      "sha256": "73149d0786d79a67d877d584f4822e023f9492fa463c2aad42da557b3ae685e9",
+      "kind": "web"
+    },
+    {
+      "file": "src/chunks/bundle.js",
+      "bytes": 11381,
+      "sha256": "79384f4bbbd95347b5215aa2e3d8bdbdeb94da1f72a12eb8b7ed339a7add4c3e",
+      "kind": "web"
+    },
+    {
+      "file": "src/effect.bin",
+      "bytes": 5755,
+      "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556",
+      "kind": "web"
+    },
+    {
+      "file": "src/import-map.json",
+      "bytes": 40,
+      "sha256": "2be73d8f2e7e1d814627714ace691b6e1a9d445c779426a224e7f3685f0fa278",
+      "kind": "web"
+    },
+    {
+      "file": "src/polyfills.bundle.js",
+      "bytes": 14750,
+      "sha256": "f1e4ced3322168d6b9915e782e4c1cf1055d75f66f2b38e7fcd60f48cf89082b",
+      "kind": "web"
+    },
+    {
+      "file": "src/settings.json",
+      "bytes": 21428,
+      "sha256": "125ef9c8d110cb495c55ee4d32b3db6a6cd533d8fbe5621c4c2bc684ca2c26fa",
+      "kind": "web"
+    },
+    {
+      "file": "src/system.bundle.js",
+      "bytes": 12259,
+      "sha256": "90f192f3b04f7fcb5bba9c15745cdd1a798d9b855f752c5ee7e48bb526dd543d",
+      "kind": "web"
+    },
+    {
+      "file": "style.css",
+      "bytes": 1222,
+      "sha256": "338fc9d734af60103e6d303333e28b413f477b295fd7dd233dc7022320c56e48",
+      "kind": "web"
+    }
+  ],
+  "manifestExcludesItself": true
+}
