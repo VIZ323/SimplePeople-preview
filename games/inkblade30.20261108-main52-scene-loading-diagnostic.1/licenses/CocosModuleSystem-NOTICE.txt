@@ -1,0 +1,23 @@
+Cocos module-system runtime helpers
+
+Package: @cocos/module-system 0.0.21
+Author metadata: cocos
+Declared SPDX license: ISC
+Official metadata: https://registry.npmjs.org/@cocos%2fmodule-system/0.0.21
+
+The runtime includes code from lib/globals.ts and lib/throw-uninstantiated.ts.
+Their original package metadata is retained verbatim in
+CocosModuleSystem-package.json. The official published tarball and the
+installed package have byte-identical package metadata; the runtime debug
+source map was also matched to the installed source files.
+
+The upstream package supplies no separate LICENSE for these two helpers and
+neither source file contains a copyright or license header. This notice does
+not invent an upstream copyright notice or apply the separate SystemJS MIT
+license to these helpers.
+
+ISC-reference.txt is the unmodified standard reference retrieved from
+https://spdx.org/licenses/ISC.txt. Its Internet Systems Consortium notices
+are part of that reference text; they are not presented as authorship of
+the Cocos helper files. The package's own declared license and author are
+recorded above and in the original metadata.
