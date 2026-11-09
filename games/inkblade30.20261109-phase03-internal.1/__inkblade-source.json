@@ -1,0 +1,11 @@
+{
+  "version": "inkblade30.20261109-phase03-internal.1",
+  "sourceSHA": "f356922ca5ec9769f987927e53d82e1d44aa591b8ce20d819338ba7c0dde0e99",
+  "sourceFiles": 183,
+  "artVersion": "inkblade30-art.20261109.28",
+  "debug": false,
+  "scope": [
+    "内部手机加载、普通菜单与输入回归候选；本地ST01真实旅程已完成，非ST01–03品质阶段Release。"
+  ],
+  "wholeGameAccepted": false
+}
