@@ -1,0 +1,18 @@
+{
+  "version": "inkblade30.20261109-phase03-internal.3",
+  "sourceCommit": "4b86ad7515e4b55953c447c653287c740bf3266f",
+  "sourceCommitMeaning": "Root content mapping for this sourceSHA; not a claim about build-start HEAD",
+  "sourceSHA": "f7c0deaab4be624ea031f09d86edeeb0396a5146f1b03d8ee327a05109cc4b1d",
+  "sourceFiles": 185,
+  "artVersion": "inkblade30-art.20261109.30",
+  "debug": false,
+  "scope": [
+    "ST01–03内部手机/本地旅程候选：固定phase03独立slot、正常菜单/拖松/暂停恢复/选卡结算；非完整品质Release。"
+  ],
+  "presentationScope": {
+    "id": "inkblade30.phase03.20261109.1",
+    "stageLimit": 3,
+    "saveKey": "inkblade30.phase03.save.v1"
+  },
+  "wholeGameAccepted": false
+}
